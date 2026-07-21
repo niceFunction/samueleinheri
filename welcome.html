@@ -1,330 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Welcome</title>
+
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
 
 <style>
 
-/* TODO: Turn the container into a button instead*/
-/* TODO: When hovering, increase the size of the buttons by 5% */
-/* TODO: When hovering on name/position (after it has been turned to a button) increase the size by the same scaling amount */
 
 :root {
 
-    /* Text content */
+
+    /* NAME + POSITION */
     --name: "Samuel Einheri";
     --position: "Game Designer";
 
+    /* NAME */
+    --name-font-size: 24px;
+    --name-font-weight: 700;
 
-    /* Button text content */
+    /* POSITION */
+    --position-font-size: 16px;
+    --position-font-weight: 400;
+
+    /* NAME CONTAINER */
+    --container-width: 300px;
+    --container-height: 60px;
+
+    /* CENTRE BUTTON NAMES */
     --portfolio-button-name: "PORTFOLIO";
     --prototypes-button-name: "PROTOTYPES";
     --about-me-button-name: "ABOUT ME";
 
-
-    /* Shared text settings */
-    --font-family: "Open Sans", sans-serif;
-    --font-color: #DFE6E9;
-
-
-    /* Name settings */
-    --name-font-size: 24px;
-    --name-font-weight: 700;
-
-
-    /* Position settings */
-    --position-font-size: 16px;
-    --position-font-weight: 400;
-
-
-    /* Name container */
-    --container-width: 300px;
-    --container-height: 60px;
-    --container-left-offset: 200px;
-    --container-bottom-offset: 100px;
-
-
-    /* Button settings */
+    /* CENTRE TEXT BUTTONS */
     --button-font-size: 16px;
     --button-font-weight: 700;
-    --button-hover-color: #FFC20A;
     --button-gap: 20px;
 
+    /* SHARED SETTINGS */
+    --font-family: "Open Sans", sans-serif;
+    --font-color: #DFE6E9;
+    --button-hover-color: #FFC20A;
+
+    /* BOTTOM CONTAINER */
+    --menu-container-width: 1520px;
+    --menu-container-height: 80px;
+    --menu-container-bottom-offset: 40px;
+    --menu-container-padding: 40px;
+
+    /* ICON BUTTON SETTINGS */
+    --icon-button-size: 48px;
+    --icon-button-gap: 20px;
+
+    /* ICON FILE PATHS */
+    --mail_normal: "./ICONS/mail_normal.svg";
+    --mail_highlighted: "./ICONS/mail_highlighted.svg";
+
+    --linkedin_normal: "./ICONS/linkedin_normal.svg";
+    --linkedin_highlighted: "./ICONS/linkedin_highlighted.svg";
+
+    --resume_normal: "./ICONS/resume_normal.svg";
+    --resume_highlighted: "./ICONS/resume_highlighted.svg";
+
+
+
+    /* ICON LINKS */
+    --mail-link: "mailto:samuel.einheri@gmail.com";
+    --linkedin-link: "https://www.linkedin.com/in/samueleinheri/";
+    --resume-link: "./DOWNLOAD/SamuelEinheri_Resume.pdf";
 }
 
 
 
-/* Base */
+
+
 
 html,
 body {
-
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-
+    margin:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
 }
-
-
-
-/* Background video */
 
 video {
-
-    position: fixed;
-
-    inset: 0;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    pointer-events: none;
-
+    position:fixed;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    pointer-events:none;
 }
 
+/* MAIN CONTAINER */
+.menu-container {
+    position:fixed;
+    left:50%;
+    bottom:var(--menu-container-bottom-offset);
+    transform:translateX(-50%);
+    width:var(--menu-container-width);
+    height:var(--menu-container-height);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding-left:var(--menu-container-padding);
+    padding-right:var(--menu-container-padding);
+    box-sizing:border-box;
+}
 
-
-/* NAME + POSITION CONTAINER */
-
+/* LEFT NAME BUTTON */
 .profile-button {
-
-    position: fixed;
-
-    left: var(--container-left-offset);
-
-    bottom: var(--container-bottom-offset);
-
-    width: var(--container-width);
-
-    height: var(--container-height);
-
-    background: transparent;
-
-    border: none;
-
-    padding: 0;
-
-    cursor: pointer;
-
+    width:var(--container-width);
+    height:var(--container-height);
+    background:transparent;
+    border:none;
+    padding:0;
+    cursor:pointer;
 }
-
-
-/* Name + position container */
 
 .name-box {
-
-    width: 100%;
-
-    height: 100%;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    font-family: var(--font-family);
-
-    color: var(--font-color);
-
-    text-align: center;
-
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    font-family:var(--font-family);
+    color:var(--font-color);
+    text-align:center;
 }
-
-
-
-/* Name */
 
 .name {
-
-    font-size: var(--name-font-size);
-
-    font-weight: var(--name-font-weight);
-
+    font-size:var(--name-font-size);
+    font-weight:var(--name-font-weight);
+    transition:color .2s ease;
 }
-
 
 .name::before {
-
-    content: var(--name);
-
+    content:var(--name);
 }
-
-
-
-/* Position */
 
 .position {
-
-    font-size: var(--position-font-size);
-
-    font-weight: var(--position-font-weight);
-
+    font-size:var(--position-font-size);
+    font-weight:var(--position-font-weight);
+    transition:color .2s ease;
 }
-
 
 .position::before {
-
-    content: var(--position);
-
+    content:var(--position);
 }
 
+.profile-button:hover .name,
+.profile-button:hover .position {
+    color:var(--button-hover-color);
+}
 
-
-
-
-/* Button row */
-
+/* CENTRE TEXT MENU */
 .button-bar {
-
-    position: fixed;
-
-
-    /* Center horizontally in browser */
-
-    left: 50%;
-
-
-    /* Align vertical center with name container */
-
-    bottom: calc(
-        var(--container-bottom-offset) +
-        (var(--container-height) / 2)
-    );
-
-
-    transform: translate(-50%, 50%);
-
-
-    display: flex;
-
-    gap: var(--button-gap);
-
-
-    font-family: var(--font-family);
-
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    align-items:center;
+    gap:var(--button-gap);
+    font-family:var(--font-family);
 }
-
-
-
-
-
-/* Buttons */
 
 .button {
-
-    background: transparent;
-
-    border: none;
-
-
-    padding: 8px 16px;
-
-
-    color: var(--font-color);
-
-
-    font-family: inherit;
-
-    font-size: var(--button-font-size);
-
-    font-weight: var(--button-font-weight);
-
-
-    cursor: pointer;
-
+    background:transparent;
+    border:none;
+    padding:8px 16px;
+    color:var(--font-color);
+    font-family:inherit;
+    font-size:var(--button-font-size);
+    font-weight:var(--button-font-weight);
+    cursor:pointer;
 }
-
-
 
 .button:hover {
-
-    color: var(--button-hover-color);
-
+    color:var(--button-hover-color);
 }
 
+/* RIGHT ICON MENU */
+.icon-bar {
+    display:flex;
+    align-items:center;
+    gap:var(--icon-button-gap);
+}
+
+.icon-button {
+    width:var(--icon-button-size);
+    height:var(--icon-button-size);
+    border:none;
+    padding:0;
+    background:transparent;
+    cursor:pointer;
+    position:relative;
+}
+
+.icon-button img {
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+    transition:opacity .2s ease;
+}
+
+.icon-highlighted {
+    opacity:0;
+}
+
+.icon-button:hover .icon-normal {
+    opacity:0;
+}
+
+.icon-button:hover .icon-highlighted {
+    opacity:1;
+}
 
 </style>
-
 </head>
-
-
 <body>
 
-
-<!-- Background -->
-
 <video autoplay muted loop playsinline>
-
     <source src="./WELCOME/Reel_2025_30FPS.mp4" type="video/mp4">
-
 </video>
 
+<div class="menu-container">
+
+    <!-- LEFT NAME + POSITION -->
+    <button class="profile-button">
+
+        <div class="name-box">
+            <div class="name"></div>
+            <div class="position"></div>
+        </div>
 
 
+    </button>
 
+    <!-- CENTRE TEXT MENU -->
+    <div class="button-bar">
 
-<!-- Name / Position -->
-
-<button class="profile-button" id="profile-button">
-
-    <div class="name-box">
-
-        <div class="name"></div>
-
-        <div class="position"></div>
+        <button class="button" id="portfolio-button"></button>
+        <button class="button" id="prototypes-button"></button>
+        <button class="button" id="about-me-button"></button>
 
     </div>
 
-</button>
+    <!-- RIGHT ICON MENU -->
+    <div class="icon-bar">
 
+        <!-- MAIL -->
+        <button class="icon-button" id="mail-button">
 
+            <img 
+            class="icon-normal" 
+            src="./ICONS/mail_normal.svg">
 
+            <img 
+            class="icon-highlighted" 
+            src="./ICONS/mail_highlighted.svg">
 
-<!-- Buttons -->
+        </button>
 
-<div class="button-bar">
+        <!-- LINKEDIN -->
+        <button class="icon-button" id="linkedin-button">
 
-    <button class="button" id="portfolio-button"></button>
+            <img 
+            class="icon-normal" 
+            src="./ICONS/linkedin_normal.svg">
 
-    <button class="button" id="prototypes-button"></button>
+            <img 
+            class="icon-highlighted" 
+            src="./ICONS/linkedin_highlighted.svg">
 
-    <button class="button" id="about-me-button"></button>
+        </button>
 
+        <!-- RESUME -->
+        <button class="icon-button" id="resume-button">
+
+            <img 
+            class="icon-normal" 
+            src="./ICONS/resume_normal.svg">
+
+            <img 
+            class="icon-highlighted" 
+            src="./ICONS/resume_highlighted.svg">
+
+        </button>
+    </div>
 </div>
-
-
-
-
 
 <script>
 
 const root = getComputedStyle(document.documentElement);
 
-
+/* CENTRE MENU TEXT */
 document.getElementById("portfolio-button").textContent =
-    root.getPropertyValue("--portfolio-button-name").replaceAll('"','');
+root.getPropertyValue("--portfolio-button-name").replaceAll('"','');
 
 document.getElementById("prototypes-button").textContent =
-    root.getPropertyValue("--prototypes-button-name").replaceAll('"','');
+root.getPropertyValue("--prototypes-button-name").replaceAll('"','');
 
 document.getElementById("about-me-button").textContent =
-    root.getPropertyValue("--about-me-button-name").replaceAll('"','');
+root.getPropertyValue("--about-me-button-name").replaceAll('"','');
 
+/* ICON LINKS */
+document.getElementById("mail-button").onclick = function() {
+
+    window.location.href =
+    root.getPropertyValue("--mail-link").replaceAll('"','');
+
+};
+
+document.getElementById("linkedin-button").onclick = function() {
+
+    window.open(
+        root.getPropertyValue("--linkedin-link").replaceAll('"',''),
+        "_blank"
+    );
+};
+
+document.getElementById("resume-button").onclick = function() {
+
+
+    window.open(
+        root.getPropertyValue("--resume-link").replaceAll('"',''),
+        "_blank"
+    );
+};
 
 </script>
-
-
 </body>
 </html>

@@ -4,102 +4,308 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Welcome</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
 <style>
-:root{
---name:"Samuel Einheri";
---position:"Game Designer";
---portfolio-button-name:"PORTFOLIO";
---prototypes-button-name:"PROTOTYPES";
---about-me-button-name:"ABOUT ME";
---font-family:"Open Sans",sans-serif;
---font-color:#DFE6E9;
---name-font-size:24px;
---position-font-size:16px;
---name-font-weight:700;
---position-font-weight:400;
---profile-width:300px;
---profile-height:60px;
---ui-container-width:1520px;
---ui-container-height:80px;
---ui-container-bottom-offset:100px;
---button-font-size:16px;
---button-font-weight:700;
---button-gap:20px;
---button-hover-color:#FFC20A;
+
+/* TODO: Turn the container into a button instead*/
+/* TODO: When hovering, increase the size of the buttons by 5% */
+/* TODO: When hovering on name/position (after it has been turned to a button) increase the size by the same scaling amount */
+
+:root {
+
+    /* Text content */
+    --name: "Samuel Einheri";
+    --position: "Game Designer";
+
+
+    /* Button text content */
+    --portfolio-button-name: "PORTFOLIO";
+    --prototypes-button-name: "PROTOTYPES";
+    --about-me-button-name: "ABOUT ME";
+
+
+    /* Shared text settings */
+    --font-family: "Open Sans", sans-serif;
+    --font-color: #DFE6E9;
+
+
+    /* Name settings */
+    --name-font-size: 24px;
+    --name-font-weight: 700;
+
+
+    /* Position settings */
+    --position-font-size: 16px;
+    --position-font-weight: 400;
+
+
+    /* Name container */
+    --container-width: 300px;
+    --container-height: 60px;
+    --container-left-offset: 200px;
+    --container-bottom-offset: 100px;
+
+
+    /* Button settings */
+    --button-font-size: 16px;
+    --button-font-weight: 700;
+    --button-hover-color: #FFC20A;
+    --button-gap: 20px;
+
 }
-html,body{margin:0;width:100%;height:100%;overflow:hidden}
-video{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
-.ui-container{
-position:fixed;
-left:50%;
-bottom:var(--ui-container-bottom-offset);
-transform:translateX(-50%);
-width:var(--ui-container-width);
-height:var(--ui-container-height);
-display:flex;
-align-items:center;
-justify-content:space-between;
+
+
+
+/* Base */
+
+html,
+body {
+
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
 }
-.profile-button{
-width:var(--profile-width);
-height:var(--profile-height);
-background:transparent;
-border:none;
-padding:0;
-cursor:pointer;
-font-family:var(--font-family);
-color:var(--font-color);
+
+
+
+/* Background video */
+
+video {
+
+    position: fixed;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    pointer-events: none;
+
 }
-.name-box{
-width:100%;height:100%;
-display:flex;flex-direction:column;
-justify-content:space-between;
-align-items:center;
-text-align:center;
+
+
+
+/* Name + position container */
+
+.name-box {
+
+    position: fixed;
+
+    left: var(--container-left-offset);
+
+    bottom: var(--container-bottom-offset);
+
+
+    width: var(--container-width);
+
+    height: var(--container-height);
+
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+
+    font-family: var(--font-family);
+
+    color: var(--font-color);
+
+    text-align: center;
+
 }
-.name{font-size:var(--name-font-size);font-weight:var(--name-font-weight)}
-.position{font-size:var(--position-font-size);font-weight:var(--position-font-weight)}
-.name::before{content:var(--name)}
-.position::before{content:var(--position)}
-.button-bar{display:flex;gap:var(--button-gap);margin:0 auto;font-family:var(--font-family)}
-.button{
-background:transparent;border:none;cursor:pointer;
-color:var(--font-color);
-font:700 var(--button-font-size) var(--font-family);
-padding:8px 16px;
+
+
+
+/* Name */
+
+.name {
+
+    font-size: var(--name-font-size);
+
+    font-weight: var(--name-font-weight);
+
 }
-.button:hover,.profile-button:hover{color:var(--button-hover-color)}
+
+
+.name::before {
+
+    content: var(--name);
+
+}
+
+
+
+/* Position */
+
+.position {
+
+    font-size: var(--position-font-size);
+
+    font-weight: var(--position-font-weight);
+
+}
+
+
+.position::before {
+
+    content: var(--position);
+
+}
+
+
+
+
+
+/* Button row */
+
+.button-bar {
+
+    position: fixed;
+
+
+    /* Center horizontally in browser */
+
+    left: 50%;
+
+
+    /* Align vertical center with name container */
+
+    bottom: calc(
+        var(--container-bottom-offset) +
+        (var(--container-height) / 2)
+    );
+
+
+    transform: translate(-50%, 50%);
+
+
+    display: flex;
+
+    gap: var(--button-gap);
+
+
+    font-family: var(--font-family);
+
+}
+
+
+
+
+
+/* Buttons */
+
+.button {
+
+    background: transparent;
+
+    border: none;
+
+
+    padding: 8px 16px;
+
+
+    color: var(--font-color);
+
+
+    font-family: inherit;
+
+    font-size: var(--button-font-size);
+
+    font-weight: var(--button-font-weight);
+
+
+    cursor: pointer;
+
+}
+
+
+
+.button:hover {
+
+    color: var(--button-hover-color);
+
+}
+
+
 </style>
+
 </head>
+
+
 <body>
+
+
+<!-- Background -->
+
 <video autoplay muted loop playsinline>
-<source src="./WELCOME/Reel_2025_30FPS.mp4" type="video/mp4">
+
+    <source src="./WELCOME/Reel_2025_30FPS.mp4" type="video/mp4">
+
 </video>
-<div class="ui-container">
-<button class="profile-button" id="profile-button">
+
+
+
+
+
+<!-- Name / Position -->
+
 <div class="name-box">
-<div class="name"></div>
-<div class="position"></div>
+
+    <div class="name"></div>
+
+    <div class="position"></div>
+
 </div>
-</button>
+
+
+
+
+
+<!-- Buttons -->
+
 <div class="button-bar">
-<button class="button" id="portfolio-button"></button>
-<button class="button" id="prototypes-button"></button>
-<button class="button" id="about-me-button"></button>
+
+    <button class="button" id="portfolio-button"></button>
+
+    <button class="button" id="prototypes-button"></button>
+
+    <button class="button" id="about-me-button"></button>
+
 </div>
-<div style="width:300px"></div>
-</div>
+
+
+
+
+
 <script>
-const root=getComputedStyle(document.documentElement);
-portfolioButton=document.getElementById("portfolio-button");
-prototypesButton=document.getElementById("prototypes-button");
-aboutButton=document.getElementById("about-me-button");
-portfolioButton.textContent=root.getPropertyValue("--portfolio-button-name").replaceAll('"',"").trim();
-prototypesButton.textContent=root.getPropertyValue("--prototypes-button-name").replaceAll('"',"").trim();
-aboutButton.textContent=root.getPropertyValue("--about-me-button-name").replaceAll('"',"").trim();
+
+const root = getComputedStyle(document.documentElement);
+
+
+document.getElementById("portfolio-button").textContent =
+    root.getPropertyValue("--portfolio-button-name").replaceAll('"','');
+
+document.getElementById("prototypes-button").textContent =
+    root.getPropertyValue("--prototypes-button-name").replaceAll('"','');
+
+document.getElementById("about-me-button").textContent =
+    root.getPropertyValue("--about-me-button-name").replaceAll('"','');
+
+
 </script>
+
+
 </body>
 </html>

@@ -74,9 +74,11 @@
 
 
     /* ICON LINKS */
+    /*
     --mail-link: "mailto:samuel.einheri@gmail.com";
     --linkedin-link: "https://www.linkedin.com/in/samueleinheri/";
     --resume-link: "./DOWNLOAD/SamuelEinheri_Resume.pdf";
+    */
 }
 
 
@@ -303,6 +305,7 @@ video {
     </div>
 </div>
 
+<script src="./reference.js"></script>
 <script>
 
 const root = getComputedStyle(document.documentElement);
@@ -317,29 +320,38 @@ root.getPropertyValue("--prototypes-button-name").replaceAll('"','');
 document.getElementById("about-me-button").textContent =
 root.getPropertyValue("--about-me-button-name").replaceAll('"','');
 
-/* ICON LINKS */
-document.getElementById("mail-button").onclick = function() {
+/* ICON BUTTON LINKS */
 
-    window.location.href =
-    root.getPropertyValue("--mail-link").replaceAll('"','');
+// MAIL
+
+document.getElementById("mail-button").onclick = function () {
+
+    window.location.href = SITE_REFERENCES.mail;
 
 };
 
-document.getElementById("linkedin-button").onclick = function() {
+
+// LINKEDIN
+
+document.getElementById("linkedin-button").onclick = function () {
 
     window.open(
-        root.getPropertyValue("--linkedin-link").replaceAll('"',''),
+        SITE_REFERENCES.linkedin,
         "_blank"
     );
+
 };
 
-document.getElementById("resume-button").onclick = function() {
 
+// RESUME
+
+document.getElementById("resume-button").onclick = function () {
 
     window.open(
-        root.getPropertyValue("--resume-link").replaceAll('"',''),
+        SITE_REFERENCES.resume,
         "_blank"
     );
+
 };
 
 </script>

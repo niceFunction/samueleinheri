@@ -290,45 +290,48 @@ video {
 <script src="./reference.js"></script>
 <script>
 
-const root = getComputedStyle(document.documentElement);
-
 /* CENTRE MENU TEXT */
+
 document.getElementById("portfolio-button").textContent =
-root.getPropertyValue("--portfolio-button-name").replaceAll('"','');
+"PORTFOLIO";
 
 document.getElementById("prototypes-button").textContent =
-root.getPropertyValue("--prototypes-button-name").replaceAll('"','');
+"PROTOTYPES";
 
 document.getElementById("about-me-button").textContent =
-root.getPropertyValue("--about-me-button-name").replaceAll('"','');
+"ABOUT ME";
+
 
 /* PAGE BUTTON LINKS */
-/* PORTFOLIO */
+
 document.getElementById("portfolio-button").onclick = function () {
 
     window.location.href = SITE_REFERENCES.portfolio;
 
 };
 
-/* PROTOTYPES */
+
 document.getElementById("prototypes-button").onclick = function () {
 
     window.location.href = SITE_REFERENCES.prototypes;
 
 };
 
-/* ABOUT ME */
+
 document.getElementById("about-me-button").onclick = function () {
 
     window.location.href = SITE_REFERENCES.about;
 
+};
+
+
 /* ICON BUTTON LINKS */
-/* MAIL BUTTON */
+
 document.getElementById("mail-button").onclick = function () {
     window.location.href = SITE_REFERENCES.mail;
 };
 
-/* LINKEDIN BUTTON */
+
 document.getElementById("linkedin-button").onclick = function () {
     window.open(
         SITE_REFERENCES.linkedin,
@@ -336,7 +339,7 @@ document.getElementById("linkedin-button").onclick = function () {
     );
 };
 
-/* RESUME BUTTON*/
+
 document.getElementById("resume-button").onclick = function () {
     window.open(
         SITE_REFERENCES.resume,

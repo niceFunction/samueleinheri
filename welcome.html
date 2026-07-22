@@ -70,11 +70,6 @@
     --resume_highlighted: "./ICONS/resume_highlighted.svg";
 }
 
-
-
-
-
-
 html,
 body {
     margin:0;
@@ -103,25 +98,15 @@ video {
 
 /* LEFT NAME BUTTON */
 .profile-button {
-
     position: absolute;
-
     right: calc(100% + var(--menu-side-offset));
-
     top: 50%;
-
     transform: translateY(-50%);
-
     width: var(--container-width);
-
     height: var(--container-height);
-
     background: transparent;
-
     border: none;
-
     padding: 0;
-
     cursor: pointer;
 }
 
@@ -164,13 +149,9 @@ video {
 
 /* CENTRE TEXT MENU */
 .button-bar {
-
     display: flex;
-
     align-items: center;
-
     gap: var(--button-gap);
-
     font-family: var(--font-family);
 }
 
@@ -191,19 +172,12 @@ video {
 
 /* RIGHT ICON MENU */
 .icon-bar {
-
     position: absolute;
-
     left: calc(100% + var(--menu-side-offset));
-
     top: 50%;
-
     transform: translateY(-50%);
-
     display: flex;
-
     align-items: center;
-
     gap: var(--icon-button-gap);
 }
 
@@ -327,6 +301,26 @@ root.getPropertyValue("--prototypes-button-name").replaceAll('"','');
 
 document.getElementById("about-me-button").textContent =
 root.getPropertyValue("--about-me-button-name").replaceAll('"','');
+
+/* PAGE BUTTON LINKS */
+/* PORTFOLIO */
+document.getElementById("portfolio-button").onclick = function () {
+
+    window.location.href = SITE_REFERENCES.portfolio;
+
+};
+
+/* PROTOTYPES */
+document.getElementById("prototypes-button").onclick = function () {
+
+    window.location.href = SITE_REFERENCES.prototypes;
+
+};
+
+/* ABOUT ME */
+document.getElementById("about-me-button").onclick = function () {
+
+    window.location.href = SITE_REFERENCES.about;
 
 /* ICON BUTTON LINKS */
 /* MAIL BUTTON */

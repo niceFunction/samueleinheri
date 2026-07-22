@@ -20,6 +20,28 @@ fetch("./header.html")
     document.getElementById("header-about-button").textContent =
     "ABOUT ME";
 
+    /* PAGE BUTTON LINKS */
+    /* PORTFOLIO */
+    document.getElementById("header-portfolio-button").onclick = function () {
+
+        window.location.href = SITE_REFERENCES.portfolio;
+
+    };
+
+    /* PROTOTYPES */
+    document.getElementById("header-prototypes-button").onclick = function () {
+
+        window.location.href = SITE_REFERENCES.prototypes;
+
+    };
+
+    /* ABOUT ME */
+    document.getElementById("header-about-button").onclick = function () {
+
+        window.location.href = SITE_REFERENCES.about;
+
+    };
+
     document.getElementById("header-mail-button").onclick = function(){
         window.location.href = SITE_REFERENCES.mail;
     };

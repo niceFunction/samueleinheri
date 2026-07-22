@@ -51,11 +51,9 @@
     --font-color: #DFE6E9;
     --button-hover-color: #FFC20A;
 
-    /* BOTTOM CONTAINER */
-    --menu-container-width: 1520px;
-    --menu-container-height: 80px;
-    --menu-container-bottom-offset: 40px;
-    --menu-container-padding: 40px;
+    /* MENU LAYOUT */
+    --menu-bottom-offset: 80px;
+    --menu-side-offset: 150px;
 
     /* ICON BUTTON SETTINGS */
     --icon-button-size: 48px;
@@ -70,15 +68,6 @@
 
     --resume_normal: "./ICONS/resume_normal.svg";
     --resume_highlighted: "./ICONS/resume_highlighted.svg";
-
-
-
-    /* ICON LINKS */
-    /*
-    --mail-link: "mailto:samuel.einheri@gmail.com";
-    --linkedin-link: "https://www.linkedin.com/in/samueleinheri/";
-    --resume-link: "./DOWNLOAD/SamuelEinheri_Resume.pdf";
-    */
 }
 
 
@@ -105,28 +94,35 @@ video {
 
 /* MAIN CONTAINER */
 .menu-container {
-    position:fixed;
-    left:50%;
-    bottom:var(--menu-container-bottom-offset);
-    transform:translateX(-50%);
-    width:var(--menu-container-width);
-    height:var(--menu-container-height);
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding-left:var(--menu-container-padding);
-    padding-right:var(--menu-container-padding);
-    box-sizing:border-box;
+    position: fixed;
+    left: 50%;
+    bottom: var(--menu-bottom-offset);
+    transform: translateX(-50%);
+
 }
 
 /* LEFT NAME BUTTON */
 .profile-button {
-    width:var(--container-width);
-    height:var(--container-height);
-    background:transparent;
-    border:none;
-    padding:0;
-    cursor:pointer;
+
+    position: absolute;
+
+    right: calc(100% + var(--menu-side-offset));
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: var(--container-width);
+
+    height: var(--container-height);
+
+    background: transparent;
+
+    border: none;
+
+    padding: 0;
+
+    cursor: pointer;
 }
 
 .name-box {
@@ -168,13 +164,14 @@ video {
 
 /* CENTRE TEXT MENU */
 .button-bar {
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-    display:flex;
-    align-items:center;
-    gap:var(--button-gap);
-    font-family:var(--font-family);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: var(--button-gap);
+
+    font-family: var(--font-family);
 }
 
 .button {
@@ -194,9 +191,20 @@ video {
 
 /* RIGHT ICON MENU */
 .icon-bar {
-    display:flex;
-    align-items:center;
-    gap:var(--icon-button-gap);
+
+    position: absolute;
+
+    left: calc(100% + var(--menu-side-offset));
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    display: flex;
+
+    align-items: center;
+
+    gap: var(--icon-button-gap);
 }
 
 .icon-button {
@@ -321,37 +329,25 @@ document.getElementById("about-me-button").textContent =
 root.getPropertyValue("--about-me-button-name").replaceAll('"','');
 
 /* ICON BUTTON LINKS */
-
-// MAIL
-
+/* MAIL BUTTON */
 document.getElementById("mail-button").onclick = function () {
-
     window.location.href = SITE_REFERENCES.mail;
-
 };
 
-
-// LINKEDIN
-
+/* LINKEDIN BUTTON */
 document.getElementById("linkedin-button").onclick = function () {
-
     window.open(
         SITE_REFERENCES.linkedin,
         "_blank"
     );
-
 };
 
-
-// RESUME
-
+/* RESUME BUTTON*/
 document.getElementById("resume-button").onclick = function () {
-
     window.open(
         SITE_REFERENCES.resume,
         "_blank"
     );
-
 };
 
 </script>

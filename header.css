@@ -1,0 +1,221 @@
+:root {
+
+    --header-width:980px;
+    --header-height:155px;
+    --header-background-color:#232A2B;
+
+    --header-name:"Samuel Einheri";
+    --header-name-size:24px;
+    --header-name-weight:400;
+    --header-name-scale:1.5;
+
+    --header-button-font-size:16px;
+    --header-button-font-weight:700;
+    --header-button-gap:20px;
+
+    --header-font-family:"Open Sans",sans-serif;
+    --header-font-color:#DFE6E9;
+    --header-hover-color:#FFC20A;
+
+    --header-icon-size:48px;
+    --header-icon-scale:1.2;
+    --header-icon-gap:30px;
+
+}
+
+
+
+.header-background {
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    height:var(--header-height);
+
+    background:var(--header-background-color);
+
+    z-index:1000;
+
+}
+
+
+
+.header-container {
+
+    width:var(--header-width);
+
+    height:100%;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr auto 1fr;
+
+    grid-template-rows:1fr auto;
+
+    align-items:center;
+
+}
+
+
+
+.header-profile {
+
+    grid-column:1;
+
+    grid-row:1;
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+
+
+.header-name {
+
+    font-family:var(--header-font-family);
+
+    font-size:var(--header-name-size);
+
+    font-weight:var(--header-name-weight);
+
+    color:var(--header-font-color);
+
+    transform:scale(var(--header-name-scale));
+
+    transform-origin:left center;
+
+}
+
+
+
+.header-name::before {
+
+    content:var(--header-name);
+
+}
+
+
+
+.header-icon-bar {
+
+    grid-column:3;
+
+    grid-row:1;
+
+    justify-self:end;
+
+    display:flex;
+
+    gap:var(--header-icon-gap);
+
+}
+
+
+
+.header-icon-button {
+
+    width:var(--header-icon-size);
+
+    height:var(--header-icon-size);
+
+    transform:scale(var(--header-icon-scale));
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    position:relative;
+
+}
+
+
+
+.header-icon-button img {
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+}
+
+
+
+.header-icon-highlighted {
+
+    opacity:0;
+
+}
+
+
+
+.header-icon-button:hover .header-icon-normal {
+
+    opacity:0;
+
+}
+
+
+
+.header-icon-button:hover .header-icon-highlighted {
+
+    opacity:1;
+
+}
+
+
+
+.header-button-bar {
+
+    grid-column:1 / 4;
+
+    grid-row:2;
+
+    justify-self:center;
+
+    display:flex;
+
+    gap:var(--header-button-gap);
+
+}
+
+
+
+.header-button {
+
+    background:none;
+
+    border:none;
+
+    color:var(--header-font-color);
+
+    font-family:var(--header-font-family);
+
+    font-size:var(--header-button-font-size);
+
+    font-weight:var(--header-button-font-weight);
+
+    cursor:pointer;
+
+}
+
+
+
+.header-button:hover {
+
+    color:var(--header-hover-color);
+
+}

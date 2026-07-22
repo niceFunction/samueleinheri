@@ -290,63 +290,15 @@ video {
 <script src="./reference.js"></script>
 <script>
 
-/* CENTRE MENU TEXT */
+console.log("SCRIPT STARTED");
 
-document.getElementById("portfolio-button").textContent =
-"PORTFOLIO";
+document.getElementById("portfolio-button").textContent = "PORTFOLIO";
+document.getElementById("prototypes-button").textContent = "PROTOTYPES";
+document.getElementById("about-me-button").textContent = "ABOUT ME";
 
-document.getElementById("prototypes-button").textContent =
-"PROTOTYPES";
-
-document.getElementById("about-me-button").textContent =
-"ABOUT ME";
-
-
-/* PAGE BUTTON LINKS */
-
-document.getElementById("portfolio-button").onclick = function () {
-
-    window.location.href = SITE_REFERENCES.portfolio;
-
-};
-
-
-document.getElementById("prototypes-button").onclick = function () {
-
-    window.location.href = SITE_REFERENCES.prototypes;
-
-};
-
-
-document.getElementById("about-me-button").onclick = function () {
-
-    window.location.href = SITE_REFERENCES.about;
-
-};
-
-
-/* ICON BUTTON LINKS */
-
-document.getElementById("mail-button").onclick = function () {
-    window.location.href = SITE_REFERENCES.mail;
-};
-
-
-document.getElementById("linkedin-button").onclick = function () {
-    window.open(
-        SITE_REFERENCES.linkedin,
-        "_blank"
-    );
-};
-
-
-document.getElementById("resume-button").onclick = function () {
-    window.open(
-        SITE_REFERENCES.resume,
-        "_blank"
-    );
-};
+console.log("BUTTON TEXT ADDED");
 
 </script>
+
 </body>
 </html>

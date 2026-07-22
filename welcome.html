@@ -292,11 +292,49 @@ video {
 
 console.log("SCRIPT STARTED");
 
-document.getElementById("portfolio-button").textContent = "PORTFOLIO";
-document.getElementById("prototypes-button").textContent = "PROTOTYPES";
-document.getElementById("about-me-button").textContent = "ABOUT ME";
+
+/* CENTRE MENU TEXT */
+
+document.getElementById("portfolio-button").textContent =
+"PORTFOLIO";
+
+document.getElementById("prototypes-button").textContent =
+"PROTOTYPES";
+
+document.getElementById("about-me-button").textContent =
+"ABOUT ME";
+
 
 console.log("BUTTON TEXT ADDED");
+
+
+/* PAGE BUTTON LINKS */
+
+document.getElementById("portfolio-button").onclick = function () {
+
+    window.location.href = SITE_REFERENCES.portfolio;
+
+};
+
+
+document.getElementById("prototypes-button").onclick = function () {
+
+    window.location.href = SITE_REFERENCES.prototypes;
+
+};
+
+
+document.getElementById("about-me-button").onclick = function () {
+
+    window.location.href = SITE_REFERENCES.about;
+
+};
+
+
+console.log("PAGE LINKS ADDED");
+
+
+
 
 </script>
 

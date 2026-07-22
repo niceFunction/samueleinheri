@@ -18,5 +18,5 @@ const SITE_REFERENCES = {
         "./prototypes.html",
 
     about:
-        "./about.html"
+        "./about-me.html"
 };

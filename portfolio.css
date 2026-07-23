@@ -105,8 +105,6 @@
 
 }
 
-
-
 /* ICON BAR */
 .portfolio-icon-bar {
 
@@ -118,9 +116,7 @@
 
 }
 
-
 /* ICON BUTTON */
-
 .portfolio-icon-button {
 
     width:var(--portfolio-icon-size);
@@ -136,7 +132,6 @@
 
 
 /* ICON IMAGES */
-
 .portfolio-icon-button img {
 
     position:absolute;

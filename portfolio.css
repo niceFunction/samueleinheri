@@ -17,6 +17,11 @@
     /* PARAGRAPH */
     --intro-paragraph-size:18px;
 
+    /* PORTFOLIO PAGE TITLE */
+    --portfolio-title-size:72px;
+    --portfolio-title-top-spacing:100px;
+    --portfolio-title-bottom-spacing:50px;
+
     /* ICON SETTINGS */
     --portfolio-icon-size:48px;
     --portfolio-icon-scale:1.1;
@@ -37,16 +42,32 @@
 .page-content {
 
     width:var(--portfolio-container-width);
-    height:var(--portfolio-container-height);
+
     position:absolute;
-    top:calc(155px + 20px);
-    
-    /* header height + spacing */
+    top:0;
+
     left:50%;
     transform:translateX(-50%);
 
 }
 
+/* PORTFOLIO TITLE */
+
+.portfolio-title {
+
+    margin-top:var(--portfolio-title-top-spacing);
+    margin-bottom:var(--portfolio-title-bottom-spacing);
+
+    width:100%;
+
+    font-family:"Open Sans",sans-serif;
+    font-size:var(--portfolio-title-size);
+    font-weight:700;
+    color:var(--portfolio-font-color);
+
+    text-align:center;
+
+}
 
 /* MAIN CONTAINER */
 .portfolio-container {

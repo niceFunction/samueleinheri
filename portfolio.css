@@ -18,7 +18,8 @@
     --intro-paragraph-size:18px;
 
     /* ICON SETTINGS */
-    --portfolio-icon-size:48px;
+    --portfolio-icon-size:32px;
+    --portfolio-icon-scale:1;
     --portfolio-icon-gap:30px;
     --portfolio-icon-top-spacing:40px;
     --portfolio-icon-bottom-spacing:40px;
@@ -122,10 +123,12 @@
 
     width:var(--portfolio-icon-size);
     height:var(--portfolio-icon-size);
+    transform:scale(var(--portfolio-icon-scale));
     border:none;
     background:none;
     padding:0;
     cursor:pointer;
+    position:relative;
 
 }
 
@@ -159,5 +162,11 @@
     font-size:16px;
     font-weight:700;
     cursor:pointer;
+
+}
+
+.portfolio-navigation button:hover {
+
+    color:#FFC20A;
 
 }

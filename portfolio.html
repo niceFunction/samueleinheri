@@ -47,17 +47,41 @@
         <!-- ICON BUTTONS -->
         <div class="portfolio-icon-bar">
 
-            <button class="portfolio-icon-button">
-                <img src="./ICONS/mail_normal.svg">
+            <!-- MAIL -->
+            <button class="portfolio-icon-button" id="portfolio-mail-button">
+
+                <img class="portfolio-icon-normal"
+                src="./ICONS/mail_normal.svg">
+
+                <img class="portfolio-icon-highlighted"
+                src="./ICONS/mail_highlighted.svg">
+
             </button>
 
-            <button class="portfolio-icon-button">
-                <img src="./ICONS/linkedin_normal.svg">
+
+            <!-- LINKEDIN -->
+            <button class="portfolio-icon-button" id="portfolio-linkedin-button">
+
+                <img class="portfolio-icon-normal"
+                src="./ICONS/linkedin_normal.svg">
+
+                <img class="portfolio-icon-highlighted"
+                src="./ICONS/linkedin_highlighted.svg">
+
             </button>
 
-            <button class="portfolio-icon-button">
-                <img src="./ICONS/resume_normal.svg">
+
+            <!-- RESUME -->
+            <button class="portfolio-icon-button" id="portfolio-resume-button">
+
+                <img class="portfolio-icon-normal"
+                src="./ICONS/resume_normal.svg">
+
+                <img class="portfolio-icon-highlighted"
+                src="./ICONS/resume_highlighted.svg">
+
             </button>
+
         </div>
 
         <!-- TEXT -->
@@ -86,6 +110,7 @@
 </div>
 
 <!-- JAVASCRIPT -->
+
 <script src="./reference.js"></script>
 
 <script>
@@ -94,6 +119,85 @@ SITE_SETTINGS.pageBackground;
 </script>
 
 <script src="./header.js"></script>
+
+
+<script>
+
+/* IMAGE BUTTON */
+
+document.querySelector(".portfolio-image-button").onclick = function(){
+
+    window.location.href = SITE_REFERENCES.about;
+
+};
+
+
+
+/* ICON BUTTONS */
+
+
+/* MAIL */
+document.getElementById("portfolio-mail-button").onclick = function(){
+
+    window.location.href = SITE_REFERENCES.mail;
+
+};
+
+
+/* LINKEDIN */
+document.getElementById("portfolio-linkedin-button").onclick = function(){
+
+    window.open(
+        SITE_REFERENCES.linkedin,
+        "_blank"
+    );
+
+};
+
+
+/* RESUME */
+document.getElementById("portfolio-resume-button").onclick = function(){
+
+    window.open(
+        SITE_REFERENCES.resume,
+        "_blank"
+    );
+
+};
+
+
+
+/* HORIZONTAL NAVIGATION BUTTONS */
+
+const navigationButtons =
+document.querySelectorAll(".portfolio-navigation button");
+
+
+/* PORTFOLIO */
+navigationButtons[0].onclick = function(){
+
+    window.location.href = SITE_REFERENCES.portfolio;
+
+};
+
+
+/* PROTOTYPES */
+navigationButtons[1].onclick = function(){
+
+    window.location.href = SITE_REFERENCES.prototypes;
+
+};
+
+
+/* ABOUT ME */
+navigationButtons[2].onclick = function(){
+
+    window.location.href = SITE_REFERENCES.about;
+
+};
+
+
+</script>
 
 </body>
 </html>

@@ -151,7 +151,6 @@
 
 
 /* HIGHLIGHTED ICON DEFAULT STATE */
-
 .portfolio-icon-highlighted {
 
     opacity:0;
@@ -160,7 +159,6 @@
 
 
 /* HOVER SWITCH */
-
 .portfolio-icon-button:hover .portfolio-icon-normal {
 
     opacity:0;

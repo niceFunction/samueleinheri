@@ -54,15 +54,15 @@
 }
 
 
-/* MAIN PORTFOLIO CONTAINER */
-.portfolio-container {
+/* PORTFOLIO INTRODUCTION CONTAINER */
+.portfolio-introduction-container {
 
     width:100%;
     height:var(--portfolio-container-height);
 
     display:flex;
-    align-items:center;
     justify-content:space-between;
+    align-items:center;
 
 }
 

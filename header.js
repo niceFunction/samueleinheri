@@ -11,8 +11,9 @@ fetch("./header.html")
 
     document.getElementById("header-placeholder").innerHTML = data;
 
-    document.getElementById("header-profile").textContent = 
-    "PORTFOLIO";
+    document.getElementById("header-profile").onclick = function () {
+        window.location.href = SITE_REFERENCES.portfolio;
+    };
 
     document.getElementById("header-portfolio-button").textContent =
     "PORTFOLIO";

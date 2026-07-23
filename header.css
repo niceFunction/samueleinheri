@@ -75,12 +75,8 @@ body {
     transition:.2s ease;
 }
 
-.header-name:hover {
+.header-profile:hover .header-name {
     color:var(--header-hover-color);
-}
-
-.header-name::before {
-    content:var(--header-name);
 }
 
 /* ICON BUTTONS */

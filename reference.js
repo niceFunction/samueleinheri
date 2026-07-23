@@ -20,3 +20,9 @@ const SITE_REFERENCES = {
     about:
         "./about-me.html"
 };
+
+const SITE_SETTINGS = {
+
+    pageBackground: "#2D3436"
+
+};

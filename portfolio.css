@@ -171,6 +171,9 @@
 .introduction-text {
 
     width:90%;
+    margin-left: auto;
+    margin-right: auto;
+
     font-family:"Open Sans",sans-serif;
     font-size:var(--intro-paragraph-size);
     color:var(--portfolio-font-color);

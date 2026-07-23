@@ -43,12 +43,9 @@
 
     width:var(--portfolio-container-width);
 
-    position:absolute;
+    margin:0 auto;
 
-    top:calc(155px + 20px);
-
-    left:50%;
-    transform:translateX(-50%);
+    padding-top:calc(155px + 20px);
 
     display:flex;
     flex-direction:column;

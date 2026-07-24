@@ -57,6 +57,12 @@
     --project-title-size:36px;
     --project-info-size:22px;
 
+    /* RESPONSIBILITY BUTTON */
+    --responsibility-button-opacity:0.65;
+    --responsibility-button-fill:#000000;
+    --responsibility-button-font-size:14px;
+    --responsibility-button-offset:5px;
+
     /* BUTTONS */
     --project-button-width:150px;
     --project-button-height:50px;
@@ -168,6 +174,8 @@
 
     width:var(--project-visual-width);
     height:var(--project-visual-height);
+
+    position:relative;
 
 }
 

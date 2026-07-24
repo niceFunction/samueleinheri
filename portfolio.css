@@ -23,7 +23,7 @@
     --portfolio-title-bottom-spacing:20px;
     
     /* FILTER BUTTONS */
-    --portfolio-filter-font-size:42px;
+    --portfolio-filter-font-size:32px;
     --portfolio-filter-gap:40px;
     --portfolio-filter-offset:var(--portfolio-icon-bottom-spacing);
 

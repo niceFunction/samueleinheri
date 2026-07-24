@@ -23,7 +23,7 @@
     --portfolio-title-bottom-spacing:20px;
     
     /* FILTER BUTTONS */
-    --portfolio-filter-font-size:32px;
+    --portfolio-filter-font-size:42px;
     --portfolio-filter-gap:40px;
     --portfolio-filter-offset:var(--portfolio-icon-bottom-spacing);
 
@@ -105,8 +105,36 @@
 
 }
 
-/* IMAGE BUTTON */
+/* FILTER BUTTON */
 
+.portfolio-filter-button{
+
+    background:none;
+    border:none;
+    padding:0;
+    cursor:pointer;
+    font-family:"Open Sans",sans-serif;
+    font-size:var(--portfolio-filter-font-size);
+    font-weight:400;
+    color:var(--portfolio-font-color);
+
+}
+
+.portfolio-filter-button:hover{
+
+    color:var(--header-hover-color);
+
+}
+
+.portfolio-filter-button.active{
+
+    color:var(--header-hover-color);
+
+    font-weight:700;
+
+}
+
+/* IMAGE BUTTON */
 .portfolio-image-button {
 
     width:var(--profile-image-button-size);

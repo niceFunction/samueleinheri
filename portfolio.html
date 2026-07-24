@@ -228,6 +228,76 @@
                 </button>
 
             </div>
+        </div>
+
+        <!-- GRIEF -->
+        <div class="portfolio-project Grief-sub-container">
+
+            <div class="project-visual">
+
+                <img src="./PORTFOLIO/Grief_Banner.webp"
+                     alt="Grief">
+
+                <button class="responsibility-button">
+
+                    <div class="responsibility-content">
+
+                        <div class="responsibility-title">
+
+                            Core Responsibilities
+
+                        </div>
+
+                        <ul>
+
+                            <li>Creating & refining the level based on "Anger".</li>
+                            <li>Collaborate & iterate on the level design process.</li>
+
+                        </ul>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+            <div class="project-information">
+
+                <h2 class="project-name">
+
+                    Grief
+
+                </h2>
+
+                <div class="project-details">
+
+                    <p><strong>Engine:</strong> Unreal Engine 4.27</p>
+                    <p><strong>Genre:</strong> Dream Simulation, Puzzle</p>
+                    <p><strong>Team Size:</strong> 10</p>
+                    <p><strong>Role:</strong> Level Design</p>
+                    <p><strong>Platform:</strong> PC</p>
+
+                </div>
+
+                <div class="project-button-container">
+
+                    <button id="grief-learn-more"
+                    class="learn-more-button">
+
+                        LEARN MORE
+
+                    </button>
+
+                    <button 
+                    class="external-project-button itch-button">
+
+                        itch.io
+
+                    </button>
+
+                </div>
+
+            </div>
 
         </div>
 
@@ -246,7 +316,11 @@ const PROJECT_REFERENCES = {
     superPaparazziPage:
         "./Super-Paparazzi.html",
     superPaparazziExternal:
-        "https://store.steampowered.com/app/3746050/Super_Paparazzi/"
+        "https://store.steampowered.com/app/3746050/Super_Paparazzi/",
+    GriefPage:
+        "./Grief.html",
+    GriefExternal:
+        "https://bgibson11.itch.io/grief-overkoalafied"
 };
 </script>
 
@@ -358,6 +432,24 @@ document.getElementById(
         "_blank"
     );
 
+};
+
+document.getElementById(
+    "grief-learn-more"
+).onclick = function(){
+
+    window.location.href =
+    PROJECT_REFERENCES.GriefPage;
+};
+
+document.getElementById(
+    "grief-external"
+).onclick = function(){
+
+    window.open(
+        PROJECT_REFERENCES.GriefExternal,
+        "_blank"
+    );
 };
 
 </script>

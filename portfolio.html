@@ -123,7 +123,36 @@
     <h1 class="portfolio-title">
         PORTFOLIO
     </h1>
+    
+    <!-- PORTFOLIO FILTER BUTTONS -->
+    <div class="portfolio-filter-bar">
 
+        <button class="portfolio-filter-button active"
+                data-filter="all">
+            All
+        </button>
+
+        <button class="portfolio-filter-button"
+                data-filter="level-design">
+            Level Design
+        </button>
+
+        <button class="portfolio-filter-button"
+                data-filter="qa">
+            QA
+        </button>
+
+        <button class="portfolio-filter-button"
+                data-filter="system-design">
+            System Design
+        </button>
+
+        <button class="portfolio-filter-button"
+                data-filter="technical-design">
+            Technical Design
+        </button>
+
+    </div>
 
 </div>
 
@@ -213,6 +242,24 @@ navigationButtons[2].onclick = function(){
     window.location.href = SITE_REFERENCES.about;
 
 };
+
+/* PORTFOLIO FILTER BUTTONS */
+const filterButtons =
+document.querySelectorAll(".portfolio-filter-button");
+
+filterButtons.forEach(button => {
+
+    button.onclick = function(){
+
+        filterButtons.forEach(btn => {
+
+            btn.classList.remove("active");
+
+        });
+
+        button.classList.add("active");
+    };
+});
 
 
 </script>

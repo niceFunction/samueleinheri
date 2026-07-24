@@ -21,6 +21,11 @@
     --portfolio-title-size:72px;
     --portfolio-title-top-spacing:30px;
     --portfolio-title-bottom-spacing:20px;
+    
+    /* FILTER BUTTONS */
+    --portfolio-filter-font-size:32px;
+    --portfolio-filter-gap:40px;
+    --portfolio-filter-offset:var(--portfolio-icon-bottom-spacing);
 
     /* ICON SETTINGS */
     --portfolio-icon-size:48px;
@@ -88,6 +93,17 @@
 
 }
 
+/* FILTER BAR */
+
+.portfolio-filter-bar{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:var(--portfolio-filter-gap);
+    margin-top:var(--portfolio-filter-offset);
+
+}
 
 /* IMAGE BUTTON */
 

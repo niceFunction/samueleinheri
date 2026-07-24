@@ -375,7 +375,32 @@ const PROJECT_REFERENCES = {
     GriefPage:
         "./Grief.html",
     GriefExternal:
-        "https://bgibson11.itch.io/grief-overkoalafied"
+        "https://bgibson11.itch.io/grief-overkoalafied",
+    TectonicusPage:
+        "./Tectonicus.html",
+    TectonicusExternal:
+        "https://gamucatex.itch.io/tectonicus",
+    WellDeathHappensPage:
+        "./WellDeathHappens.html",
+    WellDeathHappensExternal:
+        "https://functionsam.itch.io/well-death-happens",
+    MerchantsRushPage:
+        "Merchants-Rush.html",
+    MerchantsRushExternal:
+        "https://store.steampowered.com/app/2110600/Merchants_Rush/",
+    DreamWalkerPage:
+        "./DreamWalker.html",
+    DreamWalkerExternal:
+        "https://simonolivecrona.itch.io/dreamwalker",
+    FollowThePathPage:
+        "./FollowThePath.html",
+    FollowThePathExternal:
+        "https://github.com/niceFunction/followThePath/tree/master/follow_The_Path/followThePath/Assets",
+    BEPPUSPage:
+        "./BEPPUS.html",
+    BEPPUSExternal:
+        "https://futuregames.itch.io/fg20-ft-gp4-beppus"
+
 };
 </script>
 
@@ -468,6 +493,7 @@ filterButtons.forEach(button => {
     };
 });
 
+/* LEARN MORE and EXTERNAL BUTTONS */
 document.getElementById(
     "super-paparazzi-learn-more"
 ).onclick = function(){
@@ -503,6 +529,114 @@ document.getElementById(
 
     window.open(
         PROJECT_REFERENCES.GriefExternal,
+        "_blank"
+    );
+};
+document.getElementById(
+    "tectonicus-learn-more"
+).onclick = function(){
+
+    window.location.href =
+    PROJECT_REFERENCES.TectonicusPage;
+};
+
+document.getElementById(
+    "tectonicus-external"
+).onclick = function(){
+
+    window.open(
+        PROJECT_REFERENCES.TectonicusExternal,
+        "_blank"
+    );
+};
+
+document.getElementById(
+    "well-death-happens-learn-more"
+).onclick = function(){
+
+    window.location.href =
+    PROJECT_REFERENCES.WellDeathHappensPage;
+};
+
+document.getElementById(
+    "well-death-happens-external"
+).onclick = function(){
+
+    window.open(
+        PROJECT_REFERENCES.WellDeathHappensExternal,
+        "_blank"
+    );
+};
+
+document.getElementById(
+    "merchants-rush-learn-more"
+).onclick = function(){
+
+    window.location.href =
+    PROJECT_REFERENCES.MerchantsRushPage;
+};
+
+document.getElementById(
+    "merchants-rush-external"
+).onclick = function(){
+
+    window.open(
+        PROJECT_REFERENCES.MerchantsRushExternal,
+        "_blank"
+    );
+};
+
+
+document.getElementById(
+    "dreamwalker-learn-more"
+).onclick = function(){
+
+    window.location.href =
+    PROJECT_REFERENCES.DreamWalkerPage;
+};
+
+document.getElementById(
+    "dreamwalker-external"
+).onclick = function(){
+
+    window.open(
+        PROJECT_REFERENCES.DreamWalkerExternal,
+        "_blank"
+    );
+};
+
+document.getElementById(
+    "followthepath-rush-learn-more"
+).onclick = function(){
+
+    window.location.href =
+    PROJECT_REFERENCES.FollowThePathPage;
+};
+
+document.getElementById(
+    "followthepath-external"
+).onclick = function(){
+
+    window.open(
+        PROJECT_REFERENCES.FollowThePathExternal,
+        "_blank"
+    );
+};
+
+document.getElementById(
+    "beppus-learn-more"
+).onclick = function(){
+
+    window.location.href =
+    PROJECT_REFERENCES.BEPPUSPage;
+};
+
+document.getElementById(
+    "beppus-external"
+).onclick = function(){
+
+    window.open(
+        PROJECT_REFERENCES.BEPPUSExternal,
         "_blank"
     );
 };

@@ -59,7 +59,7 @@
 
     /* RESPONSIBILITY BUTTON */
     --responsibility-button-opacity:0.65;
-    --responsibility-button-fill:#000000;
+    --responsibility-button-fill:rgba(0,0,0,var(--responsibility-button-opacity));
     --responsibility-button-font-size:14px;
     --responsibility-button-offset:5px;
 
@@ -184,6 +184,72 @@
     width:100%;
     height:100%;
     object-fit:cover;
+
+}
+
+/* RESPONSIBILITY BUTTON */
+
+.responsibility-button {
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:100%;
+
+    border:none;
+
+    background:transparent;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+
+.responsibility-button:hover {
+
+    background:var(--responsibility-button-fill);
+
+}
+
+
+/* RESPONSIBILITY TEXT */
+
+.responsibility-content {
+
+    position:absolute;
+
+    left:var(--responsibility-button-offset);
+
+    bottom:var(--responsibility-button-offset);
+
+    color:var(--portfolio-font-color);
+
+    font-family:"Open Sans",sans-serif;
+
+    font-size:var(--responsibility-button-font-size);
+
+    text-align:left;
+
+}
+
+
+.responsibility-title {
+
+    font-weight:700;
+
+}
+
+
+.responsibility-content ul {
+
+    margin:5px 0 0 18px;
+
+    padding:0;
 
 }
 

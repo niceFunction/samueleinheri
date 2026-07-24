@@ -210,6 +210,8 @@
 }
 
 
+/* DARK OVERLAY ONLY ON HOVER */
+
 .responsibility-button:hover {
 
     background:var(--responsibility-button-fill);
@@ -217,7 +219,7 @@
 }
 
 
-/* RESPONSIBILITY TEXT */
+/* RESPONSIBILITY TEXT DEFAULT STATE */
 
 .responsibility-content {
 
@@ -234,6 +236,19 @@
     font-size:var(--responsibility-button-font-size);
 
     text-align:left;
+
+    opacity:0;
+
+    transition:.2s;
+
+}
+
+
+/* SHOW TEXT ONLY WHEN BUTTON IS HOVERED */
+
+.responsibility-button:hover .responsibility-content {
+
+    opacity:1;
 
 }
 

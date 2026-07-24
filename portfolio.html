@@ -154,15 +154,74 @@
 
     </div>
 
+    <!-- DYNAMIC PORTFOLIO CONTAINER -->
+    <div class="dynamic-container">
+
+        <!-- SUPER PAPARAZZI -->
+        <div class="portfolio-project Super-Paparazzi-sub-container"
+             data-tags="all level-design technical-design">
+
+          <div class="project-visual">
+
+              <img
+                  src="./PORTFOLIO/SuperPaparazzi_Banner.gif"
+                  alt="Super Paparazzi">
+
+          </div>
+
+          <div class="project-information">
+
+              <h2 class="project-name">
+
+                  Super Paparazzi
+
+              </h2>
+
+              <div class="project-details">
+
+                  <p><strong>Engine:</strong> Unity</p>
+                  <p><strong>Genre:</strong> Party Game</p>
+                  <p><strong>Team Size:</strong> 6</p>
+                  <p><strong>Role:</strong> Game Designer</p>
+                  <p><strong>Platform:</strong> PC</p>
+
+              </div>
+
+              <button id="learn-more-super-paparazzi"
+              class="learn-more-button">
+
+                  LEARN MORE
+
+              </button>
+
+              <button id="super-paparazzi-external"
+              class="external-project-button">
+
+                  Steam Page
+
+              </button>
+
+          </div>
+
+        </div>
+
+    </div>
 </div>
 
 <!-- JAVASCRIPT -->
-
 <script src="./reference.js"></script>
 
 <script>
 document.body.style.backgroundColor =
 SITE_SETTINGS.pageBackground;
+
+/* PROJECT REFERENCES */
+const PROJECT_REFERENCES = {
+    superPaparazziPage:
+        "./super-paparazzi.html",
+    superPaparazziExternal:
+        "https://store.steampowered.com/app/3746050/Super_Paparazzi/"
+};
 </script>
 
 <script src="./header.js"></script>
@@ -171,18 +230,13 @@ SITE_SETTINGS.pageBackground;
 <script>
 
 /* IMAGE BUTTON */
-
 document.querySelector(".portfolio-image-button").onclick = function(){
 
     window.location.href = SITE_REFERENCES.about;
 
 };
 
-
-
 /* ICON BUTTONS */
-
-
 /* MAIL */
 document.getElementById("portfolio-mail-button").onclick = function(){
 
@@ -215,10 +269,8 @@ document.getElementById("portfolio-resume-button").onclick = function(){
 
 
 /* HORIZONTAL NAVIGATION BUTTONS */
-
 const navigationButtons =
 document.querySelectorAll(".portfolio-navigation button");
-
 
 /* PORTFOLIO */
 navigationButtons[0].onclick = function(){
@@ -261,6 +313,26 @@ filterButtons.forEach(button => {
     };
 });
 
+document.getElementById(
+    "super-paparazzi-learn-more"
+).onclick = function(){
+
+    window.location.href =
+    PROJECT_REFERENCES.superPaparazziPage;
+
+};
+
+
+document.getElementById(
+    "super-paparazzi-external"
+).onclick = function(){
+
+    window.open(
+        PROJECT_REFERENCES.superPaparazziExternal,
+        "_blank"
+    );
+
+};
 
 </script>
 

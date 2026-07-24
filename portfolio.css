@@ -13,7 +13,7 @@
 
     /* INTRODUCTION TITLE */
     --intro-title-size:54px;
-
+-button
     /* PARAGRAPH */
     --intro-paragraph-size:18px;
 
@@ -39,6 +39,33 @@
 
     /* COLORS */
     --portfolio-font-color:#DFE6E9;
+    
+    /* DYNAMIC CONTAINER */
+    --dynamic-container-width:980px;
+    --dynamic-container-top-spacing:40px;
+
+    /* PROJECT */
+    --project-width:980px;
+    --project-height:350px;
+
+    /* VISUAL */
+    --project-visual-width:580px;
+    --project-visual-height:350px;
+
+    /* CONTENT */
+    --project-content-gap:5px;
+    --project-title-size:36px;
+    --project-info-size:22px;
+
+    /* BUTTONS */
+    --project-button-width:150px;
+    --project-button-height:50px;
+    --project-button-font-size:16px;
+    --project-button-hover-scale:1.05;
+    --project-button-fill:#4A90E2;
+    --itch-io-button-fill:#FF4D4D;
+    --steam-page-button-fill:#000000;
+    --github-project-button-fill:#FAFBFC;
 
 }
 
@@ -94,7 +121,6 @@
 }
 
 /* FILTER BAR */
-
 .portfolio-filter-bar{
 
     display:flex;
@@ -105,8 +131,17 @@
 
 }
 
-/* FILTER BUTTON */
+.dynamic-container{
 
+    width:var(--dynamic-container-width);
+    margin-top:var(--dynamic-container-top-spacing);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+/* FILTER BUTTON */
 .portfolio-filter-button{
 
     background:none;
@@ -120,16 +155,145 @@
 
 }
 
+.portfolio-project{
+
+    width:var(--project-width);
+    height:var(--project-height);
+    display:flex;
+    justify-content:space-between;
+
+}
+
+.project-visual{
+
+    width:var(--project-visual-width);
+    height:var(--project-visual-height);
+
+}
+
+.project-visual img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+}
+
+.project-information{
+
+    width:calc(
+        100%
+        - var(--project-visual-width)
+        - var(--project-content-gap)
+    );
+
+    margin-left:var(--project-content-gap);
+    display:flex;
+    flex-direction:column;
+
+}
+
 .portfolio-filter-button:hover{
 
     color:var(--header-hover-color);
 
 }
 
+.project-name{
+
+    margin:0;
+    font-family:"Open Sans",sans-serif;
+    font-size:var(--project-title-size);
+    font-weight:700;
+    color:var(--portfolio-font-color);
+
+}
+
+.project-details{
+
+    margin-top:20px;
+
+}
+
+.project-details p{
+
+    margin:6px 0;
+    font-family:"Open Sans",sans-serif;
+    font-size:var(--project-info-size);
+    color:var(--portfolio-font-color);
+
+}
+
+.learn-more-button{
+
+    width:var(--project-button-width);
+    height:var(--project-button-height);
+    margin-top:20px;
+    background:none;
+    border:2px solid var(--portfolio-font-color);
+    color:var(--portfolio-font-color);
+    font-family:"Open Sans",sans-serif;
+    font-size:var(--project-button-font-size);
+    cursor:pointer;
+    transition:.2s;
+
+}
+
+.learn-more-button:hover{
+
+    transform:scale(var(--project-button-hover-scale));
+
+}
+
+.external-project-button{
+
+    width:var(--project-button-width);
+    height:var(--project-button-height);
+    margin-top:auto;
+    align-self:flex-end;
+    background:var(--project-button-fill);
+    border:none;
+    color:var(--portfolio-font-color);
+    font-family:"Open Sans",sans-serif;
+    font-size:var(--project-button-font-size);
+    font-weight:700;
+    cursor:pointer;
+    transition:.2s;
+
+}
+
+
+/* PROJECT SPECIFIC EXTERNAL BUTTON COLORS */
+
+.steam-button{
+
+    background:var(--steam-page-button-fill);
+
+}
+
+
+.itch-button{
+
+    background:var(--itch-io-button-fill);
+
+}
+
+
+.github-button{
+
+    background:var(--github-project-button-fill);
+
+}
+
+
+.external-project-button:hover{
+
+    transform:scale(var(--project-button-hover-scale));
+
+}
 .portfolio-filter-button.active{
 
     color:var(--header-hover-color);
-
     font-weight:700;
 
 }

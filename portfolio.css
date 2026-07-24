@@ -13,7 +13,7 @@
 
     /* INTRODUCTION TITLE */
     --intro-title-size:54px;
--button
+
     /* PARAGRAPH */
     --intro-paragraph-size:18px;
 
@@ -53,7 +53,7 @@
     --project-visual-height:350px;
 
     /* CONTENT */
-    --project-content-gap:5px;
+    --project-content-gap:15px;
     --project-title-size:36px;
     --project-info-size:22px;
 
@@ -193,6 +193,15 @@
 
 }
 
+.project-button-container {
+
+    margin-top:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+
+}
+
 .portfolio-filter-button:hover{
 
     color:var(--header-hover-color);
@@ -249,8 +258,6 @@
 
     width:var(--project-button-width);
     height:var(--project-button-height);
-    margin-top:auto;
-    align-self:flex-end;
     background:var(--project-button-fill);
     border:none;
     color:var(--portfolio-font-color);

@@ -290,6 +290,7 @@
     font-size:var(--project-title-size);
     font-weight:700;
     color:var(--portfolio-font-color);
+    white-space:nowrap;
 
 }
 

@@ -1,0 +1,16 @@
+:root{
+
+    --back-to-top-container-width:980px;
+    --back-to-top-container-height:150px;
+
+}
+
+.back-to-top-container{
+
+    width:var(--back-to-top-container-width);
+    height:var(--back-to-top-container-height);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}

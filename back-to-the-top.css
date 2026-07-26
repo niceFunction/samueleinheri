@@ -5,13 +5,40 @@
 
 }
 
-.back-to-top-container{
+.back-to-top-container {
 
-    width:var(--back-to-top-container-width);
-    height:var(--back-to-top-container-height);
+    width:100%;
+    height:150px;
 
     display:flex;
     justify-content:center;
     align-items:center;
+
+}
+
+
+#back-to-top-button {
+
+    width:150px;
+    height:50px;
+
+    background:none;
+    border:2px solid #DFE6E9;
+
+    color:#DFE6E9;
+
+    font-family:"Open Sans",sans-serif;
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+
+#back-to-top-button:hover {
+
+    transform:scale(1.05);
 
 }

@@ -61,17 +61,13 @@
     <!-- Moving background -->
     <div class="parallax-image"></div>
 
-
     <!-- Static text overlay -->
     <div class="parallax-content">
 
 
         <h1 class="prototypes-title">
-
             PROTOTYPES
-
         </h1>
-
 
         <p class="context-text">
 
@@ -81,9 +77,7 @@
 
         </p>
 
-
     </div>
-
 
 </section>
 
@@ -92,73 +86,44 @@
 <!-- END OF PARALLAX HERO -->
 <!-- ================================================= -->
 
-
-
-
 <!-- ================================================= -->
 <!-- START OF ROW 1 -->
 <!-- ================================================= -->
 
-
 <div class="prototype-container">
-
-
-
-
 
 <!-- ================================================= -->
 <!-- LEFT PROTOTYPE -->
 <!-- ================================================= -->
 
-
 <div class="prototype-sub-container">
 
-
     <!-- YEAR -->
-
     <h1 class="year-title">
 
         2020
 
     </h1>
 
-
-
     <!-- TITLE -->
-
     <h3 class="game-title">
 
         Seems Fishy
 
     </h3>
 
-
-
-
     <!-- IMAGE + CONTEXT + BUTTON -->
-
     <div class="prototype-content">
 
-
-
         <!-- IMAGE -->
-
         <img
             class="prototype-image"
             src="./PROTOTYPES/SeemsFishy_Banner.webp">
 
-
-
-
-
         <!-- CONTEXT + BUTTON -->
-
         <div class="prototype-side-content">
 
-
-
             <!-- CONTEXT -->
-
             <p class="game-context">
 
                 A social deception card game where you want to be the last fish standing (or swimming). You can download it to print & play it immediately!
@@ -167,91 +132,52 @@
 
             </p>
 
-
-
-
             <!-- BUTTON -->
-
             <button
                 id="seems-fishy-itch"
                 class="external-project-button itch-button">
 
-
                 itch.io Page
-
 
             </button>
 
-
-
         </div>
-
-
 
     </div>
 
-
-
 </div>
-
-
-
-
 
 <!-- ================================================= -->
 <!-- RIGHT PROTOTYPE -->
 <!-- ================================================= -->
-
-
 <div class="prototype-sub-container">
 
-
     <!-- YEAR -->
-
     <h1 class="year-title">
 
         2020
 
     </h1>
 
-
-
     <!-- TITLE -->
-
     <h3 class="game-title">
 
         Space Salvage Wars
 
     </h3>
 
-
-
-
-
     <!-- IMAGE + CONTEXT + BUTTON -->
-
     <div class="prototype-content">
 
-
-
         <!-- IMAGE -->
-
         <img
             class="prototype-image"
             src="./PROTOTYPES/SSW_Loop.gif">
 
-
-
-
-
         <!-- CONTEXT + BUTTON -->
-
         <div class="prototype-side-content">
 
-
-
             <!-- CONTEXT -->
-
             <p class="game-context">
 
                 An "Asteroids" clone local multiplayer game where you score points by breaking apart asteroids into chunks & haul them back to your base.
@@ -260,154 +186,111 @@
 
             </p>
 
-
-
-
             <!-- BUTTON -->
-
             <button
                 id="space-salvage-wars-itch"
                 class="external-project-button itch-button">
 
-
                 itch.io Page
-
 
             </button>
 
-
-
         </div>
-
-
 
     </div>
 
-
-
 </div>
 
-
-
 </div>
-
-
 <!-- ================================================= -->
 <!-- END OF ROW 1 -->
 <!-- ================================================= -->
 
-
-
-
+<!-- Add more content here -->
 
 <!-- ================================================= -->
 <!-- END OF PROTOTYPES CONTENT -->
 <!-- ================================================= -->
 
-
-
-
-
 <!-- BACK TO THE TOP BUTTON -->
-
 <div class="back-to-top-container">
-
 
     <button
         id="back-to-top-button"
         class="learn-more-button">
 
-
         BACK TO THE TOP
-
 
     </button>
 
-
 </div>
 
-
-
-
 </div>
-
-
-
-
 
 <!-- ================================================= -->
 <!-- JAVASCRIPT -->
 <!-- ================================================= -->
-
-
 <script src="./reference.js"></script>
-
 
 <script>
 
 document.body.style.backgroundColor =
 SITE_SETTINGS.pageBackground;
 
-
 </script>
-
-
 
 <script src="./header.js"></script>
 
 <script src="./back-to-the-top.js"></script>
 
-
-
-
 <script>
-
 
 /* ================================================= */
 /* PARALLAX */
 /* ================================================= */
 
-
 const parallaxImage =
 document.querySelector(".parallax-image");
 
-
 window.addEventListener("scroll", () => {
-
 
     const hero =
     document.querySelector(".parallax-container");
 
-
     const rect =
     hero.getBoundingClientRect();
 
-
     const speed = 0.35;
-
 
     const offset =
     rect.top * speed;
 
-
     parallaxImage.style.transform =
     `translateY(${offset}px)`;
 
-
 });
-
-
-
-
 
 /* ================================================= */
 /* ITCH.IO BUTTONS */
 /* ================================================= */
-
-
 document.getElementById(
     "seems-fishy-itch"
 ).onclick = function(){
 
+    window.open(
+        "https://functionsam.itch.io/seems-fishy",
+        "_blank"
+    );
 
-    window.</html>
+};
+
+document.getElementById(
+    "space-salvage-wars-itch"
+).onclick = function(){
+
+    window.open(
+        "https://functionsam.itch.io/space-salvage-wars",
+        "_blank"
+    );
+
+};

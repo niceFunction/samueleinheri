@@ -9,6 +9,40 @@
 
     /* Context */
     --context-text-size:24px;
+
+    /* ================================================= */
+    /* PROTOTYPE PROJECTS */
+    /* ================================================= */
+
+    --prototype-container-width:1086px;
+    --prototype-container-height:305px;
+
+    --prototype-above-offset:30px;
+
+
+    /* SUB CONTAINER */
+
+    --prototype-sub-width:543px;
+    --prototype-sub-height:305px;
+
+
+    /* IMAGE */
+
+    --prototype-image-width:289px;
+    --prototype-image-height:217px;
+
+
+    /* TEXT */
+
+    --year-title-size:32px;
+    --game-title-size:28px;
+
+    --game-context-size:12px;
+
+
+    /* IMAGE / BUTTON OFFSET */
+
+    --prototype-content-offset:5px;
 }
 
 
@@ -94,5 +128,111 @@
     font-weight:400;
     color:var(--header-font-color);
     text-align:center;
+
+}
+
+/* ===================================================== */
+/* PROTOTYPE PROJECT CONTAINER */
+/* ===================================================== */
+.prototype-container{
+
+    width:var(--prototype-container-width);
+    height:var(--prototype-container-height);
+    margin-top:var(--prototype-above-offset);
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+
+}
+
+/* ===================================================== */
+/* PROTOTYPE SUB CONTAINERS */
+/* ===================================================== */
+.prototype-sub-container{
+
+    width:var(--prototype-sub-width);
+    height:var(--prototype-sub-height);
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+
+}
+
+/* ===================================================== */
+/* YEAR TITLE */
+/* ===================================================== */
+.year-title{
+
+    margin:0;
+    font-family:var(--header-font-family);
+    font-size:var(--year-title-size);
+    font-weight:700;
+    color:var(--header-font-color);
+    text-align:left;
+
+}
+
+/* ===================================================== */
+/* GAME TITLE */
+/* ===================================================== */
+.game-title{
+
+    margin:0;
+    font-family:var(--header-font-family);
+    font-size:var(--game-title-size);
+    font-weight:700;
+    color:var(--header-font-color);
+    text-align:left;
+
+}
+
+/* ===================================================== */
+/* IMAGE + CONTEXT ROW */
+/* ===================================================== */
+.prototype-content{
+
+    margin-top:auto;
+    display:flex;
+    align-items:flex-end;
+
+}
+
+/* ===================================================== */
+/* IMAGE */
+/* ===================================================== */
+.prototype-image{
+
+    width:var(--prototype-image-width);
+    height:var(--prototype-image-height);
+    object-fit:cover;
+
+}
+
+/* ===================================================== */
+/* CONTEXT TEXT */
+/* ===================================================== */
+.game-context{
+
+    margin:
+    0
+    0
+    var(--prototype-content-offset)
+    var(--prototype-content-offset);
+    width:auto;
+    font-family:var(--header-font-family);
+    font-size:var(--game-context-size);
+    font-weight:400;
+    color:var(--header-font-color);
+    text-align:left;
+
+}
+
+/* ===================================================== */
+/* ITCH BUTTON */
+/* ===================================================== */
+.prototype-sub-container .itch-button{
+
+    margin-top:var(--prototype-content-offset);
+    align-self:flex-end;
 
 }

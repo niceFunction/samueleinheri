@@ -21,6 +21,8 @@
 
 <!-- BACK TO THE TOP -->
 <link rel="stylesheet" href="./back-to-the-top.css">
+
+<link rel="stylesheet" href="./prototypes.css">
 </head>
 
 
@@ -37,7 +39,26 @@
     <!-- START OF PROTOTYPES CONTENT -->
     <!-- ============================================== -->
 
-    <!-- Prototypes content goes here -->
+    <!-- PARALLAX HERO -->
+    <section class="parallax-container">
+
+        <!-- Moving background -->
+        <div class="parallax-image"></div>
+
+        <!-- Static text overlay -->
+        <div class="parallax-content">
+
+            <h1 class="prototypes-title">
+                PROTOTYPES
+            </h1>
+
+            <p class="context-text">
+                Your context text goes here.
+            </p>
+
+        </div>
+
+    </section>
 
     <!-- ============================================== -->
     <!-- END OF PROTOTYPES CONTENT -->
@@ -68,5 +89,23 @@ SITE_SETTINGS.pageBackground;
 <script src="./header.js"></script>
 <script src="./back-to-the-top.js"></script>
 
+
+<script>
+
+const parallaxImage =
+document.querySelector(".parallax-image");
+
+window.addEventListener("scroll", () => {
+    const hero = document.querySelector(".parallax-container");
+    const rect = hero.getBoundingClientRect();
+
+    const speed = 0.35;
+    const offset = rect.top * speed;
+
+    parallaxImage.style.transform = `translateY(${offset}px)`;
+
+});
+
+</script>
 </body>
 </html>

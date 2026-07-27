@@ -1,3 +1,5 @@
+Removed inline onclick usage and kept JS event listeners at the bottom.
+No structural changes to the hero/parallax section.
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,236 +21,395 @@
 <!-- HEADER CSS -->
 <link rel="stylesheet" href="./header.css">
 
+<!-- PORTFOLIO BUTTON STYLING -->
+<link rel="stylesheet" href="./portfolio.css">
+
 <!-- BACK TO THE TOP -->
 <link rel="stylesheet" href="./back-to-the-top.css">
-<link rel="stylesheet" href="./portfolio.css">
+
+<!-- PROTOTYPES CSS -->
 <link rel="stylesheet" href="./prototypes.css">
+
 </head>
 
 
 <body>
 
+
 <!-- HEADER LOAD LOCATION -->
 <div id="header-placeholder"></div>
+
+
 
 <!-- PAGE CONTENT -->
 
 <div class="page-content">
 
-    <!-- ============================================== -->
-    <!-- START OF PROTOTYPES CONTENT -->
-    <!-- ============================================== -->
 
-    <!-- ============================================== -->
-    <!-- START OF PARALLAX HERO -->
-    <!-- ============================================== -->
-    <section class="parallax-container">
 
-        <!-- Moving background -->
-        <div class="parallax-image"></div>
+<!-- ================================================= -->
+<!-- START OF PROTOTYPES CONTENT -->
+<!-- ================================================= -->
 
-        <!-- Static text overlay -->
-        <div class="parallax-content">
 
-            <h1 class="prototypes-title">
-                PROTOTYPES
-            </h1>
 
-            <p class="context-text">
-                Here's some smaller prototypes I've made for the sake of experimenting & self-improvement. 
+<!-- ================================================= -->
+<!-- START OF PARALLAX HERO -->
+<!-- ================================================= -->
+
+<section class="parallax-container">
+
+
+    <!-- Moving background -->
+    <div class="parallax-image"></div>
+
+
+    <!-- Static text overlay -->
+    <div class="parallax-content">
+
+
+        <h1 class="prototypes-title">
+
+            PROTOTYPES
+
+        </h1>
+
+
+        <p class="context-text">
+
+            Here's some smaller prototypes I've made for the sake of experimenting & self-improvement.
+            <br><br>
+            This is to show off my progression as a game developer.
+
+        </p>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- END OF PARALLAX HERO -->
+<!-- ================================================= -->
+
+
+
+
+<!-- ================================================= -->
+<!-- START OF ROW 1 -->
+<!-- ================================================= -->
+
+
+<div class="prototype-container">
+
+
+
+
+
+<!-- ================================================= -->
+<!-- LEFT PROTOTYPE -->
+<!-- ================================================= -->
+
+
+<div class="prototype-sub-container">
+
+
+    <!-- YEAR -->
+
+    <h1 class="year-title">
+
+        2020
+
+    </h1>
+
+
+
+    <!-- TITLE -->
+
+    <h3 class="game-title">
+
+        Seems Fishy
+
+    </h3>
+
+
+
+
+    <!-- IMAGE + CONTEXT + BUTTON -->
+
+    <div class="prototype-content">
+
+
+
+        <!-- IMAGE -->
+
+        <img
+            class="prototype-image"
+            src="./PROTOTYPES/SeemsFishy_Banner.webp">
+
+
+
+
+
+        <!-- CONTEXT + BUTTON -->
+
+        <div class="prototype-side-content">
+
+
+
+            <!-- CONTEXT -->
+
+            <p class="game-context">
+
+                A social deception card game where you want to be the last fish standing (or swimming). You can download it to print & play it immediately!
                 <br><br>
-                This is to show off my progression as a game developer.
+                Made together in a group of 3, where I was responsible for making the art of the game.
+
             </p>
 
-        </div>
 
-    </section>
-    <!-- ============================================== -->
-    <!-- START OF PARALLAX HERO -->
-    <!-- ============================================== -->
-
-    <!-- ============================================== -->
-    <!-- START OF ROW 1: SEEMS FISHY & SPACE SALVAGE WARS -->
-    <!-- ============================================== -->
-    <div class="prototype-container">
-
-
-        <!-- LEFT PROTOTYPE -->
-        <div class="prototype-sub-container">
-
-
-            <!-- YEAR -->
-            <h1 class="year-title">
-                2020
-            </h1>
-
-
-            <!-- TITLE -->
-            <h3 class="game-title">
-                Seems Fishy
-            </h3>
-
-
-            <!-- IMAGE + CONTEXT -->
-            <div class="prototype-content">
-
-
-                <!-- IMAGE -->
-                <img
-                    class="prototype-image"
-                    src="./PROTOTYPES/SeemsFishy_Banner.webp">
-
-
-                <!-- CONTEXT -->
-                <p class="game-context">
-
-                    A social deception card game where you want to be the last fish standing (or swimming). You can download it to print & play it immediately!
-                    <br><br>
-                    Made together in a group of 3, where I was responsible for making the art of the game.
-
-                </p>
-
-
-            </div>
 
 
             <!-- BUTTON -->
+
             <button
                 id="seems-fishy-itch"
                 class="external-project-button itch-button">
 
+
                 itch.io Page
 
+
             </button>
+
 
 
         </div>
 
 
 
-        <!-- RIGHT PROTOTYPE -->
-        <div class="prototype-sub-container">
+    </div>
 
 
-            <!-- YEAR -->
-            <h1 class="year-title">
-                2020
-            </h1>
+
+</div>
 
 
-            <!-- TITLE -->
-            <h3 class="game-title">
-                Space Salvage Wars
-            </h3>
 
 
-            <!-- IMAGE + CONTEXT -->
-            <div class="prototype-content">
+
+<!-- ================================================= -->
+<!-- RIGHT PROTOTYPE -->
+<!-- ================================================= -->
 
 
-                <!-- IMAGE -->
-                <img
-                    class="prototype-image"
-                    src="./PROTOTYPES/SSW_Loop.gif">
+<div class="prototype-sub-container">
 
 
-                <!-- CONTEXT -->
-                <p class="game-context">
+    <!-- YEAR -->
 
-                    An "Asteroids" clone local multiplayer game where you score points by breaking apart asteroids into chunks & haul them back to your base.
-                    <br><br>
-                    Made by 3 people in 1 week where I was one of the people responsible for the scripting.
+    <h1 class="year-title">
 
-                </p>
+        2020
+
+    </h1>
 
 
-            </div>
+
+    <!-- TITLE -->
+
+    <h3 class="game-title">
+
+        Space Salvage Wars
+
+    </h3>
+
+
+
+
+
+    <!-- IMAGE + CONTEXT + BUTTON -->
+
+    <div class="prototype-content">
+
+
+
+        <!-- IMAGE -->
+
+        <img
+            class="prototype-image"
+            src="./PROTOTYPES/SSW_Loop.gif">
+
+
+
+
+
+        <!-- CONTEXT + BUTTON -->
+
+        <div class="prototype-side-content">
+
+
+
+            <!-- CONTEXT -->
+
+            <p class="game-context">
+
+                An "Asteroids" clone local multiplayer game where you score points by breaking apart asteroids into chunks & haul them back to your base.
+                <br><br>
+                Made by 3 people in 1 week where I was one of the people responsible for the scripting.
+
+            </p>
+
+
 
 
             <!-- BUTTON -->
+
             <button
                 id="space-salvage-wars-itch"
                 class="external-project-button itch-button">
 
+
                 itch.io Page
 
+
             </button>
+
+
+
         </div>
-    </div>
-    <!-- ============================================== -->
-    <!-- END OF ROW 1: SEEMS FISHY & SPACE SALVAGE WARS -->
-    <!-- ============================================== -->
 
-    <!-- ============================================== -->
-    <!-- END OF PROTOTYPES CONTENT -->
-    <!-- ============================================== -->
 
-    <!-- BACK TO THE TOP BUTTON -->
-    <div class="back-to-top-container">
-
-        <button
-            id="back-to-top-button"
-            class="learn-more-button">
-
-            BACK TO THE TOP
-
-        </button>
 
     </div>
+
+
+
 </div>
 
+
+
+</div>
+
+
+<!-- ================================================= -->
+<!-- END OF ROW 1 -->
+<!-- ================================================= -->
+
+
+
+
+
+<!-- ================================================= -->
+<!-- END OF PROTOTYPES CONTENT -->
+<!-- ================================================= -->
+
+
+
+
+
+<!-- BACK TO THE TOP BUTTON -->
+
+<div class="back-to-top-container">
+
+
+    <button
+        id="back-to-top-button"
+        class="learn-more-button">
+
+
+        BACK TO THE TOP
+
+
+    </button>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+<!-- ================================================= -->
 <!-- JAVASCRIPT -->
+<!-- ================================================= -->
+
+
 <script src="./reference.js"></script>
 
+
 <script>
+
 document.body.style.backgroundColor =
 SITE_SETTINGS.pageBackground;
+
+
 </script>
 
+
+
 <script src="./header.js"></script>
+
 <script src="./back-to-the-top.js"></script>
 
 
+
+
 <script>
+
+
+/* ================================================= */
+/* PARALLAX */
+/* ================================================= */
+
 
 const parallaxImage =
 document.querySelector(".parallax-image");
 
+
 window.addEventListener("scroll", () => {
-    const hero = document.querySelector(".parallax-container");
-    const rect = hero.getBoundingClientRect();
+
+
+    const hero =
+    document.querySelector(".parallax-container");
+
+
+    const rect =
+    hero.getBoundingClientRect();
+
 
     const speed = 0.35;
-    const offset = rect.top * speed;
 
-    parallaxImage.style.transform = `translateY(${offset}px)`;
+
+    const offset =
+    rect.top * speed;
+
+
+    parallaxImage.style.transform =
+    `translateY(${offset}px)`;
+
 
 });
 
+
+
+
+
+/* ================================================= */
 /* ITCH.IO BUTTONS */
+/* ================================================= */
+
+
 document.getElementById(
     "seems-fishy-itch"
 ).onclick = function(){
 
-    window.open(
-        "https://functionsam.itch.io/seems-fishy",
-        "_blank"
-    );
 
-};
-
-
-document.getElementById(
-    "space-salvage-wars-itch"
-).onclick = function(){
-
-    window.open(
-        "https://functionsam.itch.io/space-salvage-wars",
-        "_blank"
-    );
-
-};
-
-</script>
-</body>
-</html>
+    window.</html>

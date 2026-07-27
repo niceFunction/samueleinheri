@@ -15,8 +15,7 @@
 /* PAGE CONTENT */
 .page-content{
 
-    padding-top:175px;      /* Same spacing below header as portfolio */
-
+    padding-top:var(--header-height);
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -26,14 +25,11 @@
 /* ===================================================== */
 /* PARALLAX HERO */
 /* ===================================================== */
-
 .parallax-container{
 
     position:relative;
-
     width:100vw;
     height:var(--parallax-height);
-
     overflow:hidden;
 
     /* Makes it ignore the centered page width */
@@ -44,83 +40,59 @@
 
 
 /* BACKGROUND */
-
 .parallax-image{
 
     position:absolute;
-
     left:0;
     top:-20%;
-
     width:100%;
     height:140%;
-
     background-image:url("./PROTOTYPES/PrototypesBanner_.webp");
     background-size:cover;
     background-position:center;
-
     will-change:transform;
-
     z-index:1;
 
 }
 
 
 /* TEXT LAYER */
-
 .parallax-content{
 
     position:absolute;
-
     inset:0;
-
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
-
     z-index:2;
-
     pointer-events:none;
 
 }
 
 
 /* TITLE */
-
 .prototypes-title{
 
     margin:0;
-
     transform:translateY(var(--prototypes-title-offset));
-
     font-family:"Open Sans",sans-serif;
-
     font-size:var(--prototypes-title-size);
-
     font-weight:700;
-
-    color:var(--portfolio-font-color);    /* Replace with your variable */
-
+    color:var(--header-font-color);
     text-align:center;
 
 }
 
 
 /* CONTEXT */
-
 .context-text{
 
     margin-top:10px;
-
     font-family:"Open Sans",sans-serif;
-
     font-size:var(--context-text-size);
-
     font-weight:400;
-
-    color:var(--portfolio-font-color);    /* Replace with your variable */
-
+    color:var(--header-font-color);
     text-align:center;
 
 }

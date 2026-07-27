@@ -131,7 +131,7 @@
     height:var(--prototype-container-height);
     margin-top:var(--prototype-above-offset);
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items:flex-start;
 
 }
@@ -184,7 +184,7 @@
 
     margin-top:auto;
     display:flex;
-    align-items:flex-end;
+    align-items:flex-start;
 
 }
 
@@ -207,7 +207,7 @@
     margin:
     0
     0
-    var(--prototype-content-offset)
+    0
     var(--prototype-content-offset);
     width:auto;
     font-family:var(--header-font-family);

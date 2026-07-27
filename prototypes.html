@@ -21,7 +21,7 @@
 
 <!-- BACK TO THE TOP -->
 <link rel="stylesheet" href="./back-to-the-top.css">
-
+<link rel="stylesheet" href="./portfolio.css">
 <link rel="stylesheet" href="./prototypes.css">
 </head>
 
@@ -114,8 +114,8 @@
 
             <!-- BUTTON -->
             <button
-                class="external-project-button itch-button"
-                onclick="window.open('https://functionsam.itch.io/seems-fishy','_blank');">
+                id="seems-fishy-itch"
+                class="external-project-button itch-button">
 
                 itch.io Page
 
@@ -167,13 +167,12 @@
 
             <!-- BUTTON -->
             <button
-                class="external-project-button itch-button"
-                onclick="window.open('https://functionsam.itch.io/space-salvage-wars','_blank');">
+                id="space-salvage-wars-itch"
+                class="external-project-button itch-button">
 
                 itch.io Page
 
             </button>
-
         </div>
     </div>
     <!-- ============================================== -->
@@ -225,6 +224,30 @@ window.addEventListener("scroll", () => {
     parallaxImage.style.transform = `translateY(${offset}px)`;
 
 });
+
+/* ITCH.IO BUTTONS */
+document.getElementById(
+    "seems-fishy-itch"
+).onclick = function(){
+
+    window.open(
+        "https://functionsam.itch.io/seems-fishy",
+        "_blank"
+    );
+
+};
+
+
+document.getElementById(
+    "space-salvage-wars-itch"
+).onclick = function(){
+
+    window.open(
+        "https://functionsam.itch.io/space-salvage-wars",
+        "_blank"
+    );
+
+};
 
 </script>
 </body>

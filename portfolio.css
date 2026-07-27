@@ -168,7 +168,6 @@
 
     width:var(--project-visual-width);
     height:var(--project-visual-height);
-
     position:relative;
 
 }
@@ -198,7 +197,6 @@
 
 
 /* DARK OVERLAY ONLY ON HOVER */
-
 .responsibility-button:hover {
 
     background:var(--responsibility-button-fill);

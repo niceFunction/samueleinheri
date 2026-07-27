@@ -13,35 +13,26 @@
     /* ================================================= */
     /* PROTOTYPE PROJECTS */
     /* ================================================= */
-
-    --prototype-container-width:1086px;
+    --prototype-container-width:1100px;
     --prototype-container-height:305px;
-
     --prototype-above-offset:30px;
 
-
     /* SUB CONTAINER */
-
     --prototype-sub-width:543px;
     --prototype-sub-height:305px;
 
 
     /* IMAGE */
-
     --prototype-image-width:289px;
     --prototype-image-height:217px;
 
 
     /* TEXT */
-
     --year-title-size:32px;
     --game-title-size:28px;
-
     --game-context-size:12px;
 
-
     /* IMAGE / BUTTON OFFSET */
-
     --prototype-content-offset:5px;
 }
 

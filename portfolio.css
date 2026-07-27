@@ -83,11 +83,8 @@
 .page-content {
 
     width:var(--portfolio-container-width);
-
     margin:0 auto;
-
     padding-top:calc(155px + 20px);
-
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -100,7 +97,6 @@
 
     width:100%;
     height:var(--portfolio-container-height);
-
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -113,18 +109,12 @@
 .portfolio-title {
 
     width:100%;
-
     margin-top:var(--portfolio-title-top-spacing);
     margin-bottom:var(--portfolio-title-bottom-spacing);
-
     font-family:"Open Sans",sans-serif;
-
     font-size:var(--portfolio-title-size);
-
     font-weight:700;
-
     color:var(--portfolio-font-color);
-
     text-align:center;
 
 }

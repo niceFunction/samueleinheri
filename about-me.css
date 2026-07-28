@@ -22,6 +22,7 @@
     --portfolio-font-color:#DFE6E9;
     --focus-container-padding-bottom:0px;
     --focus-text-spacing:10px;
+    --focus-title-offset:15px;
    
     /* KNOWLEDGE SECTION */
     --knowledge-container-width:1240px;
@@ -152,7 +153,7 @@
     justify-content:space-between;
     align-items:flex-start;
 
-    padding-top:var(--focus-title-size);
+    padding-top:calc(var(--focus-title-size) + var(--focus-title-offset));
 
 }
 

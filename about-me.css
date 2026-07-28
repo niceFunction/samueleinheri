@@ -15,7 +15,7 @@
     /* FOCUS SECTION */
     --focus-container-width:1240px;
     --focus-container-height:330px;
-    --focus-container-offset:100px;
+    --focus-container-offset:10px;
     --focus-sub-container-width:620px;
     --focus-sub-container-height:250px;
     --focus-title-size:54px;
@@ -212,10 +212,13 @@
 .focus-text{
 
     width:90%;
+
     position:absolute;
-    bottom:0;
+    top:calc(var(--focus-sub-title-size) + 10px);
     left:5%;
+
     margin:0;
+
     font-family:"Open Sans",sans-serif;
     font-size:var(--focus-text-size);
     font-weight:400;
@@ -298,7 +301,7 @@
     width:100%;
     margin:0;
     position:absolute;
-    top:50px;
+    top:45px;
     font-family:"Open Sans",sans-serif;
     font-size:var(--knowledge-item-text-size);
     font-weight:400;
@@ -384,6 +387,7 @@
 
     width:var(--contact-container-width);
     height:var(--contact-container-height);
+    margin-top:var(--contact-me-container-offset);
     position:relative;
     display:flex;
     flex-direction:column;
@@ -423,14 +427,22 @@
 /* SAY HI BUTTON */
 .say-hi-button{
 
+
+    display:block;
+
     margin-top:var(--say-hi-offset);
+
     font-family:"Open Sans",sans-serif;
     font-size:var(--say-hi-size);
     font-weight:700;
     color:var(--portfolio-font-color);
+
     text-decoration:none;
+
     cursor:pointer;
+
     transition:color 0.2s ease;
+
 
 }
 

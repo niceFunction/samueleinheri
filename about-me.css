@@ -2,6 +2,7 @@
 
     --portfolio-container-width:980px;
     --portfolio-container-height:585px;
+    --introduction-image-offset:15px;
 
     --profile-image-size:430px;
 
@@ -9,7 +10,7 @@
     --introduction-height:430px;
 
     --intro-title-size:54px;
-    --intro-paragraph-size:18px;
+    --intro-paragraph-size:16px;
 
     --portfolio-font-color:#DFE6E9;
 
@@ -56,9 +57,13 @@
 
     width:var(--introduction-width);
     height:var(--introduction-height);
+
+    margin-left:var(--introduction-image-offset);
+
     display:flex;
     flex-direction:column;
     align-items:flex-start;
+
     position:relative;
 
 }

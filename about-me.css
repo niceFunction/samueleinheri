@@ -1,7 +1,5 @@
 :root{
 
-    /* Same values as portfolio page */
-
     --portfolio-container-width:980px;
     --portfolio-container-height:585px;
 
@@ -60,14 +58,13 @@
     height:var(--introduction-height);
     display:flex;
     flex-direction:column;
-    align-items:center;
+    align-items:flex-start;
     position:relative;
 
 }
 
 
 /* TITLE */
-
 .about-introduction-title{
 
     margin:0;
@@ -84,7 +81,7 @@
 .about-introduction-text{
 
     width:90%;
-    margin-top:20px;
+    margin-top:10px;
     font-family:"Open Sans", sans-serif;
     font-size:var(--intro-paragraph-size);
     color:var(--portfolio-font-color);

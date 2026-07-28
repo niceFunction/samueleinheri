@@ -16,17 +16,25 @@
     --focus-container-width:1240px;
     --focus-container-height:330px;
     --focus-container-offset:100px;
-
     --focus-sub-container-width:620px;
     --focus-sub-container-height:250px;
-
     --focus-title-size:54px;
-
     --focus-sub-title-size:28px;
-
     --focus-text-size:18px;
     --portfolio-font-color:#DFE6E9;
+   
+    /* KNOWLEDGE SECTION */
 
+    --knowledge-container-width:1240px;
+    --knowledge-container-height:540px;
+    --knowledge-container-offset:100px;
+    --knowledge-title-size:54px;
+    --knowledge-grid-width:1240px;
+    --knowledge-grid-height:460px;
+    --knowledge-item-width:calc(1240px / 3);
+    --knowledge-item-height:230px;
+    --knowledge-item-title-size:26px;
+    --knowledge-item-text-size:18px;
 }
 
 
@@ -191,5 +199,135 @@
     font-weight:400;
     color:var(--portfolio-font-color);
     text-align:left;
+
+}
+
+/* ============================================== */
+/* KNOWLEDGE */
+/* ============================================== */
+
+
+/* MAIN KNOWLEDGE CONTAINER */
+
+.knowledge-container{
+
+    width:var(--knowledge-container-width);
+    height:var(--knowledge-container-height);
+
+    margin-top:var(--knowledge-container-offset);
+
+    position:relative;
+
+}
+
+
+
+/* SECTION TITLE */
+
+.knowledge-title{
+
+    width:100%;
+
+    margin:0;
+
+    position:absolute;
+
+    top:0;
+
+    font-family:"Open Sans",sans-serif;
+    font-size:var(--knowledge-title-size);
+    font-weight:700;
+
+    color:var(--portfolio-font-color);
+
+    text-align:center;
+
+}
+
+
+
+/* KNOWLEDGE GRID */
+
+.knowledge-grid{
+
+    width:var(--knowledge-grid-width);
+    height:var(--knowledge-grid-height);
+
+    position:absolute;
+
+    bottom:0;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3, 1fr);
+
+    grid-template-rows:
+    repeat(2, 1fr);
+
+}
+
+
+
+/* INDIVIDUAL KNOWLEDGE BOX */
+
+.knowledge-item{
+
+    width:var(--knowledge-item-width);
+    height:var(--knowledge-item-height);
+
+    position:relative;
+
+}
+
+
+
+/* KNOWLEDGE TITLE */
+
+.knowledge-item-title{
+
+    width:100%;
+
+    margin:0;
+
+    position:absolute;
+
+    top:0;
+
+    font-family:"Open Sans",sans-serif;
+
+    font-size:var(--knowledge-item-title-size);
+
+    font-weight:700;
+
+    color:var(--portfolio-font-color);
+
+    text-align:center;
+
+}
+
+
+
+/* KNOWLEDGE ITEMS */
+
+.knowledge-item-text{
+
+    width:100%;
+
+    margin:0;
+
+    position:absolute;
+
+    top:50px;
+
+    font-family:"Open Sans",sans-serif;
+
+    font-size:var(--knowledge-item-text-size);
+
+    font-weight:400;
+
+    color:var(--portfolio-font-color);
+
+    text-align:center;
 
 }

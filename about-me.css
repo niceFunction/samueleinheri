@@ -45,6 +45,21 @@
     --school-logo-width:144px;
     --school-logo-height:144px;
     --school-info-size:14px;
+
+    /* CONTACT SECTION */
+
+    --contact-container-width:980px;
+    --contact-container-height:380px;
+
+    --logo-button-size:167px;
+    --logo-button-hover-scale:1.05;
+
+    --name-text-size:40px;
+    --name-text-offset:20px;
+
+    --say-hi-size:72px;
+    --say-hi-offset:15px;
+    --say-hi-hover-color:#FFC20A;
 }
 
 
@@ -360,5 +375,71 @@
     font-weight:400;
     color:var(--portfolio-font-color);
     text-align:center;
+
+}
+
+/* ============================================== */
+/* CONTACT ME */
+/* ============================================== */
+
+/* MAIN CONTACT CONTAINER */
+.contact-container{
+
+    width:var(--contact-container-width);
+    height:var(--contact-container-height);
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+/* LOGO BUTTON */
+.logo-button{
+
+    width:var(--logo-button-size);
+    height:var(--logo-button-size);
+    object-fit:contain;
+    transition:transform 0.2s ease;
+
+}
+
+/* LOGO HOVER EFFECT */
+.logo-button:hover{
+
+    transform:scale(var(--logo-button-hover-scale));
+
+}
+
+/* NAME */
+.name-text{
+
+    margin:var(--name-text-offset) 0 0 0;
+    font-family:"Open Sans",sans-serif;
+    font-size:var(--name-text-size);
+    font-weight:700;
+    color:var(--portfolio-font-color);
+    text-align:center;
+
+}
+
+/* SAY HI BUTTON */
+.say-hi-button{
+
+    margin-top:var(--say-hi-offset);
+    font-family:"Open Sans",sans-serif;
+    font-size:var(--say-hi-size);
+    font-weight:700;
+    color:var(--portfolio-font-color);
+    text-decoration:none;
+    cursor:pointer;
+    transition:color 0.2s ease;
+
+}
+
+/* SAY HI HOVER */
+.say-hi-button:hover{
+
+    color:var(--say-hi-hover-color);
 
 }

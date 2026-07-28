@@ -47,16 +47,13 @@
     --school-info-size:14px;
 
     /* CONTACT SECTION */
-
     --contact-container-width:980px;
     --contact-container-height:380px;
-
+    --contact-me-container-offset:100px;
     --logo-button-size:167px;
     --logo-button-hover-scale:1.05;
-
     --name-text-size:40px;
     --name-text-offset:20px;
-
     --say-hi-size:72px;
     --say-hi-offset:15px;
     --say-hi-hover-color:#FFC20A;

@@ -24,7 +24,6 @@
     --portfolio-font-color:#DFE6E9;
    
     /* KNOWLEDGE SECTION */
-
     --knowledge-container-width:1240px;
     --knowledge-container-height:540px;
     --knowledge-container-offset:100px;
@@ -35,6 +34,17 @@
     --knowledge-item-height:230px;
     --knowledge-item-title-size:26px;
     --knowledge-item-text-size:18px;
+
+    /* EDUCATION SECTION */
+    --education-container-width:980px;
+    --education-container-height:300px;
+    --education-container-offset:100px;
+    --education-title-size:54px;
+    --education-school-width:490px;
+    --education-school-height:210px;
+    --school-logo-width:144px;
+    --school-logo-height:144px;
+    --school-info-size:14px;
 }
 
 
@@ -279,6 +289,74 @@
     top:50px;
     font-family:"Open Sans",sans-serif;
     font-size:var(--knowledge-item-text-size);
+    font-weight:400;
+    color:var(--portfolio-font-color);
+    text-align:center;
+
+}
+
+/* ============================================== */
+/* EDUCATION */
+/* ============================================== */
+
+/* MAIN EDUCATION CONTAINER */
+.education-container{
+
+    width:var(--education-container-width);
+    height:var(--education-container-height);
+    margin-top:var(--education-container-offset);
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+
+}
+
+/* SECTION TITLE */
+.education-title{
+
+    width:100%;
+    margin:0;
+    position:absolute;
+    top:0;
+    font-family:"Open Sans",sans-serif;
+    font-size:var(--education-title-size);
+    font-weight:700;
+    color:var(--portfolio-font-color);
+    text-align:center;
+
+}
+
+/* SCHOOL CONTAINERS */
+.education-school{
+
+    width:var(--education-school-width);
+    height:var(--education-school-height);
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+/* SCHOOL LOGO */
+.school-logo{
+
+    width:var(--school-logo-width);
+    height:var(--school-logo-height);
+    object-fit:contain;
+
+}
+
+/* SCHOOL INFORMATION */
+.school-info{
+
+    width:100%;
+    position:absolute;
+    bottom:0;
+    margin:0;
+    font-family:"Open Sans",sans-serif;
+    font-size:var(--school-info-size);
     font-weight:400;
     color:var(--portfolio-font-color);
     text-align:center;

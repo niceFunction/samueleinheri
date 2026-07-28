@@ -1,0 +1,110 @@
+:root{
+
+    /* Same values as portfolio page */
+
+    --portfolio-container-width:980px;
+    --portfolio-container-height:585px;
+
+    --profile-image-size:430px;
+
+    --introduction-width:548px;
+    --introduction-height:430px;
+
+    --intro-title-size:54px;
+    --intro-paragraph-size:18px;
+
+    --portfolio-font-color:#DFE6E9;
+
+}
+
+
+/* PAGE CONTENT */
+
+.page-content{
+
+    width:var(--portfolio-container-width);
+    margin:0 auto;
+    padding-top:calc(155px + 20px);
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+
+/* MAIN CONTAINER */
+
+.about-introduction-container{
+
+    width:100%;
+    height:var(--portfolio-container-height);
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+
+/* PROFILE IMAGE */
+
+.about-profile-image{
+
+    width:var(--profile-image-size);
+    height:var(--profile-image-size);
+
+    object-fit:cover;
+
+}
+
+
+/* INTRODUCTION CONTENT */
+
+.about-introduction-content{
+
+    width:var(--introduction-width);
+    height:var(--introduction-height);
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    position:relative;
+
+}
+
+
+/* TITLE */
+
+.about-introduction-title{
+
+    margin:0;
+
+    font-family:"Open Sans", sans-serif;
+    font-size:var(--intro-title-size);
+    font-weight:700;
+
+    color:var(--portfolio-font-color);
+
+    text-align:center;
+
+}
+
+
+/* INTRODUCTION TEXT */
+
+.about-introduction-text{
+
+    width:90%;
+
+    margin-top:20px;
+
+    font-family:"Open Sans", sans-serif;
+    font-size:var(--intro-paragraph-size);
+
+    color:var(--portfolio-font-color);
+
+    text-align:left;
+
+}

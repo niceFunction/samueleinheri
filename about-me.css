@@ -73,7 +73,6 @@
 
 }
 
-
 /* MAIN CONTAINER */
 .about-introduction-container{
 
@@ -95,19 +94,15 @@
 
 }
 
-
 /* INTRODUCTION CONTENT */
 .about-introduction-content{
 
     width:var(--introduction-width);
     height:var(--introduction-height);
-
     margin-left:var(--introduction-image-offset);
-
     display:flex;
     flex-direction:column;
     align-items:flex-start;
-
     position:relative;
 
 }
@@ -182,14 +177,11 @@
 
 }
 
-
-
 /* SUB TITLES */
 .focus-sub-title{
 
     width:100%;
     margin:0;
-
     font-family:"Open Sans",sans-serif;
     font-size:var(--focus-sub-title-size);
     font-weight:700;
@@ -202,9 +194,7 @@
 .focus-text{
 
     width:90%;
-
     margin:var(--focus-text-spacing) auto 0 auto;
-
     font-family:"Open Sans",sans-serif;
     font-size:var(--focus-text-size);
     font-weight:400;
@@ -413,22 +403,15 @@
 /* SAY HI BUTTON */
 .say-hi-button{
 
-
     display:block;
-
     margin-top:var(--say-hi-offset);
-
     font-family:"Open Sans",sans-serif;
     font-size:var(--say-hi-size);
     font-weight:700;
     color:var(--portfolio-font-color);
-
     text-decoration:none;
-
     cursor:pointer;
-
     transition:color 0.2s ease;
-
 
 }
 

@@ -11,7 +11,20 @@
 
     --intro-title-size:54px;
     --intro-paragraph-size:16px;
+    
+    /* FOCUS SECTION */
+    --focus-container-width:1240px;
+    --focus-container-height:330px;
+    --focus-container-offset:100px;
 
+    --focus-sub-container-width:620px;
+    --focus-sub-container-height:250px;
+
+    --focus-title-size:54px;
+
+    --focus-sub-title-size:28px;
+
+    --focus-text-size:18px;
     --portfolio-font-color:#DFE6E9;
 
 }
@@ -89,6 +102,93 @@
     margin-top:10px;
     font-family:"Open Sans", sans-serif;
     font-size:var(--intro-paragraph-size);
+    color:var(--portfolio-font-color);
+    text-align:left;
+
+}
+
+/* ============================================== */
+/* MY FOCUS IS */
+/* ============================================== */
+/* MAIN FOCUS CONTAINER */
+.focus-container{
+
+    width:var(--focus-container-width);
+    height:var(--focus-container-height);
+    margin-top:var(--focus-container-offset);
+    position:relative;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+
+}
+
+/* SECTION TITLE */
+.focus-title{
+
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    margin:0;
+    font-family:"Open Sans",sans-serif;
+    font-size:var(--focus-title-size);
+    font-weight:700;
+    color:var(--portfolio-font-color);
+    text-align:center;
+
+}
+
+/* SUB CONTAINERS */
+.focus-1,
+.focus-2{
+
+    width:var(--focus-sub-container-width);
+    height:var(--focus-sub-container-height);
+    position:relative;
+
+}
+
+/* LEFT ALIGNMENT */
+.focus-1{
+
+    align-self:flex-end;
+
+}
+
+/* RIGHT ALIGNMENT */
+.focus-2{
+
+    align-self:flex-end;
+
+}
+
+/* SUB TITLES */
+.focus-sub-title{
+
+    width:100%;
+    margin:0;
+    position:absolute;
+    top:0;
+    font-family:"Open Sans",sans-serif;
+    font-size:var(--focus-sub-title-size);
+    font-weight:700;
+    color:var(--portfolio-font-color);
+    text-align:center;
+
+}
+
+/* TEXT BOX */
+.focus-text{
+
+    width:90%;
+    position:absolute;
+    bottom:0;
+    left:5%;
+    margin:0;
+    font-family:"Open Sans",sans-serif;
+    font-size:var(--focus-text-size);
+    font-weight:400;
     color:var(--portfolio-font-color);
     text-align:left;
 

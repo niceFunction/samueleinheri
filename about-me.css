@@ -14,14 +14,14 @@
     
     /* FOCUS SECTION */
     --focus-container-width:1240px;
-    --focus-container-height:330px;
     --focus-container-offset:10px;
     --focus-sub-container-width:620px;
-    --focus-sub-container-height:250px;
     --focus-title-size:54px;
     --focus-sub-title-size:28px;
     --focus-text-size:18px;
     --portfolio-font-color:#DFE6E9;
+    --focus-container-padding-bottom:0px;
+    --focus-text-spacing:10px;
    
     /* KNOWLEDGE SECTION */
     --knowledge-container-width:1240px;
@@ -144,12 +144,15 @@
 .focus-container{
 
     width:var(--focus-container-width);
-    height:var(--focus-container-height);
     margin-top:var(--focus-container-offset);
+
     position:relative;
+
     display:flex;
     justify-content:space-between;
-    align-items:flex-end;
+    align-items:flex-start;
+
+    padding-top:var(--focus-title-size);
 
 }
 
@@ -174,32 +177,18 @@
 .focus-2{
 
     width:var(--focus-sub-container-width);
-    height:var(--focus-sub-container-height);
     position:relative;
 
 }
 
-/* LEFT ALIGNMENT */
-.focus-1{
 
-    align-self:flex-end;
-
-}
-
-/* RIGHT ALIGNMENT */
-.focus-2{
-
-    align-self:flex-end;
-
-}
 
 /* SUB TITLES */
 .focus-sub-title{
 
     width:100%;
     margin:0;
-    position:absolute;
-    top:0;
+
     font-family:"Open Sans",sans-serif;
     font-size:var(--focus-sub-title-size);
     font-weight:700;
@@ -213,11 +202,7 @@
 
     width:90%;
 
-    position:absolute;
-    top:calc(var(--focus-sub-title-size) + 10px);
-    left:5%;
-
-    margin:0;
+    margin:var(--focus-text-spacing) auto 0 auto;
 
     font-family:"Open Sans",sans-serif;
     font-size:var(--focus-text-size);

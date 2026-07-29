@@ -3,6 +3,9 @@
     /* MAIN CONTAINER */
     --intro-width:980px;
     --intro-top-offset:20px;
+    
+    /* PAGE OFFSET */
+    --page-top-offset:155px;
 
     /* TITLE */
     --project-title-size:64px;
@@ -45,6 +48,12 @@ body {
 /* ====================================================== */
 /* MAIN INTRO CONTAINER */
 /* ====================================================== */
+
+.page-content {
+
+    padding-top:var(--page-top-offset);
+
+}
 
 .intro-container {
 

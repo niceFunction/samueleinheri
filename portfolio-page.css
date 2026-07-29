@@ -4,6 +4,10 @@
     --intro-width:980px;
     --intro-top-offset:20px;
     
+    /* LINK CONTAINER */
+    --link-width:980px;
+    --link-top-offset:62px;
+
     /* PAGE OFFSET */
     --page-top-offset:155px;
 
@@ -234,5 +238,52 @@ body {
 .info-container strong {
 
     font-weight:700;
+
+}
+
+/* ====================================================== */
+/* LINK CONTAINER */
+/* ====================================================== */
+
+.link-container {
+
+    width:var(--link-width);
+
+    height:auto;
+
+    margin-top:var(--link-top-offset);
+
+    margin-left:auto;
+    margin-right:auto;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+}
+
+/* ====================================================== */
+/* STEAM WIDGET */
+/* ====================================================== */
+
+#contenedor {
+
+    width:646px;
+    height:200px;
+
+    overflow:hidden;
+
+    display:block;
+
+}
+
+
+#contenedor iframe {
+
+    width:100%;
+    height:100%;
+
+    border:none;
 
 }

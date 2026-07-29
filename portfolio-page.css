@@ -1,6 +1,8 @@
 :root{
-
+    
+    /* ====================================================== */
     /* MAIN CONTAINER */
+    /* ====================================================== */
     --intro-width:980px;
     --intro-top-offset:20px;
     
@@ -44,12 +46,9 @@
     --responsibilities-text-width:525px;
     --responsibilities-height:610px;
     --responsibilities-top-offset:40px;
-
     --responsibilities-content-width:712px;
-
     --responsibilities-title-size:40px;
     --responsibilities-sub-title-size:20px;
-
     --responsibilities-text-size:20px;
 
 }
@@ -57,16 +56,13 @@
 /* ====================================================== */
 /* GLOBAL PAGE SETTINGS */
 /* ====================================================== */
-
 body {
     margin:0;
 }
 
-
 /* ====================================================== */
 /* MAIN INTRO CONTAINER */
 /* ====================================================== */
-
 .page-content {
 
     padding-top:var(--page-top-offset);
@@ -76,115 +72,87 @@ body {
 .intro-container {
 
     width:var(--intro-width);
-
     margin-left:auto;
     margin-right:auto;
-
     margin-top:var(--intro-top-offset);
 
 }
 
-
 /* ====================================================== */
 /* PROJECT TITLE */
 /* ====================================================== */
-
 .project-title {
 
     margin-top:var(--project-title-top-offset);
-
     text-align:center;
-
     font-family:var(--font-family);
     font-size:var(--project-title-size);
-
     color:var(--font-color);
 
 }
 
-
 /* ====================================================== */
 /* VIDEO PLAYER */
 /* ====================================================== */
-
 .video-container {
 
     width:var(--video-width);
     height:var(--video-height);
-
     margin-top:var(--video-top-offset);
-
     margin-left:auto;
     margin-right:auto;
 
 }
-
 
 .video-container iframe {
 
     width:100%;
     height:100%;
-
     border:none;
 
 }
 
-
 /* ====================================================== */
 /* DETAILS CONTAINER */
 /* ====================================================== */
-
 .details-container {
 
     width:var(--video-width);
-
     margin-top:var(--details-top-offset);
-
     margin-left:auto;
     margin-right:auto;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:flex-start;
 
 }
-
 
 /* ====================================================== */
 /* LEFT COLUMN */
 /* ABOUT + BACKGROUND */
 /* ====================================================== */
-
 .about-background-container {
 
     width:var(--about-width);
 
 }
 
-
 .about-container {
 
     width:100%;
-
     font-family:var(--font-family);
     color:var(--font-color);
 
 }
-
 
 .background-container {
 
     width:100%;
-
     margin-top:var(--background-top-offset);
-
     font-family:var(--font-family);
     color:var(--font-color);
 
 }
-
 
 /* ====================================================== */
 /* RIGHT COLUMN */
@@ -195,59 +163,44 @@ body {
 
     width:var(--info-width);
     height:var(--info-height);
-
     font-family:var(--font-family);
-
     color:var(--font-color);
 
 }
-
 
 /* ====================================================== */
 /* DETAILS TITLE */
 /* ====================================================== */
-
 .details-title {
 
     margin:0;
-
     font-size:var(--details-title-size);
-
     font-weight:700;
-
     text-decoration:underline;
 
 }
-
 
 /* ====================================================== */
 /* ABOUT TITLES */
 /* ====================================================== */
-
 .about-title,
 .background-title {
 
     font-weight:700;
-
     text-decoration:underline;
 
 }
 
-
 /* ====================================================== */
 /* INFO TEXT */
 /* ====================================================== */
-
 .info-container p {
 
     margin:8px 0;
-
     font-family:var(--font-family);
-
     color:var(--font-color);
 
 }
-
 
 .info-container strong {
 
@@ -258,16 +211,13 @@ body {
 /* ====================================================== */
 /* LINKS */
 /* ====================================================== */
-
 .about-container a,
 .background-container a {
 
     color:var(--font-color);
-
     text-decoration:underline;
 
 }
-
 
 .about-container a:visited,
 .background-container a:visited {
@@ -275,7 +225,6 @@ body {
     color:var(--font-color);
 
 }
-
 
 .about-container a:hover,
 .background-container a:hover {
@@ -287,20 +236,14 @@ body {
 /* ====================================================== */
 /* LINK CONTAINER */
 /* ====================================================== */
-
 .link-container {
 
     width:var(--link-width);
-
     height:auto;
-
     margin-top:var(--link-top-offset);
-
     margin-left:auto;
     margin-right:auto;
-
     display:flex;
-
     justify-content:center;
     align-items:center;
 
@@ -309,24 +252,19 @@ body {
 /* ====================================================== */
 /* STEAM WIDGET */
 /* ====================================================== */
-
 #contenedor {
 
     width:646px;
     height:200px;
-
     overflow:hidden;
-
     display:block;
 
 }
-
 
 #contenedor iframe {
 
     width:100%;
     height:100%;
-
     border:none;
 
 }
@@ -334,139 +272,96 @@ body {
 /* ====================================================== */
 /* RESPONSIBILITIES CONTAINER */
 /* ====================================================== */
-
 .responsibilities-container {
 
     width:100%;
     height:var(--responsibilities-height);
-
     margin-top:var(--responsibilities-top-offset);
-
     display:flex;
-
     justify-content:center;
     align-items:stretch;
-
     overflow:hidden;
 
 }
-
 
 /* ====================================================== */
 /* PARALLAX IMAGE AREAS */
 /* ====================================================== */
-
-
 .responsibilities-parallax-left,
 .responsibilities-parallax-right {
 
     flex:1;
-
     overflow:hidden;
-
     position:relative;
 
 }
-
 
 .responsibilities-parallax-left img,
 .responsibilities-parallax-right img {
 
     width:100%;
     height:120%;
-
     object-fit:cover;
-
     position:absolute;
-
     top:-10%;
 
 }
 
-
 /* ====================================================== */
 /* CENTER RESPONSIBILITIES CONTENT */
 /* ====================================================== */
-
-
 .responsibilities-content {
 
     width:var(--responsibilities-content-width);
-
     height:100%;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
 }
 
-
 /* ====================================================== */
 /* RESPONSIBILITIES TEXT BOX */
 /* ====================================================== */
-
 .responsibilities-text-box {
 
    width:var(--responsibilities-text-width);
-
-    height:auto;
-
-    font-family:var(--font-family);
-
-    color:var(--font-color);
+   height:auto;
+   font-family:var(--font-family);
+   color:var(--font-color);
 
 }
 
-
 /* TITLE */
-
 .responsibilities-text-box h2 {
 
     margin:0;
-
     font-size:var(--responsibilities-title-size);
-
     font-weight:700;
-
     text-align:center;
 
 }
 
-
 /* SUB TITLE */
-
 .responsibilities-text-box h3 {
 
     margin:25px 0 10px 0;
-
     font-size:var(--responsibilities-sub-title-size);
-
     font-weight:700;
-
     text-decoration:underline;
-
     text-align:center;
 
 }
 
-
 /* LIST */
-
 .responsibilities-text-box ul {
 
     width:100%;
-
     margin:0;
-
     padding-left:40px;
-
     font-size:var(--responsibilities-text-size);
 
 }
-
 
 .responsibilities-text-box li {
 

@@ -1,0 +1,34 @@
+:root{
+
+    /* MAIN CONTAINER */
+    --intro-width:980px;
+    --intro-top-offset:20px;
+
+    /* TITLE */
+    --project-title-size:64px;
+    --project-title-top-offset:40px;
+
+    /* VIDEO */
+    --video-width:925px;
+    --video-height:520px;
+    --video-top-offset:30px;
+
+    /* DETAILS */
+    --details-top-offset:16px;
+
+    /* LEFT COLUMN */
+    --about-width:510px;
+    --background-top-offset:20px;
+
+    /* RIGHT COLUMN */
+    --info-width:360px;
+    --info-height:220px;
+
+    /* TEXT */
+    --details-title-size:40px;
+
+    /* SHARED */
+    --font-family:"Open Sans",sans-serif;
+    --font-color:#DFE6E9;
+
+}

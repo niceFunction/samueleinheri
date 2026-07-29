@@ -242,6 +242,35 @@ body {
 }
 
 /* ====================================================== */
+/* LINKS */
+/* ====================================================== */
+
+.about-container a,
+.background-container a {
+
+    color:var(--font-color);
+
+    text-decoration:underline;
+
+}
+
+
+.about-container a:visited,
+.background-container a:visited {
+
+    color:var(--font-color);
+
+}
+
+
+.about-container a:hover,
+.background-container a:hover {
+
+    color:var(--font-color);
+
+}
+
+/* ====================================================== */
 /* LINK CONTAINER */
 /* ====================================================== */
 

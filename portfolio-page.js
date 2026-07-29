@@ -3,15 +3,28 @@ const parallaxImages = document.querySelectorAll(
 );
 
 
+const responsibilitiesContainer =
+document.querySelector(".responsibilities-container");
+
+
 window.addEventListener("scroll", () => {
 
-    const scrollPosition = window.scrollY;
+    const containerPosition =
+    responsibilitiesContainer.getBoundingClientRect();
+
+
+    const windowHeight =
+    window.innerHeight;
+
+
+    const movement =
+    (windowHeight / 2 - containerPosition.top) * 0.15;
 
 
     parallaxImages.forEach(image => {
 
         image.style.transform =
-            `translateY(${scrollPosition * 0.15}px)`;
+        `translateY(${movement}px)`;
 
     });
 

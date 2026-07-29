@@ -41,7 +41,7 @@
     /* ====================================================== */
     /* RESPONSIBILITIES */
     /* ====================================================== */
-
+    --responsibilities-text-width:220px;
     --responsibilities-height:610px;
     --responsibilities-top-offset:40px;
 
@@ -397,11 +397,22 @@ body {
 
     display:flex;
 
-    flex-direction:column;
+    justify-content:center;
 
     align-items:center;
 
-    justify-content:center;
+}
+
+
+/* ====================================================== */
+/* RESPONSIBILITIES TEXT BOX */
+/* ====================================================== */
+
+.responsibilities-text-box {
+
+   width:var(--responsibilities-text-width);
+
+    height:auto;
 
     font-family:var(--font-family);
 
@@ -412,7 +423,7 @@ body {
 
 /* TITLE */
 
-.responsibilities-content h2 {
+.responsibilities-text-box h2 {
 
     margin:0;
 
@@ -427,7 +438,7 @@ body {
 
 /* SUB TITLE */
 
-.responsibilities-content h3 {
+.responsibilities-text-box h3 {
 
     margin:25px 0 10px 0;
 
@@ -444,7 +455,7 @@ body {
 
 /* LIST */
 
-.responsibilities-content ul {
+.responsibilities-text-box ul {
 
     width:100%;
 
@@ -457,7 +468,7 @@ body {
 }
 
 
-.responsibilities-content li {
+.responsibilities-text-box li {
 
     margin-bottom:8px;
 

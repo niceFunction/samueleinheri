@@ -1052,7 +1052,7 @@ body {
 
     max-height:280px;
 
-    object-fit:contain;
+    object-fit:none;
 
 }
 

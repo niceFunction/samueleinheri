@@ -75,6 +75,16 @@
     --topic-sub-title-size:22px;
     --topic-context-size:20px;
 
+    /* ====================================================== */
+     /* BLUEPRINT CONTAINER */
+     /* ====================================================== */
+     --blueprint-width:1274px;
+     --blueprint-height:754px;
+     --blueprint-top-offset:85px;
+     --blueprint-title-size:40px;
+     --blueprint-widget-top-offset:30px;
+     --blueprint-widget-height:672px;
+
 }
 
 /* ====================================================== */
@@ -625,4 +635,79 @@ body {
 
 /* ====================================================== */
 /* END OF TOPIC CONTEXT */
+/* ====================================================== */
+
+/* ====================================================== */
+/* START OF BLUEPRINT CONTAINER */
+/* ====================================================== */
+
+.blueprint-container{
+
+    width:var(--blueprint-width);
+
+    height:var(--blueprint-height);
+
+    margin-top:var(--blueprint-top-offset);
+
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+/* ====================================================== */
+/* END OF BLUEPRINT CONTAINER */
+/* ====================================================== */
+
+
+/* ====================================================== */
+/* START OF BLUEPRINT TITLE */
+/* ====================================================== */
+
+.blueprint-title{
+
+    margin:0;
+
+    font-family:var(--font-family);
+
+    font-size:var(--blueprint-title-size);
+
+    font-weight:700;
+
+    text-align:center;
+
+    color:var(--font-color);
+
+}
+
+/* ====================================================== */
+/* END OF BLUEPRINT TITLE */
+/* ====================================================== */
+
+
+/* ====================================================== */
+/* START OF BLUEPRINT WIDGET */
+/* ====================================================== */
+
+.blueprint-widget-container{
+
+    width:100%;
+
+    height:var(--blueprint-widget-height);
+
+    margin-top:var(--blueprint-widget-top-offset);
+
+}
+
+.blueprint-widget-container iframe{
+
+    width:100%;
+
+    height:100%;
+
+    border:none;
+
+}
+
+/* ====================================================== */
+/* END OF BLUEPRINT WIDGET */
 /* ====================================================== */

@@ -102,6 +102,33 @@
      --screenshot-video-height:466px;
      --screenshot-video-top-offset:20px;
 
+     /* ====================================================== */
+     /* REUSABLE SCREENSHOT IMAGE */
+     /* ====================================================== */
+
+     --screenshot-image-width:1284px;
+     --screenshot-image-height:428px;
+     --screenshot-image-top-offset:20px;
+
+     /* ====================================================== */
+     /* IMAGE + TEXT CONTAINER */
+     /* ====================================================== */
+
+     --image-topic-width:1284px;
+     --image-topic-top-offset:80px;
+
+     --image-topic-content-width:1168px;
+     --image-topic-content-top-offset:20px;
+
+     --image-topic-image-width:509px;
+     --image-topic-image-height:287px;
+
+     --image-topic-text-left-offset:15px;
+
+     --image-topic-sub-title-size:22px;
+
+     --image-topic-context-size:20px;
+
 }
 
 /* ====================================================== */
@@ -765,14 +792,13 @@ body {
 /* SCREENSHOT IMAGE CONTAINER */
 /* ====================================================== */
 
-
 .screenshot-image-container{
 
-    width:var(--screenshot-container-width);
+    width:var(--screenshot-image-width);
 
-    height:var(--screenshot-height);
+    height:var(--screenshot-image-height);
 
-    margin-top:20px;
+    margin-top:var(--screenshot-image-top-offset);
 
     margin-left:auto;
 
@@ -934,6 +960,170 @@ body {
 
 }
 
+/* ====================================================== */
+/* START OF IMAGE TOPIC CONTAINER */
+/* ====================================================== */
+
+.image-topic-container{
+
+    width:var(--image-topic-width);
+
+    height:auto;
+
+    margin-top:var(--image-topic-top-offset);
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+
+/* ====================================================== */
+/* IMAGE TOPIC TITLE */
+/* ====================================================== */
+
+.image-topic-title{
+
+    margin:0;
+
+    font-family:var(--font-family);
+
+    font-size:var(--screenshot-title-size);
+
+    font-weight:700;
+
+    text-align:center;
+
+    color:var(--font-color);
+
+}
+
+
+/* ====================================================== */
+/* IMAGE TOPIC CONTENT */
+/* ====================================================== */
+
+.image-topic-content{
+
+    width:var(--image-topic-content-width);
+
+    margin-top:var(--image-topic-content-top-offset);
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+
+/* ====================================================== */
+/* IMAGE TOPIC ROW */
+/* ====================================================== */
+
+.image-topic-row{
+
+    margin-top:var(--image-topic-content-top-offset);
+
+    display:flex;
+
+    align-items:flex-start;
+
+}
+
+
+/* ====================================================== */
+/* IMAGE COLUMN */
+/* ====================================================== */
+
+.image-topic-image{
+
+    width:var(--image-topic-image-width);
+
+    height:var(--image-topic-image-height);
+
+    flex-shrink:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+/* IMAGE SUB TITLE */
+
+.image-topic-image-title{
+
+    margin:0;
+
+    margin-bottom:10px;
+
+    font-size:var(--image-topic-sub-title-size);
+
+    font-family:var(--font-family);
+
+    font-weight:700;
+
+    color:var(--font-color);
+
+}
+
+
+/* IMAGE */
+
+.image-topic-image img{
+
+    max-width:100%;
+
+    max-height:100%;
+
+    object-fit:contain;
+
+}
+
+
+/* ====================================================== */
+/* TEXT COLUMN */
+/* ====================================================== */
+
+.image-topic-text{
+
+    margin-left:var(--image-topic-text-left-offset);
+
+    flex:1;
+
+    font-family:var(--font-family);
+
+    color:var(--font-color);
+
+}
+
+
+/* TITLE */
+
+.image-topic-text h3{
+
+    margin:0;
+
+    font-size:var(--topic-sub-title-size);
+
+    font-weight:700;
+
+}
+
+
+/* CONTEXT */
+
+.image-topic-text p{
+
+    margin-top:10px;
+
+    font-size:var(--image-topic-context-size);
+
+}
 
 /* ====================================================== */
 /* END OF SCREENSHOT CONTAINER */

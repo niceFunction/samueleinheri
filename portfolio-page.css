@@ -51,6 +51,21 @@
     --responsibilities-sub-title-size:20px;
     --responsibilities-text-size:20px;
 
+    /* ====================================================== */
+      /* SPECIFIC CONTAINER */
+      /* ====================================================== */
+
+      --specific-width:980px;
+      --specific-top-offset:50px;
+
+      --specific-title-size:40px;
+      --specific-sub-container-top-offset:20px;
+
+      --specific-item-width:450px;
+
+      --specific-item-title-size:24px;
+      --specific-item-text-size:20px;
+
 }
 
 /* ====================================================== */
@@ -368,3 +383,154 @@ body {
     margin-bottom:8px;
 
 }
+
+/* ====================================================== */
+/* START OF SPECIFIC CONTAINER */
+/* ====================================================== */
+
+.specific-container{
+
+    width:var(--specific-width);
+
+    height:auto;
+
+    margin-top:var(--specific-top-offset);
+
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+/* ====================================================== */
+/* END OF SPECIFIC CONTAINER */
+/* ====================================================== */
+
+
+/* ====================================================== */
+/* START OF SPECIFIC TITLE */
+/* ====================================================== */
+
+.specific-title{
+
+    margin:0;
+
+    font-family:var(--font-family);
+
+    font-size:var(--specific-title-size);
+
+    font-weight:700;
+
+    text-align:center;
+
+    color:var(--font-color);
+
+}
+
+/* ====================================================== */
+/* END OF SPECIFIC TITLE */
+/* ====================================================== */
+
+
+/* ====================================================== */
+/* START OF SPECIFIC CONTENT */
+/* ====================================================== */
+
+.specific-content{
+
+    margin-top:var(--specific-sub-container-top-offset);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+}
+
+/* ====================================================== */
+/* END OF SPECIFIC CONTENT */
+/* ====================================================== */
+
+
+/* ====================================================== */
+/* START OF SPECIFIC 1 */
+/* ====================================================== */
+
+.specific-1{
+
+    width:var(--specific-item-width);
+
+    height:auto;
+
+}
+
+/* ====================================================== */
+/* END OF SPECIFIC 1 */
+/* ====================================================== */
+
+
+/* ====================================================== */
+/* START OF SPECIFIC 2 */
+/* ====================================================== */
+
+.specific-2{
+
+    width:var(--specific-item-width);
+
+    height:auto;
+
+}
+
+/* ====================================================== */
+/* END OF SPECIFIC 2 */
+/* ====================================================== */
+
+
+/* ====================================================== */
+/* START OF SPECIFIC TITLES */
+/* ====================================================== */
+
+.specific-1-title,
+.specific-2-title{
+
+    margin:0;
+
+    font-family:var(--font-family);
+
+    font-size:var(--specific-item-title-size);
+
+    font-weight:700;
+
+    text-align:center;
+
+    color:var(--font-color);
+
+}
+
+/* ====================================================== */
+/* END OF SPECIFIC TITLES */
+/* ====================================================== */
+
+
+/* ====================================================== */
+/* START OF SPECIFIC CONTEXT */
+/* ====================================================== */
+
+.specific-1-context,
+.specific-2-context{
+
+    margin-top:10px;
+
+    font-family:var(--font-family);
+
+    font-size:var(--specific-item-text-size);
+
+    text-align:left;
+
+    color:var(--font-color);
+
+}
+
+/* ====================================================== */
+/* END OF SPECIFIC CONTEXT */
+/* ====================================================== */

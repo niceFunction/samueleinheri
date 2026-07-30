@@ -1048,9 +1048,11 @@ body {
 
 .image-topic-image img{
 
-    width:auto;
-    height:auto;
-    object-fit:none;
+    max-width:510px;
+
+    max-height:280px;
+
+    object-fit:contain;
 
 }
 

@@ -770,12 +770,10 @@ body {
 
     width:100%;
 
-    height:var(--screenshot-height);
-
+    height:100%;
+    object-fit:contain;
     margin-top:20px;
-
     margin-left:auto;
-
     margin-right:auto;
 
 }
@@ -837,6 +835,27 @@ body {
 
 }
 
+/* SCREENSHOT CONTEXT LINKS */
+.screenshot-context-text a{
+
+    color:var(--font-color);
+    text-decoration:underline;
+
+}
+
+
+.screenshot-context-text a:visited{
+
+    color:var(--font-color);
+
+}
+
+
+.screenshot-context-text a:hover{
+
+    color:var(--font-color);
+
+}
 
 
 /* ====================================================== */

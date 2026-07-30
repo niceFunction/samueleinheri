@@ -441,37 +441,20 @@
            <!-- ================================================= -->
            <!-- START OF TOPIC CONTAINER (TAKING PICTURES)-->
            <!-- ================================================= -->
-
            <div class="topic-container">
 
-
-               <!-- ============================================= -->
                <!-- START OF TOPIC TITLE -->
-               <!-- ============================================= -->
-
                <h2 class="topic-title">
 
                    Taking Pictures
 
                </h2>
-
-               <!-- ============================================= -->
                <!-- END OF TOPIC TITLE -->
-               <!-- ============================================= -->
 
-
-
-               <!-- ============================================= -->
                <!-- START OF TOPIC CONTENT -->
-               <!-- ============================================= -->
-
                <div class="topic-content">
 
-
-                   <!-- ========================================= -->
                    <!-- START OF TOPIC VIDEO -->
-                   <!-- ========================================= -->
-
                    <div class="topic-video-container">
 
                        <iframe
@@ -482,39 +465,24 @@
                        </iframe>
 
                    </div>
-
-                   <!-- ========================================= -->
                    <!-- END OF TOPIC VIDEO -->
-                   <!-- ========================================= -->
 
-
-
-                   <!-- ========================================= -->
                    <!-- START OF TOPIC TEXT -->
-                   <!-- ========================================= -->
-
                    <div class="topic-text-box">
 
-
                        <!-- TOPIC SUB TITLE -->
-
                        <h3 class="topic-sub-title">
 
                            Actually taking pictures
 
                        </h3>
 
-
-
                        <!-- TOPIC CONTEXT -->
-
                        <div class="topic-context">
-
 
                            <p>
                                Taking pictures is something that I'm personally very proud of.
                            </p>
-
 
                            <p>
                                Using a
@@ -528,9 +496,6 @@
 
                                (which is essentially another camera), there are two options that weren't needed:
                            </p>
-
-
-
                            <ul>
 
                                <li>
@@ -539,7 +504,6 @@
                                    </strong>
                                </li>
 
-
                                <li>
                                    <strong>
                                        Capture on Movement
@@ -547,68 +511,36 @@
                                </li>
 
                            </ul>
-
-
-
                            <p>
                                Since the player only needs to capture what they're looking at when they press the button, continuously updating the scene every frame or whenever the camera moves would only waste performance.
                            </p>
 
-
                        </div>
-
-
                    </div>
-
-                   <!-- ========================================= -->
                    <!-- END OF TOPIC TEXT -->
-                   <!-- ========================================= -->
-
 
                </div>
-
-               <!-- ============================================= -->
                <!-- END OF TOPIC CONTENT -->
-               <!-- ============================================= -->
-
 
            </div>
-
            <!-- ================================================= -->
            <!-- END OF TOPIC CONTAINER -->
            <!-- ================================================= -->
 
-
-
-
-
            <!-- ================================================= -->
            <!-- START OF BLUEPRINT CONTAINER -->
            <!-- ================================================= -->
-
            <div class="blueprint-container">
 
-
-               <!-- ============================================= -->
                <!-- START OF BLUEPRINT TITLE -->
-               <!-- ============================================= -->
-
                <h2 class="blueprint-title">
 
                    Taking Pictures - Blueprint
 
                </h2>
-
-               <!-- ============================================= -->
                <!-- END OF BLUEPRINT TITLE -->
-               <!-- ============================================= -->
 
-
-
-               <!-- ============================================= -->
                <!-- START OF BLUEPRINT WIDGET -->
-               <!-- ============================================= -->
-
                <div class="blueprint-widget-container">
 
                    <iframe
@@ -618,17 +550,115 @@
                    </iframe>
 
                </div>
-
-               <!-- ============================================= -->
                <!-- END OF BLUEPRINT WIDGET -->
-               <!-- ============================================= -->
-
 
            </div>
-
            <!-- ================================================= -->
            <!-- END OF BLUEPRINT CONTAINER -->
            <!-- ================================================= -->
+           
+           <!-- ================================================= -->
+           <!-- START OF SCREENSHOT CONTAINER -->
+           <!-- ================================================= -->
+           <div class="blueprint-screenshot-container">
+
+               <!-- START OF SCREENSHOT TITLE -->
+               <h2 class="screenshot-title">
+                   Taking Pictures - Sphere Trace by Channel
+               </h2>
+               <!-- END OF SCREENSHOT TITLE -->
+
+               <!-- START OF SCREENSHOT IMAGE -->
+               <div class="screenshot-image-container">
+
+                   <!-- IMAGE WILL BE ADDED HERE -->
+
+               </div>
+               <!-- END OF SCREENSHOT IMAGE -->
+
+               <!-- START OF SCREENSHOT CONTEXT -->
+               <div class="screenshot-context">
+
+                   <!-- SCREENSHOT CONTEXT TITLE -->
+                   <h3 class="screenshot-context-title">
+                       Detecting hits with Sphere Trace
+                   </h3>
+
+                   <!-- SCREENSHOT CONTEXT TEXT -->
+                   <div class="screenshot-context-text">
+
+                       
+                       <p>
+                           There are multiple methods where you can "capture" the image of something, and the easiest method that I found, was using 
+                           "<a 
+                               href="https://dev.epicgames.com/documentation/en-us/unreal-engine/BlueprintAPI/Rendering/SceneCapture/CaptureScene"
+                               target="_blank">
+
+                               Sphere Trace By Channel
+
+                           </a>"
+                       <p>
+                        What it does in this context:
+                       </p>
+                       <ul>
+
+                           <li>
+                                "Fires" a trace in the player's look direction of a set size & length.
+                           </li>
+
+                           <li>
+                                On "Break Hit Result", the trace will look for specific tags:
+                                
+                                <li>
+                                    If it hits the tag "Golden Target", the level is beaten
+                                </li>
+
+                                <li>
+                                    If it hits the tag "Secondary Target", it will aid the play to progress further into a level
+                                </li>
+
+                                <li>
+                                    If it hits nothing, the taken picture will appear to the left & move outside the screen
+                                </li>
+                           </li>
+                       </ul>
+
+                       <p>
+                           <i>
+                            In "Super Paparazzi", the player needs to take photographs of the "Secondary Targets" in order to destroy "Gates the hinders the player's progression.
+                            </i>
+                       </p>
+
+                   </div>
+
+
+               </div>
+               <!-- END OF SCREENSHOT CONTEXT -->
+
+               <!-- START OF SCREENSHOT VIDEO TITLE -->
+               <h3 class="screenshot-video-title">
+                   How Sphere Trace By Channel looks like
+               </h3>
+               <!-- END OF SCREENSHOT VIDEO TITLE -->
+
+               <!-- START OF SCREENSHOT VIDEO -->
+               <div class="screenshot-video-container">
+
+                   <iframe 
+                       src="https://www.youtube-nocookie.com/embed/6OaZASJ3Dmw ?autoplay=1&mute=1&loop=1&playlist=6OaZASJ3Dmw"
+                       title="Screenshot Video"
+                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                       allowfullscreen>
+                   </iframe>
+
+               </div>
+               <!-- END OF SCREENSHOT VIDEO -->
+
+           </div>
+           <!-- ================================================= -->
+           <!-- END OF SCREENSHOT CONTAINER -->
+           <!-- ================================================= -->
+
     <!-- BACK TO THE TOP BUTTON -->
     <div class="back-to-top-container">
 

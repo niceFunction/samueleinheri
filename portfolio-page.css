@@ -85,6 +85,23 @@
      --blueprint-widget-top-offset:30px;
      --blueprint-widget-height:672px;
 
+     /* ====================================================== */
+     /* SCREENSHOT CONTAINER */
+     /* ====================================================== */
+     --screenshot-container-width:1284px;
+     --screenshot-container-top-offset:80px;
+     --screenshot-title-size:40px;
+     --screenshot-height:428px;
+     --screenshot-context-width:980px;
+     --screenshot-context-top-offset:30px;
+     --screenshot-context-title-size:22px;
+     --screenshot-context-text-size:20px;
+     --screenshot-video-title-size:22px;
+     --screenshot-video-top-offset:40px;
+     --screenshot-video-width:820px;
+     --screenshot-video-height:466px;
+     --screenshot-video-top-offset:20px;
+
 }
 
 /* ====================================================== */
@@ -699,4 +716,185 @@ body {
 }
 /* ====================================================== */
 /* END OF BLUEPRINT CONTAINER */
+/* ====================================================== */
+
+/* ====================================================== */
+/* START OF SCREENSHOT CONTAINER */
+/* ====================================================== */
+
+
+.blueprint-screenshot-container{
+
+    width:var(--screenshot-container-width);
+
+    height:auto;
+
+    margin-top:var(--screenshot-container-top-offset);
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+
+/* ====================================================== */
+/* SCREENSHOT TITLE */
+/* ====================================================== */
+
+
+.screenshot-title{
+
+    margin:0;
+
+    font-family:var(--font-family);
+
+    font-size:var(--screenshot-title-size);
+
+    font-weight:700;
+
+    text-align:center;
+
+    color:var(--font-color);
+
+}
+
+
+
+/* ====================================================== */
+/* SCREENSHOT IMAGE CONTAINER */
+/* ====================================================== */
+
+
+.screenshot-image-container{
+
+    width:100%;
+
+    height:var(--screenshot-height);
+
+    margin-top:20px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+
+
+/* ====================================================== */
+/* SCREENSHOT CONTEXT */
+/* ====================================================== */
+
+
+.screenshot-context{
+
+    width:var(--screenshot-context-width);
+
+    height:auto;
+
+    margin-top:var(--screenshot-context-top-offset);
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+    font-family:var(--font-family);
+
+    color:var(--font-color);
+
+}
+
+
+
+/* ====================================================== */
+/* SCREENSHOT CONTEXT TITLE */
+/* ====================================================== */
+
+
+.screenshot-context-title{
+
+    margin:0;
+
+    font-size:var(--screenshot-context-title-size);
+
+    font-weight:700;
+
+}
+
+
+
+/* ====================================================== */
+/* SCREENSHOT CONTEXT TEXT */
+/* ====================================================== */
+
+
+.screenshot-context-text{
+
+    margin-top:10px;
+
+    font-size:var(--screenshot-context-text-size);
+
+}
+
+
+
+/* ====================================================== */
+/* SCREENSHOT VIDEO TITLE */
+/* ====================================================== */
+
+
+.screenshot-video-title{
+
+    margin-top:var(--screenshot-video-title-top-offset);
+
+    margin-bottom:0;
+
+    font-family:var(--font-family);
+
+    font-size:var(--screenshot-video-title-size);
+
+    font-weight:700;
+
+    text-align:center;
+
+    color:var(--font-color);
+
+}
+
+
+
+/* ====================================================== */
+/* SCREENSHOT VIDEO */
+/* ====================================================== */
+
+
+.screenshot-video-container{
+
+    width:var(--screenshot-video-width);
+
+    height:var(--screenshot-video-height);
+
+    margin-top:var(--screenshot-video-top-offset);
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+
+.screenshot-video-container iframe{
+
+    width:100%;
+
+    height:100%;
+
+    border:none;
+
+}
+
+
+/* ====================================================== */
+/* END OF SCREENSHOT CONTAINER */
 /* ====================================================== */

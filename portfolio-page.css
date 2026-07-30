@@ -633,6 +633,25 @@ body {
 
 }
 
+/* TOPIC CONTEXT LINKS */
+.topic-context a{
+
+    color:var(--font-color);
+    text-decoration:underline;
+
+}
+
+.topic-context a:visited{
+
+    color:var(--font-color);
+
+}
+
+.topic-context a:hover{
+
+    color:var(--font-color);
+
+}
 /* ====================================================== */
 /* END OF TOPIC CONTEXT */
 /* ====================================================== */

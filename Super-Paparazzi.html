@@ -483,31 +483,35 @@
                          <!-- TOPIC CONTEXT -->
                          <div class="topic-context">
 
-                            Taking pictures is something that I'm personally very proud of.
-                            <br></br>
-                            Using a 
-                            "<a 
-                            href="https://dev.epicgames.com/documentation/en-us/unreal-engine/BlueprintAPI/Rendering/SceneCapture/CaptureScene" target="_blank">"
-                            Scene Capture Component 2D
-                            </a>" 
+                             <p>
+                                 Taking pictures is something that I'm personally very proud of.
+                             </p>
 
-                            (which is pretty much is a camera), it has 2 options that isn't needed:
+                             <p>
+                                 Using a
+                                 <a href="https://dev.epicgames.com/documentation/en-us/unreal-engine/BlueprintAPI/Rendering/SceneCapture/CaptureScene" target="_blank">
+                                     Scene Capture Component 2D
+                                 </a>
+                                 (which is essentially another camera), there are two options that weren't needed:
+                             </p>
 
-                            <ul>
-                                <br></br>
-                                <li>
-                                <strong>Capture Every Frame</strong>
-                                <strong>Capture on Movement</strong>
-                                </li>
-                                <br></br>
+                             <ul>
 
-                            </ul>
+                                 <li>
+                                     <strong>Capture Every Frame</strong>
+                                 </li>
 
-                            Since the camera only need to capture whatever the player points at once, capturing everything all the time isn't necessary here.
+                                 <li>
+                                     <strong>Capture on Movement</strong>
+                                 </li>
+
+                             </ul>
+
+                             <p>
+                                 Since the player only needs to capture what they're looking at when they press the button, continuously updating the scene every frame or whenever the camera moves would only waste performance.
+                             </p>
 
                          </div>
-
-                     </div>
                      <!-- END OF TOPIC TEXT -->
 
                  </div>

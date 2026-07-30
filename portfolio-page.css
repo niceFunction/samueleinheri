@@ -129,6 +129,7 @@
 
      --image-topic-context-size:20px;
 
+
 }
 
 /* ====================================================== */
@@ -1070,6 +1071,7 @@ body {
     font-family:var(--font-family);
 
     color:var(--font-color);
+    transform:translateY(20px);
 
 }
 

@@ -640,60 +640,33 @@ body {
 /* ====================================================== */
 /* START OF BLUEPRINT CONTAINER */
 /* ====================================================== */
-
 .blueprint-container{
 
     width:var(--blueprint-width);
-
     height:var(--blueprint-height);
-
     margin-top:var(--blueprint-top-offset);
-
     margin-left:auto;
     margin-right:auto;
 
 }
 
-/* ====================================================== */
-/* END OF BLUEPRINT CONTAINER */
-/* ====================================================== */
-
-
-/* ====================================================== */
 /* START OF BLUEPRINT TITLE */
-/* ====================================================== */
-
 .blueprint-title{
 
     margin:0;
-
     font-family:var(--font-family);
-
     font-size:var(--blueprint-title-size);
-
     font-weight:700;
-
     text-align:center;
-
     color:var(--font-color);
 
 }
 
-/* ====================================================== */
-/* END OF BLUEPRINT TITLE */
-/* ====================================================== */
-
-
-/* ====================================================== */
 /* START OF BLUEPRINT WIDGET */
-/* ====================================================== */
-
 .blueprint-widget-container{
 
     width:100%;
-
     height:var(--blueprint-widget-height);
-
     margin-top:var(--blueprint-widget-top-offset);
 
 }
@@ -701,13 +674,10 @@ body {
 .blueprint-widget-container iframe{
 
     width:100%;
-
     height:100%;
-
     border:none;
 
 }
-
 /* ====================================================== */
-/* END OF BLUEPRINT WIDGET */
+/* END OF BLUEPRINT CONTAINER */
 /* ====================================================== */

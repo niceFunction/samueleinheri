@@ -955,3 +955,26 @@ body {
 /* ====================================================== */
 /* END OF BLUEPRINT IMAGE CONTAINER */
 /* ====================================================== */
+
+/* ====================================================== */
+/* BLUEPRINT IMAGE LINKS */
+/* ====================================================== */
+
+.blueprint-image-text a{
+
+    color:var(--font-color);
+    text-decoration:underline;
+
+}
+
+.blueprint-image-text a:visited{
+
+    color:var(--font-color);
+
+}
+
+.blueprint-image-text a:hover{
+
+    color:var(--font-color);
+
+}

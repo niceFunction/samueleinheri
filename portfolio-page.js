@@ -1,25 +1,33 @@
-const parallaxImages = document.querySelectorAll(
-    ".responsibilities-parallax-left img, .responsibilities-parallax-right img"
-);
+const responsibilitiesContainer = document.querySelector(".responsibilities-container");
 
-const responsibilitiesContainer =
-document.querySelector(".responsibilities-container");
+if (responsibilitiesContainer) {
 
-window.addEventListener("scroll", () => {
+    const parallaxImages = responsibilitiesContainer.querySelectorAll(
+        ".responsibilities-parallax-left img, .responsibilities-parallax-right img"
+    );
 
-    const containerPosition =
-    responsibilitiesContainer.getBoundingClientRect();
+    function updateResponsibilitiesParallax() {
 
-    const windowHeight =
-    window.innerHeight;
+        const rect = responsibilitiesContainer.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
 
-    const movement =
-    (windowHeight / 2 - containerPosition.top) * 0.15;
+        // Only apply while the responsibilities section is visible.
+        if (rect.bottom <= 0 || rect.top >= windowHeight) {
+            return;
+        }
 
-    parallaxImages.forEach(image => {
+        const movement = (windowHeight / 2 - rect.top) * 0.15;
 
-        image.style.transform =
-        `translateY(${movement}px)`;
+        parallaxImages.forEach(img => {
+            img.style.transform = `translate3d(0, ${movement}px, 0)`;
+        });
+    }
 
+    updateResponsibilitiesParallax();
+
+    window.addEventListener("scroll", updateResponsibilitiesParallax, {
+        passive: true
     });
-});
+
+    window.addEventListener("resize", updateResponsibilitiesParallax);
+}

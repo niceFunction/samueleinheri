@@ -359,6 +359,11 @@ body {
 
 }
 
+.responsibilities-parallax-left img,
+.responsibilities-parallax-right img {
+    will-change: transform;
+}
+
 /* CENTER RESPONSIBILITIES CONTENT */
 .responsibilities-content {
 

@@ -120,6 +120,17 @@
      --simple-text-top-offset:50px;
      --simple-text-size:20px;
 
+     /* LEVEL VIDEO CONTAINER */
+
+     --level-video-width:980px;
+     --level-video-top-offset:50px;
+
+     --level-video-title-size:32px;
+
+     --level-video-player-width:980px;
+     --level-video-player-height:545px;
+     --level-video-player-top-offset:15px;
+
 }
 
 /* ====================================================== */
@@ -1116,4 +1127,58 @@ body {
 
 /* ====================================================== */
 /* END OF SIMPLE TEXT CONTAINER */
+/* ====================================================== */
+
+/* ====================================================== */
+/* START OF LEVEL VIDEO CONTAINER */
+/* ====================================================== */
+
+.level-video-container{
+
+    width:var(--level-video-width);
+    height:auto;
+    margin-top:var(--level-video-top-offset);
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+
+/* TITLE */
+
+.level-video-title{
+
+    margin:0;
+    font-family:var(--font-family);
+    font-size:var(--level-video-title-size);
+    font-weight:700;
+    text-align:center;
+    color:var(--font-color);
+
+}
+
+
+/* VIDEO PLAYER */
+
+.level-video-player{
+
+    width:var(--level-video-player-width);
+    height:var(--level-video-player-height);
+    margin-top:var(--level-video-player-top-offset);
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+
+.level-video-player iframe{
+
+    width:100%;
+    height:100%;
+    border:none;
+
+}
+
+/* ====================================================== */
+/* END OF LEVEL VIDEO CONTAINER */
 /* ====================================================== */

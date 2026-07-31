@@ -1239,7 +1239,6 @@ body {
 /* ====================================================== */
 /* START OF SIMPLE TEXT CONTAINER */
 /* ====================================================== */
-
 .simple-text-container{
 
     width:var(--simple-text-width);
@@ -1305,13 +1304,8 @@ body {
 }
 
 /* ====================================================== */
-/* END OF SIMPLE TEXT CONTAINER */
-/* ====================================================== */
-
-/* ====================================================== */
 /* START OF LEVEL VIDEO CONTAINER */
 /* ====================================================== */
-
 .level-video-container{
 
     width:var(--level-video-width);
@@ -1322,9 +1316,7 @@ body {
 
 }
 
-
 /* TITLE */
-
 .level-video-title{
 
     margin:0;
@@ -1336,9 +1328,7 @@ body {
 
 }
 
-
 /* VIDEO PLAYER */
-
 .level-video-player{
 
     width:var(--level-video-player-width);
@@ -1349,7 +1339,6 @@ body {
 
 }
 
-
 .level-video-player iframe{
 
     width:100%;
@@ -1357,7 +1346,3 @@ body {
     border:none;
 
 }
-
-/* ====================================================== */
-/* END OF LEVEL VIDEO CONTAINER */
-/* ====================================================== */

@@ -131,6 +131,36 @@
      --level-video-player-height:545px;
      --level-video-player-top-offset:15px;
 
+     /* ITCH LINK CONTAINER */
+
+     --itch-link-width:980px;
+
+     /*
+         Same offset as Steam link-container
+     */
+     --itch-link-top-offset:var(--link-top-offset);
+
+
+     /* EMBED */
+
+     --itch-embed-width:554px;
+     --itch-embed-height:169px;
+
+
+     /* BUTTON */
+
+     --itch-button-size:169px;
+
+     /*
+         Horizontal gap between embed and button
+     */
+     --itch-button-left-offset:40px;
+
+
+     /* BUTTON HOVER */
+
+     --itch-button-hover-scale:1.05;
+
 }
 
 /* ====================================================== */
@@ -348,7 +378,114 @@ body {
     border:none;
 
 }
+/* ====================================================== */
+/* ITCH LINK CONTAINER */
+/* ====================================================== */
 
+.itch-link-container {
+
+    width:var(--itch-link-width);
+
+    /*
+        Dynamic height:
+        determined automatically by content
+    */
+    height:auto;
+
+    margin-top:var(--itch-link-top-offset);
+
+    margin-left:auto;
+    margin-right:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+/* ====================================================== */
+/* ITCH EMBED */
+/* ====================================================== */
+
+.itch-embed-container {
+
+    width:var(--itch-embed-width);
+
+    height:var(--itch-embed-height);
+
+}
+
+
+.itch-embed-container iframe {
+
+    width:100%;
+
+    height:100%;
+
+    border:none;
+
+    display:block;
+
+}
+
+
+
+/* ====================================================== */
+/* ITCH EXTERNAL BUTTON */
+/* ====================================================== */
+
+
+.itch-external-button {
+
+    width:var(--itch-button-size);
+
+    height:var(--itch-button-size);
+
+
+    margin-left:var(--itch-button-left-offset);
+
+
+    background:var(--button-fill);
+
+    color:var(--button-font-color);
+
+
+    border:none;
+
+    cursor:pointer;
+
+
+    font-family:var(--font-family);
+
+    font-size:var(--project-button-font-size);
+
+    font-weight:700;
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+
+    transition:.2s;
+
+}
+
+
+/* HOVER EFFECT */
+
+.itch-external-button:hover {
+
+    transform:scale(var(--itch-button-hover-scale));
+
+}
 /* RESPONSIBILITIES CONTAINER */
 .responsibilities-container {
 

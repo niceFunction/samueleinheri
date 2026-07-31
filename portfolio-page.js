@@ -31,3 +31,31 @@ if (responsibilitiesContainer) {
 
     window.addEventListener("resize", updateResponsibilitiesParallax);
 }
+
+/* ====================================================== */
+/* ITCH.IO EXTERNAL BUTTON */
+/* ====================================================== */
+
+
+const itchButton =
+document.getElementById(
+    "well-death-happens-itch-button"
+);
+
+
+if (itchButton) {
+
+
+    itchButton.onclick = function(){
+
+
+        window.open(
+            WELL_DEATH_HAPPENS_EXTERNAL_LINK,
+            "_blank"
+        );
+
+
+    };
+
+
+}

@@ -538,8 +538,10 @@ body {
 
 .single-specific-content{
 
-    width:100%;
+    width:980px;
     margin-top:var(--single-specific-content-top-offset);
+    margin-left:auto;
+    margin-right:auto;
     display:flex;
     justify-content:center;
     align-items:flex-start;
@@ -551,7 +553,7 @@ body {
 
 .single-specific-item{
 
-    width:450px;
+    width:860px;
     height:auto;
     text-align:center;
 

@@ -18,7 +18,11 @@
 
 <!-- HEADER CSS -->
 <link rel="stylesheet" href="./header.css">
+<!-- BACK TO THE TOP -->
+<link rel="stylesheet" href="./back-to-the-top.css">
 
+<!-- PORTFOLIO PAGE CSS -->
+<link rel="stylesheet" href="./portfolio-page.css">
 
 </head>
 
@@ -32,8 +36,98 @@
 
 <div class="page-content">
 
-    <!-- Well, Death Happens content goes here -->
+    
+    <!-- ================================================= -->
+    <!-- INTRO CONTAINER -->
+    <!-- ================================================= -->
+    <div class="intro-container">
 
+        <!-- PROJECT TITLE -->
+        <h1 class="project-title">
+            Well, Death Happens
+        </h1>
+
+        <!-- ================================================= -->
+        <!-- YOUTUBE VIDEO -->
+        <!-- ================================================= -->
+
+        <div class="video-container">
+            
+            <iframe 
+                class="project-video"
+                src="https://www.youtube-nocookie.com/embed/z5sZtgL7NpU"
+                title="Well, Death Happens"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <!-- ================================================= -->
+        <!-- DETAILS CONTAINER -->
+        <!-- ================================================= -->
+        <div class="details-container">
+
+            <!-- LEFT SIDE -->
+            <div class="about-background-container">
+
+                <!-- ABOUT -->
+                <div class="about-container">
+
+                    <strong><u>About</u></strong>
+
+                    <p>
+                        In "Well, Death Happens", the goal is simple: get from the start of the level to the Flag that signifies the end of the level.
+                        <br></br>
+                        The only thing that the Player has access to is platform movement & the games core mechanic: when you die you create a "Corpse", this "Corpse" can be used as a platform to get over hazardous sections in the game's levels. However, the supply of "Corpses" is limited.
+                        <br></br>
+                        If the Player uses up all of their "Corpses", they have to start over from the beginning. So use your "Deaths" wisely...
+                    </p>
+
+                </div>
+
+                <!-- BACKGROUND -->
+                <div class="background-container">
+
+                    <strong><u>Background</u></strong>
+
+                    <p>
+                        My personal goal with this project was to learn the ins & outs of Godot & create a game with relatively simple features/mechanics that I could implement on my own. 
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="info-container">
+
+                <div class="details-title">
+                    Details
+                </div>
+
+                <p><strong>Engine:</strong> Godot 3.2</p>
+                <p><strong>Genre:</strong> Platformer, Puzzle</p>
+                <p><strong>Team Size:</strong> 1</p>
+                <p><strong>Role:</strong> Game- & Technical Design</p>
+                <p><strong>Platform:</strong> PC</p>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- BACK TO THE TOP BUTTON -->
+    <div class="back-to-top-container">
+
+        <button
+            id="back-to-top-button"
+            class="learn-more-button">
+
+            BACK TO THE TOP
+
+        </button>
+
+    </div>
 </div>
 
 <!-- JAVASCRIPT -->
@@ -45,6 +139,9 @@ SITE_SETTINGS.pageBackground;
 </script>
 
 <script src="./header.js"></script>
+<script src="./back-to-the-top.js"></script>
+<!-- PORTFOLIO PAGE JAVASCRIPT -->
+<script src="./portfolio-page.js"></script>
 
 </body>
 </html>

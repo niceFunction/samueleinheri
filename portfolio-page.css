@@ -105,7 +105,11 @@
      --image-topic-text-left-offset:15px;
      --image-topic-sub-title-size:22px;
      --image-topic-context-size:20px;
-
+     
+     /* SIMPLE TEXT CONTAINER */
+     --simple-text-width:980px;
+     --simple-text-top-offset:50px;
+     --simple-text-size:20px;
 
 }
 
@@ -873,10 +877,6 @@ body {
 }
 
 /* ====================================================== */
-/* END OF SCREENSHOT CONTAINER */
-/* ====================================================== */
-
-/* ====================================================== */
 /* START OF BLUEPRINT IMAGE CONTAINER */
 /* ====================================================== */
 
@@ -928,7 +928,6 @@ body {
 
     margin-left:var(--image-topic-text-left-offset);
     flex:1;
-
     font-family:var(--font-family);
     color:var(--font-color);
 
@@ -938,7 +937,6 @@ body {
 .blueprint-image-text h3{
 
     margin:0;
-
     font-size:var(--topic-sub-title-size);
     font-weight:700;
 
@@ -952,14 +950,7 @@ body {
 
 }
 
-/* ====================================================== */
-/* END OF BLUEPRINT IMAGE CONTAINER */
-/* ====================================================== */
-
-/* ====================================================== */
 /* BLUEPRINT IMAGE LINKS */
-/* ====================================================== */
-
 .blueprint-image-text a{
 
     color:var(--font-color);
@@ -978,3 +969,55 @@ body {
     color:var(--font-color);
 
 }
+
+/* ====================================================== */
+/* START OF SIMPLE TEXT CONTAINER */
+/* ====================================================== */
+
+.simple-text-container{
+
+    width:var(--simple-text-width);
+    height:auto;
+    margin-top:var(--simple-text-top-offset);
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+/* TEXT BOX */
+.simple-text-content{
+
+    width:100%;
+    font-family:var(--font-family);
+    font-size:var(--simple-text-size);
+    color:var(--font-color);
+    text-align:left;
+
+}
+
+/* LIST */
+.simple-text-content ul{
+
+    margin-top:10px;
+    margin-bottom:10px;
+    padding-left:40px;
+
+}
+
+/* SUB BULLET */
+.simple-text-content ul ul{
+
+    margin-top:5px;
+
+}
+
+/* PARAGRAPHS */
+.simple-text-content p{
+
+    margin:10px 0;
+
+}
+
+/* ====================================================== */
+/* END OF SIMPLE TEXT CONTAINER */
+/* ====================================================== */

@@ -1102,6 +1102,26 @@ body {
 
 }
 
+/* SIMPLE TEXT CONTENT LINKS */
+.simple-text-content a{
+
+    color:var(--font-color);
+    text-decoration:underline;
+
+}
+
+.simple-text-content a:visited{
+
+    color:var(--font-color);
+
+}
+
+.simple-text-content a:hover{
+
+    color:var(--font-color);
+
+}
+
 /* LIST */
 .simple-text-content ul{
 

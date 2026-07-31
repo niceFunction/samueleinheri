@@ -56,6 +56,15 @@
     --specific-item-title-size:24px;
     --specific-item-text-size:20px;
 
+    /* SINGLE SPECIFIC CONTAINER */
+     --single-specific-width:980px;
+     --single-specific-top-offset:50px;
+     --single-specific-title-size:40px;
+     --single-specific-content-top-offset:20px;
+     --single-specific-item-width:450px;
+     --single-specific-item-title-size:24px;
+     --single-specific-item-text-size:20px;
+
     /* TOPIC CONTAINER */
     --topic-width:1028px;
     --topic-top-offset:50px;
@@ -495,6 +504,84 @@ body {
     color:var(--font-color);
 
 }
+
+/* ====================================================== */
+/* START OF SINGLE SPECIFIC CONTAINER */
+/* ====================================================== */
+
+.single-specific-container{
+
+    width:var(--single-specific-width);
+    height:auto;
+    margin-top:var(--single-specific-top-offset);
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+
+/* TITLE */
+
+.single-specific-title{
+
+    margin:0;
+    font-family:var(--font-family);
+    font-size:var(--single-specific-title-size);
+    font-weight:700;
+    text-align:center;
+    color:var(--font-color);
+
+}
+
+
+/* CONTENT */
+
+.single-specific-content{
+
+    margin-top:var(--single-specific-content-top-offset);
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+
+}
+
+
+/* SINGLE ITEM */
+
+.single-specific-item{
+
+    width:var(--single-specific-item-width);
+    height:auto;
+
+}
+
+
+/* ITEM TITLE */
+
+.single-specific-item-title{
+
+    margin:0;
+    font-family:var(--font-family);
+    font-size:var(--single-specific-item-title-size);
+    font-weight:700;
+    text-align:center;
+    color:var(--font-color);
+
+}
+
+
+/* ITEM CONTEXT */
+
+.single-specific-item-context{
+
+    margin-top:10px;
+    font-family:var(--font-family);
+    font-size:var(--single-specific-item-text-size);
+    text-align:center;
+    color:var(--font-color);
+
+}
+
 
 /* ====================================================== */
 /* START OF TOPIC CONTAINER */

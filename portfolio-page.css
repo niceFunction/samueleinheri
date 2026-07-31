@@ -653,10 +653,32 @@ body {
 
 }
 
+/* SPECIFIC CONTAINER LINKS */
+.specific-1-context a,
+.specific-2-context a{
+
+    color:var(--font-color);
+    text-decoration:underline;
+
+}
+
+.specific-1-context a:visited,
+.specific-2-context a:visited{
+
+    color:var(--font-color);
+
+}
+
+.specific-1-context a:hover,
+.specific-2-context a:hover{
+
+    color:var(--font-color);
+
+}
+
 /* ====================================================== */
 /* START OF SINGLE SPECIFIC CONTAINER */
 /* ====================================================== */
-
 .single-specific-container{
 
     width:980px;

@@ -875,3 +875,83 @@ body {
 /* ====================================================== */
 /* END OF SCREENSHOT CONTAINER */
 /* ====================================================== */
+
+/* ====================================================== */
+/* START OF BLUEPRINT IMAGE CONTAINER */
+/* ====================================================== */
+
+/* CONTAINER */
+.blueprint-image-container{
+
+    width:var(--image-topic-width);
+    height:auto;
+    margin-top:var(--image-topic-top-offset);
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+/* CONTENT */
+.blueprint-image-content{
+
+    width:var(--image-topic-content-width);
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+/* ROW */
+.blueprint-image-row{
+
+    display:flex;
+    align-items:flex-start;
+
+}
+
+/* IMAGE */
+.blueprint-image{
+
+    flex-shrink:0;
+
+}
+
+/* IMAGE */
+.blueprint-image img{
+
+    display:block;
+    object-fit:fill;
+
+}
+
+/* TEXT */
+.blueprint-image-text{
+
+    margin-left:var(--image-topic-text-left-offset);
+    flex:1;
+
+    font-family:var(--font-family);
+    color:var(--font-color);
+
+}
+
+/* TITLE */
+.blueprint-image-text h3{
+
+    margin:0;
+
+    font-size:var(--topic-sub-title-size);
+    font-weight:700;
+
+}
+
+/* PARAGRAPH */
+.blueprint-image-text p{
+
+    margin-top:10px;
+    font-size:var(--image-topic-context-size);
+
+}
+
+/* ====================================================== */
+/* END OF BLUEPRINT IMAGE CONTAINER */
+/* ====================================================== */

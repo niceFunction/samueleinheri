@@ -578,6 +578,7 @@ body {
 
 .single-specific-item-context{
 
+    width:860px;
     margin-top:10px;
     font-family:var(--font-family);
     font-size:20px;

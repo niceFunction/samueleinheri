@@ -376,15 +376,44 @@
     padding:0;
     cursor:pointer;
     background:none;
+    position:relative;
 
 }
 
 
+/* BOTH IMAGES */
 .portfolio-image-button img {
 
+    position:absolute;
+    left:0;
+    top:0;
     width:100%;
     height:100%;
     object-fit:cover;
+    transition:opacity .2s ease;
+
+}
+
+
+/* HOVER IMAGE HIDDEN BY DEFAULT */
+.profile-image-hover {
+
+    opacity:0;
+
+}
+
+
+/* SWITCH IMAGES ON HOVER */
+.portfolio-image-button:hover .profile-image-normal {
+
+    opacity:0;
+
+}
+
+
+.portfolio-image-button:hover .profile-image-hover {
+
+    opacity:1;
 
 }
 

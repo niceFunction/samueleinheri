@@ -1538,3 +1538,83 @@ body {
     display:block;
 
 }
+
+/* ====================================================== */
+/* GENERIC LINK CONTAINER */
+/* ====================================================== */
+
+.generic-link-container{
+
+    width:var(--itch-link-width);
+
+    height:auto;
+
+    margin-top:var(--itch-link-top-offset);
+
+    margin-left:auto;
+    margin-right:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+/* ====================================================== */
+/* GENERIC BUTTONS */
+/* ====================================================== */
+
+.generic-button-1,
+.generic-button-2{
+
+    width:var(--itch-button-size);
+
+    height:var(--itch-button-size);
+
+    border:none;
+
+    cursor:pointer;
+
+    background:var(--button-fill);
+
+    color:var(--button-font-color);
+
+    font-family:var(--font-family);
+
+    font-size:var(--project-button-font-size);
+
+    font-weight:700;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    transition:.2s;
+
+}
+
+
+/* Only button #2 gets the horizontal spacing */
+
+.generic-button-2{
+
+    margin-left:var(--itch-button-left-offset);
+
+}
+
+
+/* Hover */
+
+.generic-button-1:hover,
+.generic-button-2:hover{
+
+    transform:scale(var(--itch-button-hover-scale));
+
+}

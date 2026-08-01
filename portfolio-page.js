@@ -82,3 +82,31 @@ document
     };
 
 });
+
+/* ====================================================== */
+/* GENERIC LINK BUTTONS */
+/* ====================================================== */
+
+document
+.querySelectorAll(
+    ".generic-button-1, .generic-button-2"
+)
+.forEach(function(button){
+
+    button.onclick = function(){
+
+        const link =
+        this.dataset.link;
+
+        if(link){
+
+            window.open(
+                link,
+                "_blank"
+            );
+
+        }
+
+    };
+
+});

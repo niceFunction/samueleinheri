@@ -151,9 +151,7 @@
 
      --itch-button-size:169px;
 
-     /*
-         Horizontal gap between embed and button
-     */
+     /* Horizontal gap between embed and button */
      --itch-button-left-offset:40px;
 
 
@@ -161,6 +159,35 @@
 
      --itch-button-hover-scale:1.05;
 
+     /* ====================================================== */
+     /* CODE CONTAINER */
+     /* ====================================================== */
+
+     --code-container-width:980px;
+     --code-container-top-offset:60px;
+
+     /* INTRO */
+
+     --code-intro-width:750px;
+     --code-intro-text-width:550px;
+
+     --code-intro-title-size:22px;
+     --code-intro-text-size:20px;
+
+     /* BUTTONS */
+
+     --code-buttons-width:150px;
+     --code-button-width:150px;
+     --code-button-height:50px;
+
+     --code-button-gap:20px;
+
+     --code-button-hover-scale:1.05;
+
+     /* GITHUB WIDGET */
+
+     --code-widget-top-offset:80px;
+     --code-widget-height:835px;
 }
 
 /* ====================================================== */
@@ -1344,5 +1371,170 @@ body {
     width:100%;
     height:100%;
     border:none;
+
+}
+
+/* ====================================================== */
+/* CODE CONTAINER */
+/* ====================================================== */
+
+.code-container{
+
+    width:var(--code-container-width);
+
+    height:auto;
+
+    margin-top:var(--code-container-top-offset);
+
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+
+/* ====================================================== */
+/* INTRO ROW */
+/* ====================================================== */
+
+.code-intro{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-start;
+
+}
+
+
+/* ====================================================== */
+/* INTRO TEXT */
+/* ====================================================== */
+
+.code-intro-text{
+
+    width:var(--code-intro-text-width);
+
+    height:auto;
+
+    font-family:var(--font-family);
+
+    color:var(--font-color);
+
+}
+
+
+/* TITLE */
+
+.code-intro-title{
+
+    margin:0;
+
+    font-size:var(--code-intro-title-size);
+
+    font-weight:700;
+
+}
+
+
+/* BODY */
+
+.code-intro-text p{
+
+    margin-top:10px;
+
+    font-size:var(--code-intro-text-size);
+
+    font-weight:400;
+
+}
+
+
+/* ====================================================== */
+/* BUTTON COLUMN */
+/* ====================================================== */
+
+.code-intro-buttons{
+
+    width:var(--code-buttons-width);
+
+    height:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+/* BUTTON */
+
+.code-intro-button{
+
+    width:var(--code-button-width);
+
+    height:var(--code-button-height);
+
+    border:none;
+
+    cursor:pointer;
+
+    font-family:var(--font-family);
+
+    font-weight:700;
+
+    transition:.2s;
+
+    background:var(--button-fill);
+
+    color:var(--button-font-color);
+
+}
+
+
+/* Every button except the first */
+
+.code-intro-button + .code-intro-button{
+
+    margin-top:var(--code-button-gap);
+
+}
+
+
+/* Hover */
+
+.code-intro-button:hover{
+
+    transform:scale(var(--code-button-hover-scale));
+
+}
+
+
+/* ====================================================== */
+/* GITHUB WIDGET */
+/* ====================================================== */
+
+.github-widget{
+
+    width:100%;
+
+    height:var(--code-widget-height);
+
+    margin-top:var(--code-widget-top-offset);
+
+}
+
+
+.github-widget iframe{
+
+    width:100%;
+
+    height:100%;
+
+    border:none;
+
+    display:block;
 
 }

@@ -54,8 +54,31 @@ if (itchButton) {
             "_blank"
         );
 
+    };
+
+}
+
+/* ====================================================== */
+/* CODE CONTAINER BUTTONS */
+/* ====================================================== */
+document
+.querySelectorAll(".code-intro-button")
+.forEach(function(button){
+
+    button.onclick = function(){
+
+        const link =
+        this.dataset.link;
+
+        if(link){
+
+            window.open(
+                link,
+                "_blank"
+            );
+
+        }
 
     };
 
-
-}
+});

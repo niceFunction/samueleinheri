@@ -39,17 +39,10 @@
 
         <!-- IMAGE BUTTON -->
         <button class="portfolio-image-button">
-
             <img
-                class="profile-image-normal"
+                id="profile-image"
                 src="./ABOUT/Samuel_Einheri.webp"
-                alt="Samuel Einheri">
-
-            <img
-                class="profile-image-hover"
-                src="./ABOUT/Hi_Samuel_Einheri.webp"
-                alt="Samuel Einheri saying Hi">
-
+                alt="Samuel">
         </button>
 
 
@@ -871,6 +864,31 @@ document.querySelector(".portfolio-image-button").onclick = function(){
     window.location.href = SITE_REFERENCES.about;
 
 };
+
+const profileButton =
+document.querySelector(".portfolio-image-button");
+
+const profileImage =
+document.getElementById("profile-image");
+
+/* Preload hover image */
+const hoverImage = new Image();
+hoverImage.src =
+"./ABOUT/Hi_Samuel_Einheri.webp";
+
+profileButton.addEventListener("mouseenter", function(){
+
+    profileImage.src =
+    "./ABOUT/Hi_Samuel_Einheri.webp";
+
+});
+
+profileButton.addEventListener("mouseleave", function(){
+
+    profileImage.src =
+    "./ABOUT/Samuel_Einheri.webp";
+
+});
 
 /* ICON BUTTONS */
 /* MAIL */

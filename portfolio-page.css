@@ -168,7 +168,7 @@
 
      /* INTRO */
 
-     --code-intro-width:750px;
+     --code-intro-width:700px;
      --code-intro-text-width:550px;
 
      --code-intro-title-size:22px;
@@ -1398,7 +1398,7 @@ body {
 
 .code-intro{
 
-    width:850px;
+    width:100%;
 
     display:flex;
 

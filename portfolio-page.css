@@ -1377,76 +1377,54 @@ body {
 /* ====================================================== */
 /* CODE CONTAINER */
 /* ====================================================== */
-
 .code-container{
 
     width:var(--code-container-width);
-
     height:auto;
-
     margin-top:var(--code-container-top-offset);
-
     margin-left:auto;
     margin-right:auto;
 
 }
 
-
 /* ====================================================== */
 /* INTRO ROW */
 /* ====================================================== */
-
 .code-intro{
 
     width:100%;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:flex-start;
 
 }
 
-
 /* ====================================================== */
 /* INTRO TEXT */
 /* ====================================================== */
-
 .code-intro-text{
 
     width:var(--code-intro-text-width);
-
     height:auto;
-
     font-family:var(--font-family);
-
     color:var(--font-color);
 
 }
 
-
 /* TITLE */
-
 .code-intro-title{
 
     margin:0;
-
     font-size:var(--code-intro-title-size);
-
     font-weight:700;
 
 }
 
-
 /* BODY */
-
 .code-intro-text p{
 
     margin-top:10px;
-
     font-size:var(--code-intro-text-size);
-
     font-weight:400;
 
 }
@@ -1455,47 +1433,32 @@ body {
 /* ====================================================== */
 /* BUTTON COLUMN */
 /* ====================================================== */
-
 .code-intro-buttons{
 
     width:var(--code-buttons-width);
-
     height:auto;
-
     display:flex;
-
     flex-direction:column;
 
 }
 
-
 /* BUTTON */
-
 .code-intro-button{
 
     width:var(--code-button-width);
-
     height:var(--code-button-height);
-
     border:none;
-
     cursor:pointer;
-
     font-family:var(--font-family);
-
     font-weight:700;
-
     transition:.2s;
-
     background:var(--button-fill);
-
     color:var(--button-font-color);
 
 }
 
 
 /* Every button except the first */
-
 .code-intro-button + .code-intro-button{
 
     margin-top:var(--code-button-gap);
@@ -1504,24 +1467,19 @@ body {
 
 
 /* Hover */
-
 .code-intro-button:hover{
 
     transform:scale(var(--code-button-hover-scale));
 
 }
 
-
 /* ====================================================== */
 /* GITHUB WIDGET */
 /* ====================================================== */
-
 .github-widget{
 
     width:100%;
-
     height:var(--code-widget-height);
-
     margin-top:var(--code-widget-top-offset);
 
 }
@@ -1530,11 +1488,8 @@ body {
 .github-widget iframe{
 
     width:100%;
-
     height:100%;
-
     border:none;
-
     display:block;
 
 }
@@ -1542,60 +1497,38 @@ body {
 /* ====================================================== */
 /* GENERIC LINK CONTAINER */
 /* ====================================================== */
-
 .generic-link-container{
 
     width:var(--itch-link-width);
-
     height:auto;
-
     margin-top:var(--itch-link-top-offset);
-
     margin-left:auto;
     margin-right:auto;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
 }
 
-
 /* ====================================================== */
 /* GENERIC BUTTONS */
 /* ====================================================== */
-
 .generic-button-1,
 .generic-button-2{
 
     width:var(--itch-button-size);
-
     height:var(--itch-button-size);
-
     border:none;
-
     cursor:pointer;
-
     background:var(--button-fill);
-
     color:var(--button-font-color);
-
     font-family:var(--font-family);
-
     font-size:var(--project-button-font-size);
-
     font-weight:700;
-
     display:flex;
-
     justify-content:center;
-
     align-items:center;
-
     text-align:center;
-
     transition:.2s;
 
 }

@@ -1539,7 +1539,8 @@ body {
 
     width:169px;
     height:169px;
-    object-fit:cover;
+    flex-shrink:0;
+    object-fit:contain;
 
 }
 

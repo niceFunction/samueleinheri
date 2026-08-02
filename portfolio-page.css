@@ -193,8 +193,26 @@
 /* ====================================================== */
 /* GLOBAL PAGE SETTINGS */
 /* ====================================================== */
+
+html {
+
+    scroll-behavior:smooth;
+
+}
+
 body {
     margin:0;
+}
+
+/* ====================================================== */
+/* SCROLL TARGET OFFSET */
+/* ====================================================== */
+
+.blueprint-title,
+.code-container {
+
+    scroll-margin-top:155px;
+
 }
 
 /* ====================================================== */
@@ -1551,15 +1569,27 @@ body {
 /* BUTTON */
 .code-intro-button{
 
+
     width:var(--code-button-width);
     height:var(--code-button-height);
+
     border:none;
     cursor:pointer;
+
     font-family:var(--font-family);
     font-weight:700;
-    transition:.2s;
+
     background:var(--button-fill);
     color:var(--button-font-color);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    text-decoration:none;
+
+    transition:.2s;
 
 }
 

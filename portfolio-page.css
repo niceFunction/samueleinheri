@@ -1290,45 +1290,28 @@ body {
 
 .blueprint-image-buttons {
 
-
-    /*
-        Places buttons below the text
-    */
     margin-top:30px;
 
-
-    /*
-        Centers buttons horizontally
-        under the text box
-    */
     display:flex;
 
     flex-direction:column;
 
     align-items:center;
 
-
-    /*
-        Allows buttons to size correctly
-    */
     width:100%;
-
 
 }
 
 
-/* ====================================================== */
-/* LEVEL GENERATION BUTTON STYLE */
-/* ====================================================== */
-
+/* SAME BUTTON BEHAVIOUR AS CODE INTRO BUTTONS */
 
 .blueprint-image-buttons .code-intro-button {
-
 
     width:260px;
     height:50px;
 
     border:none;
+
     cursor:pointer;
 
     font-family:var(--font-family);
@@ -1347,54 +1330,48 @@ body {
 
     text-align:center;
 
-    transition:.2s;
-
-
     text-decoration:none;
+
     box-sizing:border-box;
 
+    transition:transform .2s ease, color 0s;
 
 }
 
-.blueprint-image-buttons .code-intro-button:visited {
+
+/* REMOVE LINK STATE CHANGES */
+
+.blueprint-image-buttons .code-intro-button:visited,
+.blueprint-image-buttons .code-intro-button:active,
+.blueprint-image-buttons .code-intro-button:focus {
 
     color:var(--button-font-color);
 
 }
 
-/*
-    SECOND BUTTON OFFSET
-*/
+
+/* SECOND BUTTON GAP */
 
 .blueprint-image-buttons 
 .code-intro-button + 
 .code-intro-button {
 
-
     margin-top:20px;
 
-
 }
 
 
+/* EXACT SAME HOVER BEHAVIOUR */
 
-/*
-    HOVER EFFECT
-*/
+.blueprint-image-buttons .code-intro-button:hover {
 
-.blueprint-image-buttons 
-.code-intro-button:hover {
-
-
-    transform:scale(1.05);
-
+    transform:scale(var(--code-button-hover-scale));
 
 }
-
-
 /* ====================================================== */
 /* END OF LEVEL GENERATION BUTTONS */
 /* ====================================================== */
+
 /* ====================================================== */
 /* START OF SIMPLE TEXT CONTAINER */
 /* ====================================================== */
@@ -1614,6 +1591,17 @@ body {
 .code-intro-button:hover{
 
     transform:scale(var(--code-button-hover-scale));
+
+}
+
+a.code-intro-button,
+a.code-intro-button:visited,
+a.code-intro-button:hover,
+a.code-intro-button:active,
+a.code-intro-button:focus {
+
+    color:var(--button-font-color);
+    text-decoration:none;
 
 }
 

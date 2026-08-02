@@ -1546,7 +1546,7 @@ body {
     min-height:169px;
     max-height:169px;
 
-    object-fit:cover;
+    object-fit:fill;
 
     display:block;
 

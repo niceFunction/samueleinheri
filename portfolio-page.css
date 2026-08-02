@@ -1356,7 +1356,11 @@ body {
 
 }
 
+.blueprint-image-buttons .code-intro-button:visited {
 
+    color:var(--button-font-color);
+
+}
 
 /*
     SECOND BUTTON OFFSET

@@ -19,6 +19,11 @@
 <!-- HEADER CSS -->
 <link rel="stylesheet" href="./header.css">
 
+<!-- BACK TO THE TOP -->
+<link rel="stylesheet" href="./back-to-the-top.css">
+
+<!-- PORTFOLIO PAGE CSS -->
+<link rel="stylesheet" href="./portfolio-page.css">
 
 </head>
 
@@ -32,7 +37,229 @@
 
 <div class="page-content">
 
-    <!-- BEPPUS content goes here -->
+    <!-- ================================================= -->
+    <!-- INTRO CONTAINER -->
+    <!-- ================================================= -->
+    <div class="intro-container">
+
+        <!-- PROJECT TITLE -->
+        <h1 class="project-title">
+            BEPPUS
+        </h1>
+
+        <!-- YOUTUBE VIDEO -->
+        <div class="video-container">
+
+            <iframe 
+                class="project-video"
+                src="https://www.youtube-nocookie.com/embed/awNNiZr93w4"
+                title="BEPPUS"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+        <!-- DETAILS CONTAINER -->
+        <div class="details-container">
+
+            <!-- LEFT SIDE -->
+            <div class="about-background-container">
+
+                <!-- ABOUT -->
+                <div class="about-container">
+
+                    <strong><u>About</u></strong>
+
+                    <p>
+                        BEPPUS is a game where <strong>Lemmings</strong> meets <strong>Oddworld: Abe’s Oddysee</strong>. Similar to Lemmings, the minions in BEPPUS have no will of their own & will walk back & forth until they encounter a wall or fall off a cliff.
+                        <br></br>
+                        Meanwhile taking inspiration from Oddworld, you can take individual control over a minion to perform specialized tasks by using <strong>special abilities</strong> that often end with a gruesome result in order to get to the goal of the level.
+                    </p>
+
+                </div>
+
+                <!-- BACKGROUND -->
+                <div class="background-container">
+
+                    <strong><u>Background</u></strong>
+
+                    <p>
+                        Our 4th game project in school, we were tasked to create a 20 minute platforming experience. 
+                        <br></br>
+                        In this project, we didn't have any dedicated artists so we got a budget to buy assets from the Unreal Marketplace.
+                    </p>
+
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="info-container">
+
+                <div class="details-title">
+                    Details
+                </div>
+
+                <p><strong>Engine:</strong> Unreal Engine 4.27</p>
+                <p><strong>Genre:</strong> Platformer, Puzzle</p>
+                <p><strong>Team Size:</strong> 6</p>
+                <p><strong>Role:</strong> Level Design</p>
+                <p><strong>Platform:</strong> PC</p>
+
+            </div>
+        </div>
+    </div>
+    <!-- ================================================= -->
+    <!-- END OF INTRO CONTAINER -->
+    <!-- ================================================= -->
+    
+    <!-- ================================================= -->
+    <!-- GAME WIDGET + LINK CONTAINER START -->
+    <!-- ================================================= -->
+    <div class="itch-link-container">
+
+        <!-- CUSTOM GAME WIDGET START -->
+
+        <div
+            class="custom-game-widget"
+
+            style="
+                --widget-background:#116640;
+                --widget-outline:#D40000;
+                --widget-text:#4EC795;
+                --itch-button-fill:#D40000;
+                --itch-button-font:#FFFFFF;
+            ">
+
+            <!-- GAME COVER -->
+            <img
+                class="custom-game-widget-image"
+                src="./PORTFOLIO/BEPPUS_Banner.webp"
+                alt="BEPPUS Cover">
+
+            <!-- GAME INFO -->
+                <div class="custom-game-widget-content">
+
+                    <h3>
+                        BEPPUS
+                    </h3>
+
+                    <p>
+                        by BEPPUS Team
+                    </p>
+
+                    <a
+                        href="https://futuregames.itch.io/fg20-ft-gp4-beppus"
+                        target="_blank">
+
+                        Download on Itch.io
+
+                    </a>
+
+                </div>
+            </div>
+        <!-- CUSTOM GAME WIDGET END -->
+
+        <!-- DESIGN DOCUMENT BUTTON START -->
+        <button
+
+            class="itch-external-button"
+
+            data-link="./PORTFOLIO-PAGES/DreamWalker_GDD.pdf"
+
+            style="
+                --button-fill:#7D5FFF;
+                --button-font-color:#FFFFFF;
+            ">
+
+            DESIGN DOCUMENT
+
+        </button>
+        <!-- DESIGN DOCUMENT BUTTON END -->
+
+    </div>
+    <!-- ================================================= -->
+    <!-- GAME WIDGET + LINK CONTAINER END -->
+    <!-- ================================================= -->
+    
+    <!-- ================================================= -->
+    <!-- RESPONSIBILITIES CONTAINER -->
+    <!-- ================================================= -->
+    <div class="responsibilities-container">
+
+        <!-- LEFT PARALLAX IMAGE -->
+        <div class="responsibilities-parallax-left">
+
+            <img src="./PORTFOLIO-PAGES/BEPPUS_Cover1.webp">
+
+        </div>
+
+        <!-- CENTER CONTENT -->
+        <div class="responsibilities-content">
+
+            <div class="responsibilities-text-box">
+
+                <h2>
+                    RESPONSIBILITIES
+                </h2>
+
+                <!-- START OF RESPONSIBILITY 1-->
+                <h3>
+                    Level Design
+                </h3>
+
+                <ul>
+
+                    <li>
+                        Create tutorial levels that taught the player the game's mechanics
+                    </li>
+
+                </ul>
+                <!-- END OF RESPONSIBILITY 1 -->
+
+                <!-- START OF RESPONSIBILITY 2 -->
+                <h3>
+                    User Interface Design
+                </h3>
+
+                <ul>
+                    <li>
+                        Sketched Main Menu & in game menu elements
+                    </li>
+
+                    <li>
+                        Worked closely with a programmer in implementing the menu elements
+                    </li>
+
+                </ul>
+                <!-- END OF RESPONSIBILITY 2 -->
+                
+            </div>
+        </div>
+
+        <!-- RIGHT PARALLAX IMAGE -->
+        <div class="responsibilities-parallax-right">
+
+            <img src="./PORTFOLIO-PAGES/BEPPUS_Cover2.webp">
+
+        </div>
+    </div>
+    <!-- ========================================= -->
+    <!-- END OF RESPONSIBILITIES -->
+    <!-- ========================================= -->
+
+    <!-- BACK TO THE TOP BUTTON -->
+    <div class="back-to-top-container">
+
+        <button
+            id="back-to-top-button"
+            class="learn-more-button">
+
+            BACK TO THE TOP
+
+        </button>
+
+    </div>
 
 </div>
 
@@ -45,6 +272,11 @@ SITE_SETTINGS.pageBackground;
 </script>
 
 <script src="./header.js"></script>
+
+<script src="./back-to-the-top.js"></script>
+
+<!-- PORTFOLIO PAGE JAVASCRIPT -->
+<script src="./portfolio-page.js"></script>
 
 </body>
 </html>

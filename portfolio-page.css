@@ -1265,7 +1265,133 @@ body {
     color:var(--font-color);
 
 }
+/* ====================================================== */
+/* START OF LEVEL GENERATION BUTTONS */
+/* ====================================================== */
 
+
+.blueprint-image-buttons {
+
+
+    /*
+        Places buttons below the text
+    */
+    margin-top:30px;
+
+
+    /*
+        Centers buttons horizontally
+        under the text box
+    */
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+
+    /*
+        Allows buttons to size correctly
+    */
+    width:100%;
+
+
+}
+
+
+/* ====================================================== */
+/* LEVEL GENERATION BUTTON STYLE */
+/* ====================================================== */
+
+
+.blueprint-image-buttons .code-intro-button {
+
+
+    /*
+        REQUIRED HEIGHT
+    */
+    height:50px;
+
+
+    /*
+        Button width adjusts based
+        on text length
+    */
+    width:max-content;
+
+
+    min-width:150px;
+
+
+    padding-left:20px;
+
+    padding-right:20px;
+
+
+    border:none;
+
+    cursor:pointer;
+
+
+    font-family:var(--font-family);
+
+    font-weight:700;
+
+
+    background:var(--button-fill);
+
+    color:var(--button-font-color);
+
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+
+    transition:.2s;
+
+
+}
+
+
+
+/*
+    SECOND BUTTON OFFSET
+*/
+
+.blueprint-image-buttons 
+.code-intro-button + 
+.code-intro-button {
+
+
+    margin-top:20px;
+
+
+}
+
+
+
+/*
+    HOVER EFFECT
+*/
+
+.blueprint-image-buttons 
+.code-intro-button:hover {
+
+
+    transform:scale(1.05);
+
+
+}
+
+
+/* ====================================================== */
+/* END OF LEVEL GENERATION BUTTONS */
+/* ====================================================== */
 /* ====================================================== */
 /* START OF SIMPLE TEXT CONTAINER */
 /* ====================================================== */

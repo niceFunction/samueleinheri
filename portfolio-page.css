@@ -1509,7 +1509,100 @@ body {
     align-items:center;
 
 }
+/* ====================================================== */
+/* CUSTOM GAME WIDGET */
+/* ====================================================== */
 
+.custom-game-widget {
+
+    width:554px;
+    height:169px;
+
+    display:flex;
+
+    background:#000000;
+
+    border:2px solid #FFFFFF;
+
+    font-family:var(--font-family);
+
+    color:#FFFFFF;
+
+    overflow:hidden;
+
+}
+
+
+.custom-game-widget-image {
+
+    width:169px;
+    height:169px;
+
+    object-fit:cover;
+
+}
+
+
+.custom-game-widget-content {
+
+    flex:1;
+
+    padding:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+
+.custom-game-widget-content h3 {
+
+    margin:0;
+
+    font-size:28px;
+
+}
+
+
+.custom-game-widget-content p {
+
+    margin:8px 0;
+
+    font-size:16px;
+
+}
+
+
+.custom-game-widget-content a {
+
+    width:max-content;
+
+    padding:8px 16px;
+
+    background:#FFFFFF;
+
+    color:#000000;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+}
+
+
+.custom-game-widget-content a:hover {
+
+    transform:scale(1.05);
+
+}
+
+
+/* ====================================================== */
+/* GENERIC BUTTONS */
+/* ====================================================== */
 /* ====================================================== */
 /* GENERIC BUTTONS */
 /* ====================================================== */

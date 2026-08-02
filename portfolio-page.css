@@ -1515,20 +1515,18 @@ body {
 /* ====================================================== */
 .custom-game-widget {
 
-        width:554px;
-        height:169px;
+    width:554px;
+    height:169px;
 
-        display:flex;
+    display:flex;
 
-        background:var(--widget-background);
+    background:var(--widget-background);
 
-        border:2px solid var(--widget-outline);
+    border:2px solid var(--widget-outline);
 
-        font-family:var(--font-family);
+    font-family:var(--font-family);
 
-        overflow:hidden;
-
-    }
+    overflow:hidden;
 
 }
 

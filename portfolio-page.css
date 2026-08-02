@@ -1509,82 +1509,91 @@ body {
     align-items:center;
 
 }
+
 /* ====================================================== */
 /* CUSTOM GAME WIDGET */
 /* ====================================================== */
-
 .custom-game-widget {
 
-    width:554px;
-    height:169px;
+        width:554px;
+        height:169px;
 
-    display:flex;
+        display:flex;
 
-    background:#000000;
+        background:var(--widget-background);
 
-    border:2px solid #FFFFFF;
+        border:2px solid var(--widget-outline);
 
-    font-family:var(--font-family);
+        font-family:var(--font-family);
 
-    color:#FFFFFF;
+        overflow:hidden;
 
-    overflow:hidden;
+    }
 
 }
 
-
+/* ====================================================== */
+/* IMAGE */
+/* ====================================================== */
 .custom-game-widget-image {
 
     width:169px;
     height:169px;
-
     object-fit:cover;
 
 }
 
-
+/* ====================================================== */
+/* CONTENT */
+/* ====================================================== */
 .custom-game-widget-content {
 
     flex:1;
-
     padding:20px;
-
     display:flex;
-
     flex-direction:column;
-
     justify-content:center;
 
 }
 
-
+/* ====================================================== */
+/* TITLE */
+/* ====================================================== */
 .custom-game-widget-content h3 {
 
     margin:0;
+
+    color:var(--widget-text);
 
     font-size:28px;
 
 }
 
-
+/* ====================================================== */
+/* CREATOR */
+/* ====================================================== */
 .custom-game-widget-content p {
 
     margin:8px 0;
+
+    color:var(--widget-text);
 
     font-size:16px;
 
 }
 
-
+/* ====================================================== */
+/* ITCH BUTTON */
+/* ====================================================== */
 .custom-game-widget-content a {
 
     width:max-content;
 
     padding:8px 16px;
 
-    background:#FFFFFF;
+    background:var(--itch-button-fill);
 
-    color:#000000;
+    color:var(--itch-button-font);
 
     text-decoration:none;
 
@@ -1592,17 +1601,15 @@ body {
 
 }
 
-
+/* ====================================================== */
+/* HOVER */
+/* ====================================================== */
 .custom-game-widget-content a:hover {
 
     transform:scale(1.05);
 
 }
 
-
-/* ====================================================== */
-/* GENERIC BUTTONS */
-/* ====================================================== */
 /* ====================================================== */
 /* GENERIC BUTTONS */
 /* ====================================================== */

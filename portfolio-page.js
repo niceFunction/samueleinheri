@@ -33,30 +33,29 @@ if (responsibilitiesContainer) {
 }
 
 /* ====================================================== */
-/* ITCH.IO EXTERNAL BUTTON */
+/* REUSABLE ITCH EXTERNAL BUTTONS */
 /* ====================================================== */
 
+document
+.querySelectorAll(".itch-external-button")
+.forEach(function(button){
 
-const itchButton =
-document.getElementById(
-    "well-death-happens-itch-button"
-);
+    button.onclick = function(){
 
+        const link = this.dataset.link;
 
-if (itchButton) {
+        if(link){
 
+            window.open(
+                link,
+                "_blank"
+            );
 
-    itchButton.onclick = function(){
-
-
-        window.open(
-            WELL_DEATH_HAPPENS_EXTERNAL_LINK,
-            "_blank"
-        );
+        }
 
     };
 
-}
+});
 
 /* ====================================================== */
 /* CODE CONTAINER BUTTONS */

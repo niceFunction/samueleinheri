@@ -306,7 +306,6 @@
                 </div>
                 <!-- END OF IMAGE -->
 
-
                 <!-- START OF TEXT -->
                 <div class="blueprint-image-text">
 
@@ -318,7 +317,6 @@
 
                         The level generation is one of the aspects in "FollowThePath" that I'm the most proud of.
                         <br></br>
-
                         It uses a method called
 
                         "<a
@@ -330,24 +328,17 @@
                         </a>",
 
                         for this project it's used to create a pool of objects that I can reuse whenever I want.
-
                         <br></br>
-
                         "Tiles" were modeled using "Blender", they're of similar height & width.
-
                         <br></br>
-
                         In the GIF, you can see some examples of the level generation in action.
 
                     </p>
 
-
                     <!-- START OF LEVEL GENERATION BUTTONS -->
                     <div class="blueprint-image-buttons">
 
-
                         <!-- GITHUB BUTTON START -->
-
                         <button
 
                             class="code-intro-button"
@@ -355,19 +346,16 @@
                             data-link="https://github.com/niceFunction/followThePath/tree/master/follow_The_Path/followThePath/Assets"
 
                             style="
-                                --button-fill:#0500A1;
-                                --button-font-color:#FFFFFF;
+                                --button-fill:#FFFFFF;
+                                --button-font-color:#000000;
                             ">
 
                             Look at code on GitHub
 
                         </button>
-
                         <!-- GITHUB BUTTON END -->
 
-
                         <!-- TILE GENERATION BUTTON START -->
-
                         <button
 
                             class="code-intro-button"
@@ -382,17 +370,13 @@
                             Go to Tile Generation Code
 
                         </button>
-
                         <!-- TILE GENERATION BUTTON END -->
-
 
                     </div>
                     <!-- END OF LEVEL GENERATION BUTTONS -->
 
-
                 </div>
                 <!-- END OF TEXT -->
-
 
             </div>
             <!-- END OF IMAGE + TEXT ROW -->
@@ -403,6 +387,141 @@
     </div>
     <!-- ================================================= -->
     <!-- END OF LEVEL GENERATION CONTAINER -->
+    <!-- ================================================= -->
+
+    <!-- ================================================= -->
+    <!-- START OF HOW DOES IT WORK? CONTAINER -->
+    <!-- ================================================= -->
+    <div class="blueprint-image-container">
+
+        <!-- START OF IMAGE + TEXT CONTENT -->
+        <div class="blueprint-image-content">
+
+            <!-- START OF IMAGE + TEXT ROW -->
+            <div class="blueprint-image-row">
+
+                <!-- START OF IMAGE -->
+                <div class="blueprint-image">
+
+                    <img
+
+                        src="./PORTFOLIO-PAGES/FTP_Tile_Generation.webp"
+
+                        alt="Tile Generation"
+
+                        style="
+                            width:240;
+                            height:414px;
+                        "
+
+                    >
+
+                </div>
+                <!-- END OF IMAGE -->
+
+                <!-- START OF TEXT -->
+                <div class="blueprint-image-text">
+
+                    <h3>
+                        How does it work?
+                    </h3>
+
+                    <p>
+
+                        Whenever the player has rolled <strong>20 units (Unity measurements)</strong>, the game will generate a "Tile" in front of the player ahead of time.
+
+                    </p>
+
+                </div>
+                <!-- END OF TEXT -->
+
+            </div>
+            <!-- END OF IMAGE + TEXT ROW -->
+
+        </div>
+        <!-- END OF IMAGE + TEXT CONTENT -->
+
+    </div>
+    <!-- ================================================= -->
+    <!-- END OF HOW DOES IT WORK? CONTAINER -->
+    <!-- ================================================= -->
+
+    <!-- ================================================= -->
+    <!-- START OF CHOOSING A TILE CONTAINER -->
+    <!-- ================================================= -->
+    <div class="blueprint-image-container">
+
+        <!-- START OF IMAGE + TEXT CONTENT -->
+        <div class="blueprint-image-content">
+
+            <!-- START OF IMAGE + TEXT ROW -->
+            <div class="blueprint-image-row">
+
+                <!-- START OF IMAGE -->
+                <div class="blueprint-image">
+
+                    <img
+
+                        src="./PORTFOLIO-PAGES/FTP_Tile_Generation_ChoosingATile.gif"
+
+                        alt="Choosing a Tile"
+
+                        style="
+                            width:240;
+                            height:414px;
+                        "
+
+                    >
+
+                </div>
+                <!-- END OF IMAGE -->
+
+                <!-- START OF TEXT -->
+                <div class="blueprint-image-text">
+
+                    <h3>
+                        Choosing a Tile
+                    </h3>
+
+                    <p>
+
+                        <ol type="1">
+                            <li>
+                                Every "Tile" in the game has something called an "<strong>Entry</strong>" & an "<strong>Exit</strong>".
+                            </li>
+
+                            <li>
+                                The "Tile" itself has an internal list of different "Tiles" that fits with their "<strong>Exit</strong>".
+                            </li>
+
+                            <li>
+                                Before it creates a "Tile" that fits, it <strong>checks the internal</strong> list of different "Tiles".
+                            </li>
+
+                            <li>
+                                The "Tile" <strong>randomly</strong> chooses a "Tile".
+                            </li>
+
+                            <li>
+                                The "Tile" takes the randomly chosen "Tile" and <strong>places it in front of itself</strong>.
+                            </li>
+
+                        </ol>
+
+                    </p>
+
+                </div>
+                <!-- END OF TEXT -->
+
+            </div>
+            <!-- END OF IMAGE + TEXT ROW -->
+
+        </div>
+        <!-- END OF IMAGE + TEXT CONTENT -->
+
+    </div>
+    <!-- ================================================= -->
+    <!-- END OF HOW DOES IT WORK? CONTAINER -->
     <!-- ================================================= -->
 
     <!-- BACK TO THE TOP BUTTON -->

@@ -18,44 +18,6 @@ fetch("./footer.html")
         "footer-placeholder"
     ).innerHTML = data;
 
-    const footer =
-    document.querySelector(".footer-background");
-
-    function updateFooterVisibility() {
-
-        const scrollPosition =
-        window.innerHeight + window.scrollY;
-
-        const pageHeight =
-        document.documentElement.scrollHeight;
-
-        const reachedBottom =
-        scrollPosition >= pageHeight - 2;
-
-        if (reachedBottom) {
-
-            footer.classList.add("visible");
-
-        }
-        else {
-
-            footer.classList.remove("visible");
-
-        }
-
-    }
-
-    window.addEventListener(
-        "scroll",
-        updateFooterVisibility
-    );
-
-    window.addEventListener(
-        "resize",
-        updateFooterVisibility
-    );
-
-    updateFooterVisibility();
 
     /* MAIL */
     document.getElementById(
@@ -67,20 +29,19 @@ fetch("./footer.html")
 
     };
 
+
     /* LINKEDIN */
     document.getElementById(
         "footer-linkedin-button"
     ).onclick = function(){
 
         window.open(
-
             SITE_REFERENCES.linkedin,
-
             "_blank"
-
         );
 
     };
+
 
     /* RESUME */
     document.getElementById(
@@ -88,14 +49,12 @@ fetch("./footer.html")
     ).onclick = function(){
 
         window.open(
-
             SITE_REFERENCES.resume,
-
             "_blank"
-
         );
 
     };
+
 
 })
 

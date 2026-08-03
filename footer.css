@@ -18,35 +18,11 @@
 /* FOOTER BACKGROUND */
 .footer-background {
 
-    position:fixed;
-
-    left:0;
-    bottom:0;
-
     width:100%;
+
     height:var(--footer-height);
 
     background:var(--footer-background-color);
-
-    z-index:1000;
-
-    /* Hidden by default */
-    opacity:0;
-    visibility:hidden;
-    pointer-events:none;
-
-    transition:
-        opacity .25s ease,
-        visibility .25s ease;
-
-}
-
-/* Visible state */
-.footer-background.visible {
-
-    opacity:1;
-    visibility:visible;
-    pointer-events:auto;
 
 }
 

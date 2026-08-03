@@ -1,0 +1,139 @@
+:root {
+
+    /* FOOTER SETTINGS */
+    --footer-width:980px;
+    --footer-height:260px;
+    --footer-background-color:#232A2B;
+
+    /* ICONS */
+    --footer-icon-size:48px;
+    --footer-icon-scale:1.2;
+    --footer-icon-gap:40px;
+
+    /* POSITIONING */
+    --footer-icon-top-offset:30px;
+
+}
+
+/* FOOTER BACKGROUND */
+.footer-background {
+
+    position:fixed;
+
+    left:0;
+    bottom:0;
+
+    width:100%;
+    height:var(--footer-height);
+
+    background:var(--footer-background-color);
+
+    z-index:1000;
+
+    /* Hidden by default */
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+
+    transition:
+        opacity .25s ease,
+        visibility .25s ease;
+
+}
+
+/* Visible state */
+.footer-background.visible {
+
+    opacity:1;
+    visibility:visible;
+    pointer-events:auto;
+
+}
+
+/* INNER FOOTER */
+.footer-container {
+
+    width:var(--footer-width);
+    height:100%;
+
+    margin:auto;
+
+    position:relative;
+
+}
+
+/* ICON BAR */
+.footer-icon-bar {
+
+    position:absolute;
+
+    top:var(--footer-icon-top-offset);
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    align-items:center;
+
+    gap:var(--footer-icon-gap);
+
+}
+
+/* ICON BUTTON */
+.footer-icon-button {
+
+    width:var(--footer-icon-size);
+    height:var(--footer-icon-size);
+
+    transform:scale(var(--footer-icon-scale));
+
+    border:none;
+    background:none;
+
+    padding:0;
+
+    cursor:pointer;
+
+    position:relative;
+
+}
+
+/* BOTH IMAGES */
+.footer-icon-button img {
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:contain;
+
+    transition:.2s ease;
+
+}
+
+/* HOVER */
+.footer-icon-highlighted {
+
+    opacity:0;
+
+}
+
+.footer-icon-button:hover
+.footer-icon-normal {
+
+    opacity:0;
+
+}
+
+.footer-icon-button:hover
+.footer-icon-highlighted {
+
+    opacity:1;
+
+}

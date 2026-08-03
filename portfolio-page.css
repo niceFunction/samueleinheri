@@ -1716,9 +1716,9 @@ a.code-intro-button:focus {
 .spreadsheet-widget-container{
 
     width:100%;
-    height:auto;
     margin-top:var(--spreadsheet-widget-top-offset);
-    overflow:hidden;
+    overflow-x:auto;
+    overflow-y:hidden;
 
 }
 
@@ -1727,7 +1727,7 @@ a.code-intro-button:focus {
 
 .spreadsheet-widget-container iframe{
 
-    width:100%;
+    width:1080px;
     height:100%;
     border:none;
     display:block;

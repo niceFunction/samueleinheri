@@ -1730,7 +1730,7 @@ a.code-intro-button:focus {
 .spreadsheet-widget-container iframe{
 
     width:1600px;
-    height:145px;
+    height:100%;
 
     border:none;
     display:block;

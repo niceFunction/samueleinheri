@@ -1204,6 +1204,22 @@ body {
 
 }
 
+/* QUEST BOARD LIST */
+.blueprint-image-text ul{
+
+    margin-top:10px;
+    padding-left:40px;
+    font-size:var(--image-topic-context-size);
+
+}
+
+.blueprint-image-text li{
+
+    margin-bottom:8px;
+    font-size:var(--image-topic-context-size);
+
+}
+
 /* BLUEPRINT IMAGE LINKS */
 .blueprint-image-text a{
 

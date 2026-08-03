@@ -169,6 +169,11 @@
      /* GITHUB WIDGET */
      --code-widget-top-offset:48px;
      --code-widget-height:835px;
+
+     /* PDF WIDGET */
+     --pdf-widget-top-offset:25px;
+     --pdf-widget-width:980px;
+     --pdf-widget-height:1225px;
 }
 
 /* ====================================================== */
@@ -1630,9 +1635,7 @@ a.code-intro-button:focus {
 
 }
 
-
 /* Only button #2 gets the horizontal spacing */
-
 .generic-button-2{
 
     margin-left:var(--itch-button-left-offset);
@@ -1641,10 +1644,31 @@ a.code-intro-button:focus {
 
 
 /* Hover */
-
 .generic-button-1:hover,
 .generic-button-2:hover{
 
     transform:scale(var(--itch-button-hover-scale));
+
+}
+
+/* ====================================================== */
+/* PDF WIDGET */
+/* ====================================================== */
+.pdf-widget-container{
+
+    width:var(--pdf-widget-width);
+    height:var(--pdf-widget-height);
+    margin-top:var(--pdf-widget-top-offset);
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.pdf-widget{
+
+    width:100%;
+    height:100%;
+    border:none;
+    display:block;
 
 }

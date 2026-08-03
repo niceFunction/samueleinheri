@@ -174,6 +174,15 @@
      --pdf-widget-top-offset:25px;
      --pdf-widget-width:980px;
      --pdf-widget-height:1225px;
+
+     /* ====================================================== */
+     /* SPREADSHEET CONTAINER */
+     /* ====================================================== */
+     --spreadsheet-width:1080px;
+     --spreadsheet-top-offset:50px;
+     --spreadsheet-title-size:32px;
+     --spreadsheet-widget-top-offset:20px;
+     --spreadsheet-widget-height:800px;
 }
 
 /* ====================================================== */
@@ -1672,3 +1681,59 @@ a.code-intro-button:focus {
     display:block;
 
 }
+
+/* ====================================================== */
+/* START OF SPREADSHEET CONTAINER */
+/* ====================================================== */
+
+.spreadsheet-container{
+
+    width:var(--spreadsheet-width);
+    height:auto;
+    margin-top:var(--spreadsheet-top-offset);
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+
+/* TITLE */
+
+.spreadsheet-title{
+
+    margin:0;
+    font-family:var(--font-family);
+    font-size:var(--spreadsheet-title-size);
+    font-weight:700;
+    text-align:center;
+    color:var(--font-color);
+
+}
+
+
+/* WIDGET HOLDER */
+
+.spreadsheet-widget-container{
+
+    width:100%;
+    height:auto;
+    margin-top:var(--spreadsheet-widget-top-offset);
+    overflow:hidden;
+
+}
+
+
+/* GOOGLE SHEET */
+
+.spreadsheet-widget-container iframe{
+
+    width:100%;
+    height:100%;
+    border:none;
+    display:block;
+
+}
+
+/* ====================================================== */
+/* END OF SPREADSHEET CONTAINER */
+/* ====================================================== */

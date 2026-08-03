@@ -1711,13 +1711,15 @@ a.code-intro-button:focus {
 }
 
 
-/* WIDGET HOLDER */
+/* SCROLL HOLDER */
 
 .spreadsheet-widget-container{
 
     width:100%;
+    height:145px;
     margin-top:var(--spreadsheet-widget-top-offset);
-    overflow-x:auto;
+
+    overflow-x:scroll;
     overflow-y:hidden;
 
 }
@@ -1727,12 +1729,14 @@ a.code-intro-button:focus {
 
 .spreadsheet-widget-container iframe{
 
-    width:1080px;
-    height:100%;
+    width:1600px;
+    height:145px;
+
     border:none;
     display:block;
 
 }
+
 
 /* ====================================================== */
 /* END OF SPREADSHEET CONTAINER */

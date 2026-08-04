@@ -12,13 +12,13 @@ const SITE_REFERENCES = {
 
     /* PAGES */
     portfolio:
-        "./html/portfolio.html",
+        "./portfolio.html",
 
     prototypes:
-        "./html/prototypes.html",
+        "./prototypes.html",
 
     about:
-        "./html/about-me.html"
+        "./about-me.html"
 };
 
 const SITE_SETTINGS = {

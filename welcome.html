@@ -13,208 +13,14 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 
+<link rel="stylesheet" href="./welcome.css">
 
-<style>
-
-
-:root {
-
-
-    /* NAME + POSITION */
-    --name: "Samuel Einheri";
-    --position: "Game Designer";
-
-    /* NAME */
-    --name-font-size: 24px;
-    --name-font-weight: 700;
-
-    /* POSITION */
-    --position-font-size: 16px;
-    --position-font-weight: 400;
-
-    /* NAME CONTAINER */
-    --container-width: 300px;
-    --container-height: 60px;
-
-    /* CENTRE BUTTON NAMES */
-    --portfolio-button-name: "PORTFOLIO";
-    --prototypes-button-name: "PROTOTYPES";
-    --about-me-button-name: "ABOUT ME";
-
-    /* CENTRE TEXT BUTTONS */
-    --button-font-size: 16px;
-    --button-font-weight: 700;
-    --button-gap: 20px;
-
-    /* SHARED SETTINGS */
-    --font-family: "Open Sans", sans-serif;
-    --font-color: #DFE6E9;
-    --button-hover-color: #FFC20A;
-
-    /* MENU LAYOUT */
-    --menu-bottom-offset: 80px;
-    --menu-side-offset: 150px;
-
-    /* ICON BUTTON SETTINGS */
-    --icon-button-size: 48px;
-    --icon-button-gap: 20px;
-
-    /* ICON FILE PATHS */
-    --mail_normal: "./ICONS/mail_normal.svg";
-    --mail_highlighted: "./ICONS/mail_highlighted.svg";
-
-    --linkedin_normal: "./ICONS/linkedin_normal.svg";
-    --linkedin_highlighted: "./ICONS/linkedin_highlighted.svg";
-
-    --resume_normal: "./ICONS/resume_normal.svg";
-    --resume_highlighted: "./ICONS/resume_highlighted.svg";
-}
-
-html,
-body {
-    margin:0;
-    width:100%;
-    height:100%;
-    overflow:hidden;
-}
-
-video {
-    position:fixed;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    pointer-events:none;
-}
-
-/* MAIN CONTAINER */
-.menu-container {
-    position: fixed;
-    left: 50%;
-    bottom: var(--menu-bottom-offset);
-    transform: translateX(-50%);
-
-}
-
-/* LEFT NAME BUTTON */
-.profile-button {
-    position: absolute;
-    right: calc(100% + var(--menu-side-offset));
-    top: 50%;
-    transform: translateY(-50%);
-    width: var(--container-width);
-    height: var(--container-height);
-    background: transparent;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-}
-
-.name-box {
-    width:100%;
-    height:100%;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:center;
-    font-family:var(--font-family);
-    color:var(--font-color);
-    text-align:center;
-}
-
-.name {
-    font-size:var(--name-font-size);
-    font-weight:var(--name-font-weight);
-    transition:color .2s ease;
-}
-
-.name::before {
-    content:var(--name);
-}
-
-.position {
-    font-size:var(--position-font-size);
-    font-weight:var(--position-font-weight);
-    transition:color .2s ease;
-}
-
-.position::before {
-    content:var(--position);
-}
-
-.profile-button:hover .name,
-.profile-button:hover .position {
-    color:var(--button-hover-color);
-}
-
-/* CENTRE TEXT MENU */
-.button-bar {
-    display: flex;
-    align-items: center;
-    gap: var(--button-gap);
-    font-family: var(--font-family);
-}
-
-.button {
-    background:transparent;
-    border:none;
-    padding:8px 16px;
-    color:var(--font-color);
-    font-family:inherit;
-    font-size:var(--button-font-size);
-    font-weight:var(--button-font-weight);
-    cursor:pointer;
-}
-
-.button:hover {
-    color:var(--button-hover-color);
-}
-
-/* RIGHT ICON MENU */
-.icon-bar {
-    position: absolute;
-    left: calc(100% + var(--menu-side-offset));
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-    gap: var(--icon-button-gap);
-}
-
-.icon-button {
-    width:var(--icon-button-size);
-    height:var(--icon-button-size);
-    border:none;
-    padding:0;
-    background:transparent;
-    cursor:pointer;
-    position:relative;
-}
-
-.icon-button img {
-    position:absolute;
-    left:0;
-    top:0;
-    width:100%;
-    height:100%;
-    object-fit:contain;
-    transition:opacity .2s ease;
-}
-
-.icon-highlighted {
-    opacity:0;
-}
-
-.icon-button:hover .icon-normal {
-    opacity:0;
-}
-
-.icon-button:hover .icon-highlighted {
-    opacity:1;
-}
-
-</style>
 </head>
+
+Just show me the whole script instead
+
+Here is your entire updated <body> section with only the Step 4 change applied (type="button" added to every button). Everything else is unchanged.
+
 <body>
 
 <video autoplay muted loop playsinline>
@@ -224,30 +30,48 @@ video {
 <div class="menu-container">
 
     <!-- LEFT NAME + POSITION -->
-    <button class="profile-button">
+    <button type="button" class="profile-button">
 
         <div class="name-box">
             <div class="name"></div>
             <div class="position"></div>
         </div>
 
-
     </button>
+
 
     <!-- CENTRE TEXT MENU -->
     <div class="button-bar">
 
-        <button class="button" id="portfolio-button"></button>
-        <button class="button" id="prototypes-button"></button>
-        <button class="button" id="about-me-button"></button>
+        <button 
+            type="button"
+            class="button" 
+            id="portfolio-button">
+        </button>
+
+        <button 
+            type="button"
+            class="button" 
+            id="prototypes-button">
+        </button>
+
+        <button 
+            type="button"
+            class="button" 
+            id="about-me-button">
+        </button>
 
     </div>
+
 
     <!-- RIGHT ICON MENU -->
     <div class="icon-bar">
 
         <!-- MAIL -->
-        <button class="icon-button" id="mail-button">
+        <button 
+            type="button"
+            class="icon-button" 
+            id="mail-button">
 
             <img 
             class="icon-normal" 
@@ -259,8 +83,12 @@ video {
 
         </button>
 
+
         <!-- LINKEDIN -->
-        <button class="icon-button" id="linkedin-button">
+        <button 
+            type="button"
+            class="icon-button" 
+            id="linkedin-button">
 
             <img 
             class="icon-normal" 
@@ -272,8 +100,12 @@ video {
 
         </button>
 
+
         <!-- RESUME -->
-        <button class="icon-button" id="resume-button">
+        <button 
+            type="button"
+            class="icon-button" 
+            id="resume-button">
 
             <img 
             class="icon-normal" 
@@ -284,18 +116,26 @@ video {
             src="./ICONS/resume_highlighted.svg">
 
         </button>
+
     </div>
+
 </div>
 
+
 <script src="./reference.js"></script>
+
 <script>
 
 console.log("SCRIPT STARTED");
 
+
 /* NAME + POSITION BUTTON */
 document.querySelector(".profile-button").onclick = function () {
+
     window.location.href = SITE_REFERENCES.portfolio;
+
 };
+
 
 /* CENTRE MENU TEXT */
 document.getElementById("portfolio-button").textContent =
@@ -311,7 +151,9 @@ document.getElementById("about-me-button").textContent =
 console.log("BUTTON TEXT ADDED");
 
 
+
 /* PAGE BUTTON LINKS */
+
 
 /* PORTFOLIO */
 document.getElementById("portfolio-button").onclick = function () {
@@ -321,12 +163,14 @@ document.getElementById("portfolio-button").onclick = function () {
 };
 
 
+
 /* PROTOTYPES */
 document.getElementById("prototypes-button").onclick = function () {
 
     window.location.href = SITE_REFERENCES.prototypes;
 
 };
+
 
 
 /* ABOUT ME */
@@ -340,7 +184,9 @@ document.getElementById("about-me-button").onclick = function () {
 console.log("PAGE LINKS ADDED");
 
 
+
 /* ICON BUTTON LINKS */
+
 
 /* MAIL */
 document.getElementById("mail-button").onclick = function () {
@@ -348,6 +194,7 @@ document.getElementById("mail-button").onclick = function () {
     window.location.href = SITE_REFERENCES.mail;
 
 };
+
 
 
 /* LINKEDIN */
@@ -359,6 +206,7 @@ document.getElementById("linkedin-button").onclick = function () {
     );
 
 };
+
 
 
 /* RESUME */
@@ -373,6 +221,7 @@ document.getElementById("resume-button").onclick = function () {
 
 
 console.log("ICON LINKS ADDED");
+
 </script>
 
 </body>

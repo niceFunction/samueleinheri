@@ -1,0 +1,58 @@
+:root {
+
+    /* COMPANY CONTAINER */
+    --specific-company-gap:30px;
+
+    /* TITLE OFFSET */
+    --portfolio-title-left-offset:30px;
+
+}
+
+
+/* ====================================================== */
+/* SPECIFIC COMPANY CONTAINER */
+/* ====================================================== */
+
+.specific-company-container {
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    width:auto;
+    margin:0 auto;
+
+}
+
+
+/* ====================================================== */
+/* COMPANY LOGO */
+/* ====================================================== */
+
+.company-logo-container {
+
+    width:var(--company-logo-width);
+    height:var(--company-logo-height);
+
+}
+
+
+.company-logo-container img {
+
+    width:100%;
+    height:100%;
+
+    object-fit:contain;
+
+}
+
+
+/* ====================================================== */
+/* PORTFOLIO TITLE */
+/* ====================================================== */
+
+.portfolio-title-container {
+
+    margin-left:var(--portfolio-title-left-offset);
+
+}

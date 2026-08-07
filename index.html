@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +13,205 @@
         Redirecting...
         <a href="./welcome.html">Click here if you are not redirected.</a>
     </p>
+
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WELCOME</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./welcome.css">
+
+</head>
+
+<body>
+
+<video autoplay muted loop playsinline>
+    <source src="./WELCOME/Reel_2025_30FPS.mp4" type="video/mp4">
+</video>
+
+<div class="menu-container">
+
+    <!-- LEFT NAME + POSITION -->
+    <button type="button" class="profile-button">
+
+        <div class="name-box">
+            <div class="name"></div>
+            <div class="position"></div>
+        </div>
+
+    </button>
+
+    <!-- CENTRE TEXT MENU -->
+    <div class="button-bar">
+
+        <button 
+            type="button"
+            class="button" 
+            id="portfolio-button">
+        </button>
+
+        <button 
+            type="button"
+            class="button" 
+            id="prototypes-button">
+        </button>
+
+        <button 
+            type="button"
+            class="button" 
+            id="about-me-button">
+        </button>
+
+    </div>
+
+    <!-- RIGHT ICON MENU -->
+    <div class="icon-bar">
+
+        <!-- MAIL -->
+        <button 
+            type="button"
+            class="icon-button" 
+            id="mail-button">
+
+            <img 
+            class="icon-normal" 
+            src="./ICONS/mail_normal.svg">
+
+            <img 
+            class="icon-highlighted" 
+            src="./ICONS/mail_highlighted.svg">
+
+        </button>
+
+        <!-- LINKEDIN -->
+        <button 
+            type="button"
+            class="icon-button" 
+            id="linkedin-button">
+
+            <img 
+            class="icon-normal" 
+            src="./ICONS/linkedin_normal.svg">
+
+            <img 
+            class="icon-highlighted" 
+            src="./ICONS/linkedin_highlighted.svg">
+
+        </button>
+
+        <!-- RESUME -->
+        <button 
+            type="button"
+            class="icon-button" 
+            id="resume-button">
+
+            <img 
+            class="icon-normal" 
+            src="./ICONS/resume_normal.svg">
+
+            <img 
+            class="icon-highlighted" 
+            src="./ICONS/resume_highlighted.svg">
+
+        </button>
+
+    </div>
+
+</div>
+
+<script src="./reference.js"></script>
+
+<script>
+
+console.log("SCRIPT STARTED");
+
+/* NAME + POSITION BUTTON */
+document.querySelector(".profile-button").onclick = function () {
+
+    window.location.href = SITE_REFERENCES.portfolio;
+
+};
+
+/* CENTRE MENU TEXT */
+document.getElementById("portfolio-button").textContent =
+"PORTFOLIO";
+
+document.getElementById("prototypes-button").textContent =
+"PROTOTYPES";
+
+document.getElementById("about-me-button").textContent =
+"ABOUT ME";
+
+console.log("BUTTON TEXT ADDED");
+
+/* PAGE BUTTON LINKS */
+/* PORTFOLIO */
+document.getElementById("portfolio-button").onclick = function () {
+
+    window.location.href = SITE_REFERENCES.portfolio;
+
+};
+
+/* PROTOTYPES */
+document.getElementById("prototypes-button").onclick = function () {
+
+    window.location.href = SITE_REFERENCES.prototypes;
+
+};
+
+/* ABOUT ME */
+document.getElementById("about-me-button").onclick = function () {
+
+    window.location.href = SITE_REFERENCES.about;
+
+};
+
+console.log("PAGE LINKS ADDED");
+
+/* ICON BUTTON LINKS */
+/* MAIL */
+document.getElementById("mail-button").onclick = function () {
+
+    window.location.href = SITE_REFERENCES.mail;
+
+};
+
+/* LINKEDIN */
+document.getElementById("linkedin-button").onclick = function () {
+
+    window.open(
+        SITE_REFERENCES.linkedin,
+        "_blank"
+    );
+
+};
+
+/* RESUME */
+document.getElementById("resume-button").onclick = function () {
+
+    window.open(
+        SITE_REFERENCES.resume,
+        "_blank"
+    );
+
+};
+
+console.log("ICON LINKS ADDED");
+
+</script>
 
 </body>
 </html>

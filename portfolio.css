@@ -26,6 +26,7 @@
     --portfolio-filter-font-size:28px;
     --portfolio-filter-gap:44px;
     --portfolio-filter-offset:var(--portfolio-icon-bottom-spacing);
+    --portfolio-filter-hover-scale:1.05;
 
     /* ICON SETTINGS */
     --portfolio-icon-size:48px;
@@ -150,6 +151,7 @@
     font-size:var(--portfolio-filter-font-size);
     font-weight:400;
     color:var(--portfolio-font-color);
+    transition:transform .2s ease;
 
 }
 
@@ -267,6 +269,7 @@
 .portfolio-filter-button:hover{
 
     color:var(--header-hover-color);
+    transform:scale(var(--portfolio-filter-hover-scale));
 
 }
 

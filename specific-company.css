@@ -29,14 +29,6 @@
 /* COMPANY LOGO */
 /* ====================================================== */
 
-.company-logo-container {
-
-    width:var(--company-logo-width);
-    height:var(--company-logo-height);
-
-}
-
-
 .company-logo-container img {
 
     width:100%;

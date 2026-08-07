@@ -360,6 +360,28 @@
     transform:scale(var(--project-button-hover-scale));
 
 }
+
+/* ====================================================== */
+/* IMAGE HOVER SCALE */
+/* ====================================================== */
+
+.portfolio-image-button,
+.project-visual {
+
+    transition:transform .2s ease;
+
+}
+
+
+/* SCALE UP 5% ON HOVER */
+
+.portfolio-image-button:hover,
+.project-visual:hover {
+
+    transform:scale(var(--project-button-hover-scale));
+
+}
+
 .portfolio-filter-button.active{
 
     color:var(--header-hover-color);

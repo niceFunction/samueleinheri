@@ -554,3 +554,12 @@
     color:#FFC20A;
 
 }
+
+/* ====================================================== */
+/* DYNAMIC PROJECT VISIBILITY (Used for specific company applications)*/
+/* ====================================================== */
+.portfolio-project.hidden-project {
+
+    display:none;
+
+}

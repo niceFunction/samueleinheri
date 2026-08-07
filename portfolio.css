@@ -147,10 +147,13 @@
     border:none;
     padding:0;
     cursor:pointer;
+
     font-family:"Open Sans",sans-serif;
     font-size:var(--portfolio-filter-font-size);
-    font-weight:400;
+    font-weight:700;
     color:var(--portfolio-font-color);
+
+    transform-origin:center;
     transition:transform .2s ease;
 
 }
@@ -266,7 +269,7 @@
 
 }
 
-.portfolio-filter-button:hover{
+.portfolio-filter-button:not(.active):hover{
 
     color:var(--header-hover-color);
     transform:scale(var(--portfolio-filter-hover-scale));
@@ -388,7 +391,6 @@
 .portfolio-filter-button.active{
 
     color:var(--header-hover-color);
-    font-weight:700;
 
 }
 

@@ -153,6 +153,7 @@
     <!-- ====================================================== -->
     <!-- START: DYNAMIC PORTFOLIO CONTAINER -->
     <!-- ====================================================== -->
+
     <div class="dynamic-container">
 
         <!-- START: SUPER PAPARAZZI -->
@@ -167,8 +168,7 @@
 
                 <button
                     id="super-paparazzi-responsibilities"
-                    class="responsibility-button"
-                    onclick="window.location.href=PROJECT_REFERENCES.superPaparazziPage;">
+                    class="responsibility-button">
 
                     <div class="responsibility-content">
 
@@ -228,6 +228,7 @@
         </div>
         <!-- END: SUPER PAPARAZZI -->
 
+
         <!-- START: GRIEF -->
         <div class="portfolio-project Grief-sub-container"
              data-tags="all level-design">
@@ -240,8 +241,7 @@
 
                 <button
                     id="grief-responsibilities"
-                    class="responsibility-button"
-                    onclick="window.location.href=PROJECT_REFERENCES.GriefPage;">
+                    class="responsibility-button">
 
                     <div class="responsibility-content">
 
@@ -301,6 +301,7 @@
         </div>
         <!-- END: GRIEF -->
 
+
         <!-- START: TECTONICUS -->
         <div class="portfolio-project Tectonicus-sub-container"
              data-tags="all system-design qa">
@@ -313,8 +314,7 @@
 
                 <button
                     id="tectonicus-responsibilities"
-                    class="responsibility-button"
-                    onclick="window.location.href=PROJECT_REFERENCES.TectonicusPage;">
+                    class="responsibility-button">
 
                     <div class="responsibility-content">
 
@@ -375,6 +375,7 @@
         </div>
         <!-- END: TECTONICUS -->
 
+
         <!-- START: WELL, DEATH HAPPENS -->
         <div class="portfolio-project WellDeathHappens-sub-container"
              data-tags="all technical-design">
@@ -387,8 +388,7 @@
 
                 <button
                     id="well-death-happens-responsibilities"
-                    class="responsibility-button"
-                    onclick="window.location.href=PROJECT_REFERENCES.WellDeathHappensPage;">
+                    class="responsibility-button">
 
                     <div class="responsibility-content">
 
@@ -448,6 +448,7 @@
         </div>
         <!-- END: WELL, DEATH HAPPENS -->
 
+
         <!-- START: MERCHANT'S RUSH -->
         <div class="portfolio-project Merchants-Rush-sub-container"
              data-tags="all system-design">
@@ -460,8 +461,7 @@
 
                 <button
                     id="merchants-rush-responsibilities"
-                    class="responsibility-button"
-                    onclick="window.location.href=PROJECT_REFERENCES.MerchantsRushPage;">
+                    class="responsibility-button">
 
                     <div class="responsibility-content">
 
@@ -522,6 +522,7 @@
         </div>
         <!-- END: MERCHANT'S RUSH -->
 
+
         <!-- START: DREAMWALKER -->
         <div class="portfolio-project DreamWalker-sub-container"
              data-tags="all system-design">
@@ -534,8 +535,7 @@
 
                 <button
                     id="dreamwalker-responsibilities"
-                    class="responsibility-button"
-                    onclick="window.location.href=PROJECT_REFERENCES.DreamWalkerPage;">
+                    class="responsibility-button">
 
                     <div class="responsibility-content">
 
@@ -595,6 +595,7 @@
         </div>
         <!-- END: DREAMWALKER -->
 
+
         <!-- START: FOLLOW THE PATH -->
         <div class="portfolio-project FollowThePath-sub-container"
              data-tags="all technical-design">
@@ -607,8 +608,7 @@
 
                 <button
                     id="followthepath-responsibilities"
-                    class="responsibility-button"
-                    onclick="window.location.href=PROJECT_REFERENCES.FollowThePathPage;">
+                    class="responsibility-button">
 
                     <div class="responsibility-content">
 
@@ -668,6 +668,7 @@
         </div>
         <!-- END: FOLLOW THE PATH -->
 
+
         <!-- START: BEPPUS -->
         <div class="portfolio-project BEPPUS-sub-container"
              data-tags="all level-design">
@@ -680,8 +681,7 @@
 
                 <button
                     id="beppus-responsibilities"
-                    class="responsibility-button"
-                    onclick="window.location.href=PROJECT_REFERENCES.BEPPUSPage;">
+                    class="responsibility-button">
 
                     <div class="responsibility-content">
 
@@ -742,11 +742,14 @@
         <!-- END: BEPPUS -->
 
     </div>
+
     <!-- ====================================================== -->
     <!-- END DYNAMIC PORTFOLIO CONTAINER -->
     <!-- ====================================================== -->
 
+
     <!-- BACK TO THE TOP BUTTON -->
+
     <div class="back-to-top-container">
 
         <button
@@ -759,342 +762,598 @@
 
     </div>
 
+
     <!-- FOOTER LOAD LOCATION -->
+
     <div id="footer-placeholder"></div>
-    
-</div>
 
-<!-- JAVASCRIPT -->
-<script src="./reference.js"></script>
 
-<script>
-document.body.style.backgroundColor =
-SITE_SETTINGS.pageBackground;
+    <!-- ====================================================== -->
+    <!-- JAVASCRIPT -->
+    <!-- ====================================================== -->
 
-/* PROJECT REFERENCES */
-const PROJECT_REFERENCES = {
-    superPaparazziPage:
-        "./portfolio/Super-Paparazzi",
-    superPaparazziExternal:
-        "https://store.steampowered.com/app/3746050/Super_Paparazzi/",
-    GriefPage:
-        "./Grief.html",
-    GriefExternal:
-        "https://bgibson11.itch.io/grief-overkoalafied",
-    TectonicusPage:
-        "./Tectonicus.html",
-    TectonicusExternal:
-        "https://gamucatex.itch.io/tectonicus",
-    WellDeathHappensPage:
-        "./WellDeathHappens.html",
-    WellDeathHappensExternal:
-        "https://functionsam.itch.io/well-death-happens",
-    MerchantsRushPage:
-        "Merchants-Rush.html",
-    MerchantsRushExternal:
-        "https://store.steampowered.com/app/2110600/Merchants_Rush/",
-    DreamWalkerPage:
-        "./DreamWalker.html",
-    DreamWalkerExternal:
-        "https://simonolivecrona.itch.io/dreamwalker",
-    FollowThePathPage:
-        "./FollowThePath.html",
-    FollowThePathExternal:
-        "https://github.com/niceFunction/followThePath/tree/master/follow_The_Path/followThePath/Assets",
-    BEPPUSPage:
-        "./BEPPUS.html",
-    BEPPUSExternal:
-        "https://futuregames.itch.io/fg20-ft-gp4-beppus"
+    <!-- GLOBAL REFERENCES -->
 
-};
-</script>
+    <script src="./reference.js"></script>
 
-<script src="./header.js"></script>
-<script src="./footer.js"></script>
-<script src="./back-to-the-top.js"></script>
 
-<script>
+    <!-- SITE COMPONENTS -->
 
-/* IMAGE BUTTON */
-document.querySelector(".portfolio-image-button").onclick = function(){
+    <script src="../header.js"></script>
+    <script src="../footer.js"></script>
+    <script src="../back-to-the-top.js"></script>
 
-    window.location.href = SITE_REFERENCES.about;
 
-};
+    <!-- PORTFOLIO PAGE JAVASCRIPT -->
 
-const profileButton =
-document.querySelector(".portfolio-image-button");
+    <script>
 
-const profileImage =
-document.getElementById("profile-image");
+    /* ====================================================== */
+    /* PAGE SETTINGS */
+    /* ====================================================== */
 
-/* Preload hover image */
-const hoverImage = new Image();
-hoverImage.src =
-"./ABOUT/Hi_Samuel_Einheri.webp";
+    document.body.style.backgroundColor ="#2D3436";
 
-profileButton.addEventListener("mouseenter", function(){
 
-    profileImage.src =
-    "./ABOUT/Hi_Samuel_Einheri.webp";
+    /* ====================================================== */
+    /* IMAGE BUTTON */
+    /* ====================================================== */
 
-});
+    const profileButton =
+        document.querySelector(".portfolio-image-button");
 
-profileButton.addEventListener("mouseleave", function(){
+    const profileImage =
+        document.getElementById("profile-image");
 
-    profileImage.src =
-    "./ABOUT/Samuel_Einheri.webp";
 
-});
+    /* Profile image navigation */
 
-/* ICON BUTTONS */
-/* MAIL */
-document.getElementById("portfolio-mail-button").onclick = function(){
+    profileButton.onclick = function() {
 
-    window.location.href = SITE_REFERENCES.mail;
-
-};
-
-/* LINKEDIN */
-document.getElementById("portfolio-linkedin-button").onclick = function(){
-
-    window.open(
-        SITE_REFERENCES.linkedin,
-        "_blank"
-    );
-
-};
-
-/* RESUME */
-document.getElementById("portfolio-resume-button").onclick = function(){
-
-    window.open(
-        SITE_REFERENCES.resume,
-        "_blank"
-    );
-
-};
-
-/* HORIZONTAL NAVIGATION BUTTONS */
-const navigationButtons =
-document.querySelectorAll(".portfolio-navigation button");
-
-/* PORTFOLIO */
-navigationButtons[0].onclick = function(){
-
-    window.location.href = SITE_REFERENCES.portfolio;
-
-};
-
-/* PROTOTYPES */
-navigationButtons[1].onclick = function(){
-
-    window.location.href = SITE_REFERENCES.prototypes;
-
-};
-
-/* ABOUT ME */
-navigationButtons[2].onclick = function(){
-
-    window.location.href = SITE_REFERENCES.about;
-
-};
-
-/* PORTFOLIO FILTER BUTTONS */
-const filterButtons =
-document.querySelectorAll(".portfolio-filter-button");
-
-const portfolioProjects =
-document.querySelectorAll(".portfolio-project");
-
-filterButtons.forEach(button => {
-
-    button.onclick = function(){
-
-        /* Active button */
-        filterButtons.forEach(btn => {
-            btn.classList.remove("active");
-        });
-
-        button.classList.add("active");
-
-        /* Selected filter */
-        const selectedFilter =
-        button.dataset.filter;
-
-        /* Show/Hide projects */
-        portfolioProjects.forEach(project => {
-
-            const tags =
-            project.dataset.tags.split(" ");
-
-            if (
-                selectedFilter === "all" ||
-                tags.includes(selectedFilter)
-            ) {
-
-                project.style.display = "flex";
-
-            }
-            else {
-
-                project.style.display = "none";
-
-            }
-
-        });
+        window.location.href =
+            SITE_REFERENCES.about;
 
     };
 
-});
 
-/* LEARN MORE and EXTERNAL BUTTONS */
-document.getElementById(
-    "super-paparazzi-learn-more"
-).onclick = function(){
+    /* Preload hover image */
 
-    window.location.href =
-    PROJECT_REFERENCES.superPaparazziPage;
+    const hoverImage = new Image();
 
-};
+    hoverImage.src =
+        "./ABOUT/Hi_Samuel_Einheri.webp";
 
-document.getElementById(
-    "super-paparazzi-external"
-).onclick = function(){
 
-    window.open(
-        PROJECT_REFERENCES.superPaparazziExternal,
-        "_blank"
+    /* Profile image hover */
+
+    profileButton.addEventListener(
+        "mouseenter",
+        function() {
+
+            profileImage.src =
+                "./ABOUT/Hi_Samuel_Einheri.webp";
+
+        }
     );
 
-};
 
-document.getElementById(
-    "grief-learn-more"
-).onclick = function(){
+    profileButton.addEventListener(
+        "mouseleave",
+        function() {
 
-    window.location.href =
-    PROJECT_REFERENCES.GriefPage;
-};
+            profileImage.src =
+                "./ABOUT/Samuel_Einheri.webp";
 
-document.getElementById(
-    "grief-external"
-).onclick = function(){
-
-    window.open(
-        PROJECT_REFERENCES.GriefExternal,
-        "_blank"
+        }
     );
-};
-document.getElementById(
-    "tectonicus-learn-more"
-).onclick = function(){
 
-    window.location.href =
-    PROJECT_REFERENCES.TectonicusPage;
-};
 
-document.getElementById(
-    "tectonicus-external"
-).onclick = function(){
+    /* ====================================================== */
+    /* ICON BUTTONS */
+    /* ====================================================== */
 
-    window.open(
-        PROJECT_REFERENCES.TectonicusExternal,
-        "_blank"
+
+    /* MAIL */
+
+    document.getElementById(
+        "portfolio-mail-button"
+    ).onclick = function() {
+
+        window.location.href =
+            SITE_REFERENCES.mail;
+
+    };
+
+
+    /* LINKEDIN */
+
+    document.getElementById(
+        "portfolio-linkedin-button"
+    ).onclick = function() {
+
+        window.open(
+            SITE_REFERENCES.linkedin,
+            "_blank"
+        );
+
+    };
+
+
+    /* RESUME */
+
+    document.getElementById(
+        "portfolio-resume-button"
+    ).onclick = function() {
+
+        window.open(
+            SITE_REFERENCES.resume,
+            "_blank"
+        );
+
+    };
+
+
+    /* ====================================================== */
+    /* HORIZONTAL NAVIGATION */
+    /* ====================================================== */
+
+    const navigationButtons =
+        document.querySelectorAll(
+            ".portfolio-navigation button"
+        );
+
+
+    /* PORTFOLIO */
+
+    navigationButtons[0].onclick = function() {
+
+        window.location.href =
+            SITE_REFERENCES.portfolio;
+
+    };
+
+
+    /* PROTOTYPES */
+
+    navigationButtons[1].onclick = function() {
+
+        window.location.href =
+            SITE_REFERENCES.prototypes;
+
+    };
+
+
+    /* ABOUT ME */
+
+    navigationButtons[2].onclick = function() {
+
+        window.location.href =
+            SITE_REFERENCES.about;
+
+    };
+
+
+    /* ====================================================== */
+    /* PORTFOLIO FILTER BUTTONS */
+    /* ====================================================== */
+
+    const filterButtons =
+        document.querySelectorAll(
+            ".portfolio-filter-button"
+        );
+
+    const portfolioProjects =
+        document.querySelectorAll(
+            ".portfolio-project"
+        );
+
+
+    filterButtons.forEach(
+        function(button) {
+
+            button.onclick = function() {
+
+                /* Remove active state */
+
+                filterButtons.forEach(
+                    function(btn) {
+
+                        btn.classList.remove("active");
+
+                    }
+                );
+
+
+                /* Add active state */
+
+                button.classList.add("active");
+
+
+                /* Get selected filter */
+
+                const selectedFilter =
+                    button.dataset.filter;
+
+
+                /* Show / hide projects */
+
+                portfolioProjects.forEach(
+                    function(project) {
+
+                        const tags =
+                            project.dataset.tags.split(" ");
+
+
+                        if (
+                            selectedFilter === "all" ||
+                            tags.includes(selectedFilter)
+                        ) {
+
+                            project.style.display =
+                                "flex";
+
+                        }
+                        else {
+
+                            project.style.display =
+                                "none";
+
+                        }
+
+                    }
+                );
+
+            };
+
+        }
     );
-};
 
-document.getElementById(
-    "well-death-happens-learn-more"
-).onclick = function(){
 
-    window.location.href =
-    PROJECT_REFERENCES.WellDeathHappensPage;
-};
+    /* ====================================================== */
+    /* PROJECT PAGE BUTTONS */
+    /* ====================================================== */
 
-document.getElementById(
-    "well-death-happens-external"
-).onclick = function(){
 
-    window.open(
-        PROJECT_REFERENCES.WellDeathHappensExternal,
-        "_blank"
-    );
-};
+    /* SUPER PAPARAZZI */
 
-document.getElementById(
-    "merchants-rush-learn-more"
-).onclick = function(){
+    /* Responsibilities */
 
-    window.location.href =
-    PROJECT_REFERENCES.MerchantsRushPage;
-};
+    document.getElementById(
+        "super-paparazzi-responsibilities"
+    ).onclick = function() {
 
-document.getElementById(
-    "merchants-rush-external"
-).onclick = function(){
+        window.location.href =
+            PROJECT_REFERENCES.superPaparazziPage;
 
-    window.open(
-        PROJECT_REFERENCES.MerchantsRushExternal,
-        "_blank"
-    );
-};
+    };
 
-document.getElementById(
-    "dreamwalker-learn-more"
-).onclick = function(){
 
-    window.location.href =
-    PROJECT_REFERENCES.DreamWalkerPage;
-};
+    /* Learn More */
 
-document.getElementById(
-    "dreamwalker-external"
-).onclick = function(){
+    document.getElementById(
+        "super-paparazzi-learn-more"
+    ).onclick = function() {
 
-    window.open(
-        PROJECT_REFERENCES.DreamWalkerExternal,
-        "_blank"
-    );
-};
+        window.location.href =
+            PROJECT_REFERENCES.superPaparazziPage;
 
-document.getElementById(
-    "followthepath-learn-more"
-).onclick = function(){
+    };
 
-    window.location.href =
-    PROJECT_REFERENCES.FollowThePathPage;
-};
 
-document.getElementById(
-    "followthepath-external"
-).onclick = function(){
+    /* External */
 
-    window.open(
-        PROJECT_REFERENCES.FollowThePathExternal,
-        "_blank"
-    );
-};
+    document.getElementById(
+        "super-paparazzi-external"
+    ).onclick = function() {
 
-document.getElementById(
-    "beppus-learn-more"
-).onclick = function(){
+        window.open(
+            PROJECT_REFERENCES.superPaparazziExternal,
+            "_blank"
+        );
 
-    window.location.href =
-    PROJECT_REFERENCES.BEPPUSPage;
-};
+    };
 
-document.getElementById(
-    "beppus-external"
-).onclick = function(){
 
-    window.open(
-        PROJECT_REFERENCES.BEPPUSExternal,
-        "_blank"
-    );
-};
+    /* ====================================================== */
+    /* GRIEF */
+    /* ====================================================== */
 
-</script>
+    /* Responsibilities */
 
-</body>
-</html>
+    document.getElementById(
+        "grief-responsibilities"
+    ).onclick = function() {
+
+        window.location.href =
+            PROJECT_REFERENCES.GriefPage;
+
+    };
+
+
+    /* Learn More */
+
+    document.getElementById(
+        "grief-learn-more"
+    ).onclick = function() {
+
+        window.location.href =
+            PROJECT_REFERENCES.GriefPage;
+
+    };
+
+
+    /* External */
+
+    document.getElementById(
+        "grief-external"
+    ).onclick = function() {
+
+        window.open(
+            PROJECT_REFERENCES.GriefExternal,
+            "_blank"
+        );
+
+    };
+
+
+    /* ====================================================== */
+    /* TECTONICUS */
+    /* ====================================================== */
+
+    /* Responsibilities */
+
+    document.getElementById(
+        "tectonicus-responsibilities"
+    ).onclick = function() {
+
+        window.location.href =
+            PROJECT_REFERENCES.TectonicusPage;
+
+    };
+
+
+    /* Learn More */
+
+    document.getElementById(
+        "tectonicus-learn-more"
+    ).onclick = function() {
+
+        window.location.href =
+            PROJECT_REFERENCES.TectonicusPage;
+
+    };
+
+
+    /* External */
+
+    document.getElementById(
+        "tectonicus-external"
+    ).onclick = function() {
+
+        window.open(
+            PROJECT_REFERENCES.TectonicusExternal,
+            "_blank"
+        );
+
+    };
+
+
+    /* ====================================================== */
+    /* WELL, DEATH HAPPENS */
+    /* ====================================================== */
+
+    /* Responsibilities */
+
+    document.getElementById(
+        "well-death-happens-responsibilities"
+    ).onclick = function() {
+
+        window.location.href =
+            PROJECT_REFERENCES.WellDeathHappensPage;
+
+    };
+
+
+    /* Learn More */
+
+    document.getElementById(
+        "well-death-happens-learn-more"
+    ).onclick = function() {
+
+        window.location.href =
+            PROJECT_REFERENCES.WellDeathHappensPage;
+
+    };
+
+
+    /* External */
+
+    document.getElementById(
+        "well-death-happens-external"
+    ).onclick = function() {
+
+        window.open(
+            PROJECT_REFERENCES.WellDeathHappensExternal,
+            "_blank"
+        );
+
+    };
+
+
+    /* ====================================================== */
+    /* MERCHANT'S RUSH */
+    /* ====================================================== */
+
+    /* Responsibilities */
+
+    document.getElementById(
+        "merchants-rush-responsibilities"
+    ).onclick = function() {
+
+        window.location.href =
+            PROJECT_REFERENCES.MerchantsRushPage;
+
+    };
+
+
+    /* Learn More */
+
+    document.getElementById(
+        "merchants-rush-learn-more"
+    ).onclick = function() {
+
+        window.location.href =
+            PROJECT_REFERENCES.MerchantsRushPage;
+
+    };
+
+
+    /* External */
+
+    document.getElementById(
+        "merchants-rush-external"
+    ).onclick = function() {
+
+        window.open(
+            PROJECT_REFERENCES.MerchantsRushExternal,
+            "_blank"
+        );
+
+    };
+
+
+    /* ====================================================== */
+    /* DREAMWALKER */
+    /* ====================================================== */
+
+    /* Responsibilities */
+
+    document.getElementById(
+        "dreamwalker-responsibilities"
+    ).onclick = function() {
+
+        window.location.href =
+            PROJECT_REFERENCES.DreamWalkerPage;
+
+    };
+
+
+    /* Learn More */
+
+    document.getElementById(
+        "dreamwalker-learn-more"
+    ).onclick = function() {
+
+        window.location.href =
+            PROJECT_REFERENCES.DreamWalkerPage;
+
+    };
+
+
+    /* External */
+
+    document.getElementById(
+        "dreamwalker-external"
+    ).onclick = function() {
+
+        window.open(
+            PROJECT_REFERENCES.DreamWalkerExternal,
+            "_blank"
+        );
+
+    };
+
+
+    /* ====================================================== */
+    /* FOLLOW THE PATH */
+    /* ====================================================== */
+
+    /* Responsibilities */
+
+    document.getElementById(
+        "followthepath-responsibilities"
+    ).onclick = function() {
+
+        window.location.href =
+            PROJECT_REFERENCES.FollowThePathPage;
+
+    };
+
+
+    /* Learn More */
+
+    document.getElementById(
+        "followthepath-learn-more"
+    ).onclick = function() {
+
+        window.location.href =
+            PROJECT_REFERENCES.FollowThePathPage;
+
+    };
+
+
+    /* External */
+
+    document.getElementById(
+        "followthepath-external"
+    ).onclick = function() {
+
+        window.open(
+            PROJECT_REFERENCES.FollowThePathExternal,
+            "_blank"
+        );
+
+    };
+
+
+    /* ====================================================== */
+    /* BEPPUS */
+    /* ====================================================== */
+
+    /* Responsibilities */
+
+    document.getElementById(
+        "beppus-responsibilities"
+    ).onclick = function() {
+
+        window.location.href =
+            PROJECT_REFERENCES.BEPPUSPage;
+
+    };
+
+
+    /* Learn More */
+
+    document.getElementById(
+        "beppus-learn-more"
+    ).onclick = function() {
+
+        window.location.href =
+            PROJECT_REFERENCES.BEPPUSPage;
+
+    };
+
+
+    /* External */
+
+    document.getElementById(
+        "beppus-external"
+    ).onclick = function() {
+
+        window.open(
+            PROJECT_REFERENCES.BEPPUSExternal,
+            "_blank"
+        );
+
+    };
+
+    </script>
+
+
+    <!-- ====================================================== -->
+    <!-- END BODY -->
+    <!-- ====================================================== -->
+
+    </body>
+
+    </html>

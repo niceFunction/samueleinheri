@@ -21,7 +21,7 @@ const SITE_REFERENCES = {
         "./about-me"
 };
 
-window SITE_SETTINGS = {
+const SITE_SETTINGS = {
 
     pageBackground: "#2D3436"
 

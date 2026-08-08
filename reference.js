@@ -8,7 +8,7 @@ const SITE_REFERENCES = {
         "https://www.linkedin.com/in/samueleinheri/",
 
     resume:
-        "./DOWNLOAD/SamuelEinheri_Resume.pdf",
+        "./RESOURCES/DOWNLOAD/SamuelEinheri_Resume.pdf",
 
     /* PAGES */
     portfolio:

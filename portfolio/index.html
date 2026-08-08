@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PORTFOLIO</title>
+
+<!-- GOOGLE FONT -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- HEADER CSS -->
+<link rel="stylesheet" href="./header.css">
+<link rel="stylesheet" href="./footer.css">
+<link rel="stylesheet" href="./portfolio.css">
+
+<!-- BACK TO THE TOP -->
+<link rel="stylesheet" href="./back-to-the-top.css">
+
+</head>
+
+<body>
+
+<!-- HEADER LOAD LOCATION -->
+<div id="header-placeholder"></div>
+
+<!-- PAGE CONTENT -->
+<div class="page-content">
+
+    <!-- MAIN PORTFOLIO CONTAINER -->
+    <div class="portfolio-introduction-container">
+
+        <!-- IMAGE BUTTON -->
+        <button class="portfolio-image-button">
+            <img
+                id="profile-image"
+                src="./ABOUT/Samuel_Einheri.webp"
+                alt="Samuel">
+        </button>
+
+        <!-- INTRODUCTION -->
+        <div class="introduction-container">
+
+            <h1 class="introduction-title">
+                Hello, I'm Samuel!
+            </h1>
+
+            <!-- ICON BUTTONS -->
+            <div class="portfolio-icon-bar">
+
+                <!-- MAIL -->
+                <button class="portfolio-icon-button" id="portfolio-mail-button">
+
+                    <img class="portfolio-icon-normal"
+                    src="./ICONS/mail_normal.svg">
+
+                    <img class="portfolio-icon-highlighted"
+                    src="./ICONS/mail_highlighted.svg">
+
+                </button>
+
+                <!-- LINKEDIN -->
+                <button class="portfolio-icon-button" id="portfolio-linkedin-button">
+
+                    <img class="portfolio-icon-normal"
+                    src="./ICONS/linkedin_normal.svg">
+
+                    <img class="portfolio-icon-highlighted"
+                    src="./ICONS/linkedin_highlighted.svg">
+
+                </button>
+
+                <!-- RESUME -->
+                <button class="portfolio-icon-button" id="portfolio-resume-button">
+
+                    <img class="portfolio-icon-normal"
+                    src="./ICONS/resume_normal.svg">
+
+                    <img class="portfolio-icon-highlighted"
+                    src="./ICONS/resume_highlighted.svg">
+
+                </button>
+
+            </div>
+
+            <!-- TEXT -->
+            <p class="introduction-text">
+                As a game designer, I'm committed to crafting <strong>emergent</strong> &amp; <strong>engaging</strong> systems that draws the players in, while delivering a balanced and a memorable experience!
+                <br><br>
+                I’m also passionate about <strong>game accessibility</strong>, which is why everyone should be able to experience games, barrier-free!
+            </p>
+
+            <!-- NAVIGATION -->
+            <div class="portfolio-navigation">
+
+                <button>
+                    PORTFOLIO
+                </button>
+
+                <button>
+                    PROTOTYPES
+                </button>
+
+                <button>
+                    ABOUT ME
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- PORTFOLIO TITLE -->
+    <h1 class="portfolio-title">
+        PORTFOLIO
+    </h1>
+    
+    <!-- PORTFOLIO FILTER BUTTONS -->
+    <div class="portfolio-filter-bar">
+
+        <button class="portfolio-filter-button active"
+                data-filter="all">
+            All
+        </button>
+
+        <button class="portfolio-filter-button"
+                data-filter="level-design">
+            Level Design
+        </button>
+
+        <button class="portfolio-filter-button"
+                data-filter="qa">
+            QA
+        </button>
+
+        <button class="portfolio-filter-button"
+                data-filter="system-design">
+            System Design
+        </button>
+
+        <button class="portfolio-filter-button"
+                data-filter="technical-design">
+            Technical Design
+        </button>
+
+    </div>
+    <!-- ====================================================== -->
+    <!-- START: DYNAMIC PORTFOLIO CONTAINER -->
+    <!-- ====================================================== -->
+    <div class="dynamic-container">
+
+        <!-- START: SUPER PAPARAZZI -->
+        <div class="portfolio-project Super-Paparazzi-sub-container"
+             data-tags="all level-design technical-design">
+
+            <div class="project-visual">
+
+                <img
+                    src="./PORTFOLIO/SuperPaparazzi_Banner.gif"
+                    alt="Super Paparazzi">
+
+                <button
+                    id="super-paparazzi-responsibilities"
+                    class="responsibility-button"
+                    onclick="window.location.href=PROJECT_REFERENCES.superPaparazziPage;">
+
+                    <div class="responsibility-content">
+
+                        <div class="responsibility-title">
+                            Core Responsibilities
+                        </div>
+
+                        <ul>
+                            <li>Scripting mechanics & features.</li>
+                            <li>Level Design.</li>
+                        </ul>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+            <div class="project-information">
+
+                <h2 class="project-name">
+                    Super Paparazzi
+                </h2>
+
+                <div class="project-details">
+
+                    <p><strong>Engine:</strong> Unreal Engine 5.5</p>
+                    <p><strong>Genre:</strong> 3D Platformer, Photography</p>
+                    <p><strong>Team Size:</strong> 1</p>
+                    <p><strong>Role:</strong> Technical- & Level Design</p>
+                    <p><strong>Platform:</strong> PC</p>
+
+                </div>
+
+                <div class="project-button-container">
+
+                    <button
+                        id="super-paparazzi-learn-more"
+                        class="learn-more-button">
+
+                        LEARN MORE
+
+                    </button>
+
+                    <button
+                        id="super-paparazzi-external"
+                        class="external-project-button steam-button">
+
+                        Steam Page
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- END: SUPER PAPARAZZI -->
+
+        <!-- START: GRIEF -->
+        <div class="portfolio-project Grief-sub-container"
+             data-tags="all level-design">
+
+            <div class="project-visual">
+
+                <img
+                    src="./PORTFOLIO/Grief_Banner.webp"
+                    alt="Grief">
+
+                <button
+                    id="grief-responsibilities"
+                    class="responsibility-button"
+                    onclick="window.location.href=PROJECT_REFERENCES.GriefPage;">
+
+                    <div class="responsibility-content">
+
+                        <div class="responsibility-title">
+                            Core Responsibilities
+                        </div>
+
+                        <ul>
+                            <li>Creating & refining the level based on "Anger".</li>
+                            <li>Collaborate & iterate on the level design process.</li>
+                        </ul>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+            <div class="project-information">
+
+                <h2 class="project-name">
+                    Grief
+                </h2>
+
+                <div class="project-details">
+
+                    <p><strong>Engine:</strong> Unreal Engine 4.27</p>
+                    <p><strong>Genre:</strong> Dream Simulation, Puzzle</p>
+                    <p><strong>Team Size:</strong> 10</p>
+                    <p><strong>Role:</strong> Level Design</p>
+                    <p><strong>Platform:</strong> PC</p>
+
+                </div>
+
+                <div class="project-button-container">
+
+                    <button
+                        id="grief-learn-more"
+                        class="learn-more-button">
+
+                        LEARN MORE
+
+                    </button>
+
+                    <button
+                        id="grief-external"
+                        class="external-project-button itch-button">
+
+                        itch.io Page
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- END: GRIEF -->
+
+        <!-- START: TECTONICUS -->
+        <div class="portfolio-project Tectonicus-sub-container"
+             data-tags="all system-design qa">
+
+            <div class="project-visual">
+
+                <img
+                    src="./PORTFOLIO/Tectonicus_Banner.webp"
+                    alt="Tectonicus">
+
+                <button
+                    id="tectonicus-responsibilities"
+                    class="responsibility-button"
+                    onclick="window.location.href=PROJECT_REFERENCES.TectonicusPage;">
+
+                    <div class="responsibility-content">
+
+                        <div class="responsibility-title">
+                            Core Responsibilities
+                        </div>
+
+                        <ul>
+                            <li>Ownership of the game's "Story Mode" navigation.</li>
+                            <li>Prototyping navigation system in close collaboration with Programmers.</li>
+                            <li>Responsible for campaign & core gameplay testing.</li>
+                        </ul>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+            <div class="project-information">
+
+                <h2 class="project-name">
+                    Tectonicus
+                </h2>
+
+                <div class="project-details">
+
+                    <p><strong>Engine:</strong> Unity 2022.3</p>
+                    <p><strong>Genre:</strong> Card Auto-Battler, Strategy</p>
+                    <p><strong>Team Size:</strong> 15+</p>
+                    <p><strong>Role:</strong> System Design & QA</p>
+                    <p><strong>Platform:</strong> PC</p>
+
+                </div>
+
+                <div class="project-button-container">
+
+                    <button
+                        id="tectonicus-learn-more"
+                        class="learn-more-button">
+
+                        LEARN MORE
+
+                    </button>
+
+                    <button
+                        id="tectonicus-external"
+                        class="external-project-button itch-button">
+
+                        itch.io Page
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- END: TECTONICUS -->
+
+        <!-- START: WELL, DEATH HAPPENS -->
+        <div class="portfolio-project WellDeathHappens-sub-container"
+             data-tags="all technical-design">
+
+            <div class="project-visual">
+
+                <img
+                    src="./PORTFOLIO/WDH_Banner.gif"
+                    alt="Well, Death Happens">
+
+                <button
+                    id="well-death-happens-responsibilities"
+                    class="responsibility-button"
+                    onclick="window.location.href=PROJECT_REFERENCES.WellDeathHappensPage;">
+
+                    <div class="responsibility-content">
+
+                        <div class="responsibility-title">
+                            Core Responsibilities
+                        </div>
+
+                        <ul>
+                            <li>Design a core mechanic based on the question "How to make Death more useful".</li>
+                            <li>Implement the core mechanic in a new Engine.</li>
+                        </ul>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+            <div class="project-information">
+
+                <h2 class="project-name">
+                    Well, Death Happens
+                </h2>
+
+                <div class="project-details">
+
+                    <p><strong>Engine:</strong> Godot 3.2</p>
+                    <p><strong>Genre:</strong> Platformer, Puzzle</p>
+                    <p><strong>Team Size:</strong> 1</p>
+                    <p><strong>Role:</strong> Game- & Technical Design</p>
+                    <p><strong>Platform:</strong> PC</p>
+
+                </div>
+
+                <div class="project-button-container">
+
+                    <button
+                        id="well-death-happens-learn-more"
+                        class="learn-more-button">
+
+                        LEARN MORE
+
+                    </button>
+
+                    <button
+                        id="well-death-happens-external"
+                        class="external-project-button itch-button">
+
+                        itch.io Page
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- END: WELL, DEATH HAPPENS -->
+
+        <!-- START: MERCHANT'S RUSH -->
+        <div class="portfolio-project Merchants-Rush-sub-container"
+             data-tags="all system-design">
+
+            <div class="project-visual">
+
+                <img
+                    src="./PORTFOLIO/MerchantsRush_Banner.webp"
+                    alt="Merchant's Rush">
+
+                <button
+                    id="merchants-rush-responsibilities"
+                    class="responsibility-button"
+                    onclick="window.location.href=PROJECT_REFERENCES.MerchantsRushPage;">
+
+                    <div class="responsibility-content">
+
+                        <div class="responsibility-title">
+                            Core Responsibilities
+                        </div>
+
+                        <ul>
+                            <li>Creating spreadsheets for Quests & export them to CSV files.</li>
+                            <li>Use the CSV files for data driven gameplay elements.</li>
+                            <li>Implement UI-design.</li>
+                        </ul>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+            <div class="project-information">
+
+                <h2 class="project-name">
+                    Merchant's Rush
+                </h2>
+
+                <div class="project-details">
+
+                    <p><strong>Engine:</strong> Unreal Engine 4.27</p>
+                    <p><strong>Genre:</strong> Management, Strategy</p>
+                    <p><strong>Team Size:</strong> 12</p>
+                    <p><strong>Role:</strong> System Design</p>
+                    <p><strong>Platform:</strong> PC</p>
+
+                </div>
+
+                <div class="project-button-container">
+
+                    <button
+                        id="merchants-rush-learn-more"
+                        class="learn-more-button">
+
+                        LEARN MORE
+
+                    </button>
+
+                    <button
+                        id="merchants-rush-external"
+                        class="external-project-button steam-button">
+
+                        Steam Page
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- END: MERCHANT'S RUSH -->
+
+        <!-- START: DREAMWALKER -->
+        <div class="portfolio-project DreamWalker-sub-container"
+             data-tags="all system-design">
+
+            <div class="project-visual">
+
+                <img
+                    src="./PORTFOLIO/DreamWalker_Banner.webp"
+                    alt="DreamWalker">
+
+                <button
+                    id="dreamwalker-responsibilities"
+                    class="responsibility-button"
+                    onclick="window.location.href=PROJECT_REFERENCES.DreamWalkerPage;">
+
+                    <div class="responsibility-content">
+
+                        <div class="responsibility-title">
+                            Core Responsibilities
+                        </div>
+
+                        <ul>
+                            <li>Creating & refining puzzles.</li>
+                            <li>Create detailed documentation on the functionality of the puzzles.</li>
+                        </ul>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+            <div class="project-information">
+
+                <h2 class="project-name">
+                    DreamWalker
+                </h2>
+
+                <div class="project-details">
+
+                    <p><strong>Engine:</strong> Unity 2020.2</p>
+                    <p><strong>Genre:</strong> Point & Click, Puzzle</p>
+                    <p><strong>Team Size:</strong> 10</p>
+                    <p><strong>Role:</strong> System- & Puzzle Design</p>
+                    <p><strong>Platform:</strong> PC</p>
+
+                </div>
+
+                <div class="project-button-container">
+
+                    <button
+                        id="dreamwalker-learn-more"
+                        class="learn-more-button">
+
+                        LEARN MORE
+
+                    </button>
+
+                    <button
+                        id="dreamwalker-external"
+                        class="external-project-button itch-button">
+
+                        itch.io Page
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- END: DREAMWALKER -->
+
+        <!-- START: FOLLOW THE PATH -->
+        <div class="portfolio-project FollowThePath-sub-container"
+             data-tags="all technical-design">
+
+            <div class="project-visual">
+
+                <img
+                    src="./PORTFOLIO/FollowThePath_Banner.webp"
+                    alt="FollowThePath">
+
+                <button
+                    id="followthepath-responsibilities"
+                    class="responsibility-button"
+                    onclick="window.location.href=PROJECT_REFERENCES.FollowThePathPage;">
+
+                    <div class="responsibility-content">
+
+                        <div class="responsibility-title">
+                            Core Responsibilities
+                        </div>
+
+                        <ul>
+                            <li>Implement Object Pooling programming pattern for level generation.</li>
+                            <li>Implement accessibility features.</li>
+                        </ul>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+            <div class="project-information">
+
+                <h2 class="project-name">
+                    FollowThePath
+                </h2>
+
+                <div class="project-details">
+
+                    <p><strong>Engine:</strong> Unity 2019.2.7</p>
+                    <p><strong>Genre:</strong> Arcade</p>
+                    <p><strong>Team Size:</strong> 1</p>
+                    <p><strong>Role:</strong> Technical Design</p>
+                    <p><strong>Platform:</strong> Mobile</p>
+
+                </div>
+
+                <div class="project-button-container">
+
+                    <button
+                        id="followthepath-learn-more"
+                        class="learn-more-button">
+
+                        LEARN MORE
+
+                    </button>
+
+                    <button
+                        id="followthepath-external"
+                        class="external-project-button github-button github-text">
+
+                        GitHub Project
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- END: FOLLOW THE PATH -->
+
+        <!-- START: BEPPUS -->
+        <div class="portfolio-project BEPPUS-sub-container"
+             data-tags="all level-design">
+
+            <div class="project-visual">
+
+                <img
+                    src="./PORTFOLIO/BEPPUS_Banner.webp"
+                    alt="BEPPUS">
+
+                <button
+                    id="beppus-responsibilities"
+                    class="responsibility-button"
+                    onclick="window.location.href=PROJECT_REFERENCES.BEPPUSPage;">
+
+                    <div class="responsibility-content">
+
+                        <div class="responsibility-title">
+                            Core Responsibilities
+                        </div>
+
+                        <ul>
+                            <li>Design & create tutorial levels.</li>
+                            <li>Collaborate & implement the UI-Design.</li>
+                        </ul>
+
+                    </div>
+
+                </button>
+
+            </div>
+
+            <div class="project-information">
+
+                <h2 class="project-name">
+                    BEPPUS
+                </h2>
+
+                <div class="project-details">
+
+                    <p><strong>Engine:</strong> Unreal 4.27</p>
+                    <p><strong>Genre:</strong> Platformer, Puzzle</p>
+                    <p><strong>Team Size:</strong> 6</p>
+                    <p><strong>Role:</strong> Level Design</p>
+                    <p><strong>Platform:</strong> PC</p>
+
+                </div>
+
+                <div class="project-button-container">
+
+                    <button
+                        id="beppus-learn-more"
+                        class="learn-more-button">
+
+                        LEARN MORE
+
+                    </button>
+
+                    <button
+                        id="beppus-external"
+                        class="external-project-button itch-button">
+
+                        itch.io Page
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- END: BEPPUS -->
+
+    </div>
+    <!-- ====================================================== -->
+    <!-- END DYNAMIC PORTFOLIO CONTAINER -->
+    <!-- ====================================================== -->
+
+    <!-- BACK TO THE TOP BUTTON -->
+    <div class="back-to-top-container">
+
+        <button
+            id="back-to-top-button"
+            class="learn-more-button">
+
+            BACK TO THE TOP
+
+        </button>
+
+    </div>
+
+    <!-- FOOTER LOAD LOCATION -->
+    <div id="footer-placeholder"></div>
+    
+</div>
+
+<!-- JAVASCRIPT -->
+<script src="./reference.js"></script>
+
+<script>
+document.body.style.backgroundColor =
+SITE_SETTINGS.pageBackground;
+
+/* PROJECT REFERENCES */
+const PROJECT_REFERENCES = {
+    superPaparazziPage:
+        "./Super-Paparazzi.html",
+    superPaparazziExternal:
+        "https://store.steampowered.com/app/3746050/Super_Paparazzi/",
+    GriefPage:
+        "./Grief.html",
+    GriefExternal:
+        "https://bgibson11.itch.io/grief-overkoalafied",
+    TectonicusPage:
+        "./Tectonicus.html",
+    TectonicusExternal:
+        "https://gamucatex.itch.io/tectonicus",
+    WellDeathHappensPage:
+        "./WellDeathHappens.html",
+    WellDeathHappensExternal:
+        "https://functionsam.itch.io/well-death-happens",
+    MerchantsRushPage:
+        "Merchants-Rush.html",
+    MerchantsRushExternal:
+        "https://store.steampowered.com/app/2110600/Merchants_Rush/",
+    DreamWalkerPage:
+        "./DreamWalker.html",
+    DreamWalkerExternal:
+        "https://simonolivecrona.itch.io/dreamwalker",
+    FollowThePathPage:
+        "./FollowThePath.html",
+    FollowThePathExternal:
+        "https://github.com/niceFunction/followThePath/tree/master/follow_The_Path/followThePath/Assets",
+    BEPPUSPage:
+        "./BEPPUS.html",
+    BEPPUSExternal:
+        "https://futuregames.itch.io/fg20-ft-gp4-beppus"
+
+};
+</script>
+
+<script src="./header.js"></script>
+<script src="./footer.js"></script>
+<script src="./back-to-the-top.js"></script>
+
+<script>
+
+/* IMAGE BUTTON */
+document.querySelector(".portfolio-image-button").onclick = function(){
+
+    window.location.href = SITE_REFERENCES.about;
+
+};
+
+const profileButton =
+document.querySelector(".portfolio-image-button");
+
+const profileImage =
+document.getElementById("profile-image");
+
+/* Preload hover image */
+const hoverImage = new Image();
+hoverImage.src =
+"./ABOUT/Hi_Samuel_Einheri.webp";
+
+profileButton.addEventListener("mouseenter", function(){
+
+    profileImage.src =
+    "./ABOUT/Hi_Samuel_Einheri.webp";
+
+});
+
+profileButton.addEventListener("mouseleave", function(){
+
+    profileImage.src =
+    "./ABOUT/Samuel_Einheri.webp";
+
+});
+
+/* ICON BUTTONS */
+/* MAIL */
+document.getElementById("portfolio-mail-button").onclick = function(){
+
+    window.location.href = SITE_REFERENCES.mail;
+
+};
+
+/* LINKEDIN */
+document.getElementById("portfolio-linkedin-button").onclick = function(){
+
+    window.open(
+        SITE_REFERENCES.linkedin,
+        "_blank"
+    );
+
+};
+
+/* RESUME */
+document.getElementById("portfolio-resume-button").onclick = function(){
+
+    window.open(
+        SITE_REFERENCES.resume,
+        "_blank"
+    );
+
+};
+
+/* HORIZONTAL NAVIGATION BUTTONS */
+const navigationButtons =
+document.querySelectorAll(".portfolio-navigation button");
+
+/* PORTFOLIO */
+navigationButtons[0].onclick = function(){
+
+    window.location.href = SITE_REFERENCES.portfolio;
+
+};
+
+/* PROTOTYPES */
+navigationButtons[1].onclick = function(){
+
+    window.location.href = SITE_REFERENCES.prototypes;
+
+};
+
+/* ABOUT ME */
+navigationButtons[2].onclick = function(){
+
+    window.location.href = SITE_REFERENCES.about;
+
+};
+
+/* PORTFOLIO FILTER BUTTONS */
+const filterButtons =
+document.querySelectorAll(".portfolio-filter-button");
+
+const portfolioProjects =
+document.querySelectorAll(".portfolio-project");
+
+filterButtons.forEach(button => {
+
+    button.onclick = function(){
+
+        /* Active button */
+        filterButtons.forEach(btn => {
+            btn.classList.remove("active");
+        });
+
+        button.classList.add("active");
+
+        /* Selected filter */
+        const selectedFilter =
+        button.dataset.filter;
+
+        /* Show/Hide projects */
+        portfolioProjects.forEach(project => {
+
+            const tags =
+            project.dataset.tags.split(" ");
+
+            if (
+                selectedFilter === "all" ||
+                tags.includes(selectedFilter)
+            ) {
+
+                project.style.display = "flex";
+
+            }
+            else {
+
+                project.style.display = "none";
+
+            }
+
+        });
+
+    };
+
+});
+
+/* LEARN MORE and EXTERNAL BUTTONS */
+document.getElementById(
+    "super-paparazzi-learn-more"
+).onclick = function(){
+
+    window.location.href =
+    PROJECT_REFERENCES.superPaparazziPage;
+
+};
+
+document.getElementById(
+    "super-paparazzi-external"
+).onclick = function(){
+
+    window.open(
+        PROJECT_REFERENCES.superPaparazziExternal,
+        "_blank"
+    );
+
+};
+
+document.getElementById(
+    "grief-learn-more"
+).onclick = function(){
+
+    window.location.href =
+    PROJECT_REFERENCES.GriefPage;
+};
+
+document.getElementById(
+    "grief-external"
+).onclick = function(){
+
+    window.open(
+        PROJECT_REFERENCES.GriefExternal,
+        "_blank"
+    );
+};
+document.getElementById(
+    "tectonicus-learn-more"
+).onclick = function(){
+
+    window.location.href =
+    PROJECT_REFERENCES.TectonicusPage;
+};
+
+document.getElementById(
+    "tectonicus-external"
+).onclick = function(){
+
+    window.open(
+        PROJECT_REFERENCES.TectonicusExternal,
+        "_blank"
+    );
+};
+
+document.getElementById(
+    "well-death-happens-learn-more"
+).onclick = function(){
+
+    window.location.href =
+    PROJECT_REFERENCES.WellDeathHappensPage;
+};
+
+document.getElementById(
+    "well-death-happens-external"
+).onclick = function(){
+
+    window.open(
+        PROJECT_REFERENCES.WellDeathHappensExternal,
+        "_blank"
+    );
+};
+
+document.getElementById(
+    "merchants-rush-learn-more"
+).onclick = function(){
+
+    window.location.href =
+    PROJECT_REFERENCES.MerchantsRushPage;
+};
+
+document.getElementById(
+    "merchants-rush-external"
+).onclick = function(){
+
+    window.open(
+        PROJECT_REFERENCES.MerchantsRushExternal,
+        "_blank"
+    );
+};
+
+document.getElementById(
+    "dreamwalker-learn-more"
+).onclick = function(){
+
+    window.location.href =
+    PROJECT_REFERENCES.DreamWalkerPage;
+};
+
+document.getElementById(
+    "dreamwalker-external"
+).onclick = function(){
+
+    window.open(
+        PROJECT_REFERENCES.DreamWalkerExternal,
+        "_blank"
+    );
+};
+
+document.getElementById(
+    "followthepath-learn-more"
+).onclick = function(){
+
+    window.location.href =
+    PROJECT_REFERENCES.FollowThePathPage;
+};
+
+document.getElementById(
+    "followthepath-external"
+).onclick = function(){
+
+    window.open(
+        PROJECT_REFERENCES.FollowThePathExternal,
+        "_blank"
+    );
+};
+
+document.getElementById(
+    "beppus-learn-more"
+).onclick = function(){
+
+    window.location.href =
+    PROJECT_REFERENCES.BEPPUSPage;
+};
+
+document.getElementById(
+    "beppus-external"
+).onclick = function(){
+
+    window.open(
+        PROJECT_REFERENCES.BEPPUSExternal,
+        "_blank"
+    );
+};
+
+</script>
+
+</body>
+</html>

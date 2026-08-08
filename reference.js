@@ -15,10 +15,10 @@ const SITE_REFERENCES = {
         "./portfolio",
 
     prototypes:
-        "./prototypes.html",
+        "./prototypes",
 
     about:
-        "./about-me.html"
+        "./about-me"
 };
 
 const SITE_SETTINGS = {

@@ -18,7 +18,7 @@ const SITE_REFERENCES = {
         "./prototypes.html",
 
     about:
-        "./about-me.html"
+        "./about-me"
 };
 
 const SITE_SETTINGS = {

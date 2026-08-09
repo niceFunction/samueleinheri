@@ -40,6 +40,7 @@
 
     /* COLORS */
     --portfolio-font-color:#DFE6E9;
+    --portfolio-filter-hover-color:#4bcffa;
     
     /* DYNAMIC CONTAINER */
     --dynamic-container-width:980px;
@@ -271,7 +272,7 @@
 
 .portfolio-filter-button:not(.active):hover{
 
-    color:var(--header-hover-color);
+    color:var(--portfolio-filter-hover-color);
     transform:scale(var(--portfolio-filter-hover-scale));
 
 }

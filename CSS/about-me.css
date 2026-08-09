@@ -286,6 +286,32 @@
 
 }
 
+/* KNOWLEDGE LINKS */
+.knowledge-item-text a{
+
+    color:var(--portfolio-font-color);
+    text-decoration:none;
+    cursor:pointer;
+    transition:color 0.2s ease;
+
+}
+
+/* KNOWLEDGE LINK HOVER */
+.knowledge-item-text a:hover{
+
+    color:var(--say-hi-hover-color);
+    text-decoration:none;
+
+}
+
+/* KNOWLEDGE LINK VISITED */
+.knowledge-item-text a:visited{
+
+    color:var(--portfolio-font-color);
+    text-decoration:none;
+
+}
+
 /* ============================================== */
 /* EDUCATION */
 /* ============================================== */
@@ -330,11 +356,28 @@
 
 }
 
+/* SCHOOL LOGO LINK */
+.school-logo-link{
+
+    display:block;
+    width:var(--school-logo-width);
+    height:var(--school-logo-height);
+    transition:transform 0.2s ease;
+
+}
+
+/* SCHOOL LOGO HOVER */
+.school-logo-link:hover{
+
+    transform:scale(1.05);
+
+}
+
 /* SCHOOL LOGO */
 .school-logo{
 
-    width:var(--school-logo-width);
-    height:var(--school-logo-height);
+    width:100%;
+    height:100%;
     object-fit:contain;
 
 }
@@ -411,7 +454,9 @@
     color:var(--portfolio-font-color);
     text-decoration:none;
     cursor:pointer;
-    transition:color 0.2s ease;
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
 
 }
 
@@ -419,5 +464,6 @@
 .say-hi-button:hover{
 
     color:var(--say-hi-hover-color);
+    transform:scale(1.05);
 
 }

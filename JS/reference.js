@@ -12,7 +12,7 @@ const SITE_REFERENCES = {
 
     /* PAGES */
     portfolio:
-        "./portfolio",
+        "./portfolio/index.html",
 
     prototypes:
         "./prototypes",

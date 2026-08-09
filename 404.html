@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+<title>Page Not Found</title>
+
+<link
+    rel="preconnect"
+    href="https://fonts.googleapis.com">
+
+<link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+    rel="stylesheet">
+
+<link
+    rel="stylesheet"
+    href="./style.css">
+
+<link
+    rel="stylesheet"
+    href="./CSS/404.css">
+
+<!-- START OF PAGE CONTENT -->
+<main class="page-content">
+
+    <!-- START OF 404 INTRODUCTION -->
+    <div class="error-introduction-container">
+
+        <!-- 404 IMAGE -->
+        <img
+            class="error-image"
+            src="./RESOURCES/404/404_Samuel_Einheri.webp"
+            alt="Page Not Found">
+
+        <!-- START OF 404 CONTENT -->
+        <div class="error-introduction-content">
+
+            <!-- 404 TITLE -->
+            <h1 class="error-introduction-title">
+
+                PAGE NOT FOUND
+
+            </h1>
+
+            <!-- 404 TEXT -->
+            <p class="error-introduction-text">
+
+                Well dang, you're not supposed to see this, which means something went very wrong!
+                <br><br>
+                While you email me what went wrong, you can connect with me on LinkedIn or checkout my Resume!
+
+            </p>
+
+            <!-- START OF 404 ICON BUTTON ROW -->
+            <div class="error-icon-bar">
+
+                <!-- MAIL -->
+                <button
+                    class="error-icon-button"
+                    id="error-mail-button"
+                    type="button">
+
+                    <img
+                        class="error-icon-normal"
+                        src="./RESOURCES/ICONS/mail_normal.svg"
+                        alt="Email">
+
+                    <img
+                        class="error-icon-highlighted"
+                        src="./RESOURCES/ICONS/mail_highlighted.svg"
+                        alt="Email">
+
+                </button>
+
+                <!-- LINKEDIN -->
+                <button
+                    class="error-icon-button"
+                    id="error-linkedin-button"
+                    type="button">
+
+                    <img
+                        class="error-icon-normal"
+                        src="./RESOURCES/ICONS/linkedin_normal.svg"
+                        alt="LinkedIn">
+
+                    <img
+                        class="error-icon-highlighted"
+                        src="./RESOURCES/ICONS/linkedin_highlighted.svg"
+                        alt="LinkedIn">
+
+                </button>
+
+                <!-- RESUME -->
+                <button
+                    class="error-icon-button"
+                    id="error-resume-button"
+                    type="button">
+
+                    <img
+                        class="error-icon-normal"
+                        src="./RESOURCES/ICONS/resume_normal.svg"
+                        alt="Resume">
+
+                    <img
+                        class="error-icon-highlighted"
+                        src="./RESOURCES/ICONS/resume_highlighted.svg"
+                        alt="Resume">
+
+                </button>
+
+            </div>
+            <!-- END OF 404 ICON BUTTON ROW -->
+
+        </div>
+        <!-- END OF 404 CONTENT -->
+
+    </div>
+    <!-- END OF 404 INTRODUCTION -->
+
+</main>
+<!-- END OF PAGE CONTENT -->
+
+<!-- START OF 404 JAVASCRIPT -->
+<script>
+
+    /* MAIL */
+    document.getElementById("error-mail-button").onclick = function () {
+
+        const subject =
+            encodeURIComponent("Something went wrong with your website!");
+
+        window.location.href =
+            "mailto:samuel.einheri@gmail.com?subject=" + subject;
+
+    };
+
+    /* LINKEDIN */
+    document.getElementById("error-linkedin-button").onclick = function () {
+
+        window.open(
+            "https://www.linkedin.com/in/samueleinheri/",
+            "_blank"
+        );
+
+    };
+
+    /* RESUME */
+    document.getElementById("error-resume-button").onclick = function () {
+
+        window.open(
+            "./RESOURCES/DOWNLOAD/SamuelEinheri_Resume.pdf",
+            "_blank"
+        );
+
+    };
+
+</script>
+
+</body>
+<!-- END OF BODY -->
+
+</html>

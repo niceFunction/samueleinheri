@@ -19,8 +19,8 @@
     --error-text-size:16px;
 
     /* 404 ICONS */
-    --error-icon-size:32px;
-    --error-icon-spacing:20px;
+    --error-icon-size:64px;
+    --error-icon-spacing:40px;
 
     /* COLORS */
     --error-font-color:#DFE6E9;

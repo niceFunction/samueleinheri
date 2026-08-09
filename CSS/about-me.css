@@ -286,29 +286,35 @@
 
 }
 
+/* ============================================== */
 /* KNOWLEDGE LINKS */
-.knowledge-item-text a{
+/* ============================================== */
 
-    color:var(--portfolio-font-color);
-    text-decoration:none;
-    cursor:pointer;
-    transition:color 0.2s ease;
+/* NORMAL LINK */
+.knowledge-item-text a {
 
-}
+    color: var(--portfolio-font-color);
+    text-decoration: none;
+    cursor: pointer;
 
-/* KNOWLEDGE LINK HOVER */
-.knowledge-item-text a:hover{
-
-    color:var(--say-hi-hover-color);
-    text-decoration:none;
+    transition: color 0.2s ease;
 
 }
 
-/* KNOWLEDGE LINK VISITED */
-.knowledge-item-text a:visited{
+/* VISITED LINK */
+.knowledge-item-text a:visited {
 
-    color:var(--portfolio-font-color);
-    text-decoration:none;
+    color: var(--portfolio-font-color);
+    text-decoration: none;
+
+}
+
+/* HOVER LINK */
+.knowledge-item-text a:hover,
+.knowledge-item-text a:visited:hover {
+
+    color: var(--say-hi-hover-color);
+    text-decoration: none;
 
 }
 

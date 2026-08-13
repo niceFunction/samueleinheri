@@ -13,6 +13,13 @@
     /* POSITIONING */
     --footer-icon-top-offset:30px;
 
+    /* FOOTER MESSAGE SETTINGS*/
+    --footer-message-offset:30px;
+    --footer-message-font-size:16px;
+    --footer-message-font-family:'Open Sans', sans-serif;
+    --footer-message-color:#DFE6E9;
+    --footer-message-transition:.2s ease;
+
 }
 
 /* FOOTER BACKGROUND */
@@ -111,5 +118,29 @@
 .footer-icon-highlighted {
 
     opacity:1;
+
+}
+
+/* START OF FOOTER HOVER MESSAGE */
+.footer-hover-message {
+
+    position:absolute;
+
+    top:calc(
+        var(--footer-icon-top-offset)
+        + var(--footer-icon-size)
+        + var(--footer-message-offset)
+    );
+
+    left:50%;
+    transform:translateX(-50%);
+    font-family:var(--footer-message-font-family);
+    font-size:var(--footer-message-font-size);
+    color:var(--footer-message-color);
+    text-align:center;
+    pointer-events:none;
+    white-space:nowrap;
+    opacity:0;
+    transition:var(--footer-message-transition);
 
 }

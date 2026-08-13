@@ -1,6 +1,7 @@
 :root {
 
     /* FADE IN */
+    --fade-in-delay: 0.4;
     --fade-in-duration: 1.5s;
 
     /* NAME + POSITION */
@@ -97,6 +98,7 @@ video {
     opacity: 0;
     animation-name: fade-in;
     animation-duration: var(--fade-in-duration);
+    animation-delay: var(--fade-in-delay);
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 

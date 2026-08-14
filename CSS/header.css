@@ -32,6 +32,15 @@ body {
     margin:0;
 }
 
+/* HEADER LOADING */
+.header-placeholder {
+    visibility:hidden;
+}
+
+.header-placeholder.header-loaded {
+    visibility:visible;
+}
+
 /* HEADER BACKGROUND */
 .header-background {
     position:fixed;
@@ -146,3 +155,4 @@ body {
 .header-button:hover {
     color:var(--header-hover-color);
 }
+
